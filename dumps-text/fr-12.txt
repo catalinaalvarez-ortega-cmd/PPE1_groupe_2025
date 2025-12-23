@@ -5,60 +5,6 @@
    [icon-search.svg] [icon-contact.svg]
    +1 514 789 2446+1 877 677 4887
    DEMANDEZ UN DEVIS
-   INSPIREZ MOI
-   Autotour
-   Croisières Ponant
-   Incontournables
-   Plages & Culture
-   Voyage Aventure
-   Voyage culturel
-   Voyage de Luxe
-   Voyage de noces
-   Voyage en Famille
-   Voyage Nature
-   Voyages organisés en petits groupes
-   EXPLORER PAR REGION
-   Afrique [icon-arrow.svg]
-   [["Afrique du Sud","https:\/\/atypikatours.com\/destination\
-   ____________________________________________________________
-   ____________________________________________________________
-   ____________________________________________________________
-   Amérique Latine [icon-arrow.svg]
-   [["Argentine","https:\/\/atypikatours.com\/destination\/arge
-   ____________________________________________________________
-   ____________________________________________________________
-   ____________________________________________________________
-   Asie [icon-arrow.svg]
-   [["Inde","https:\/\/atypikatours.com\/destination\/inde\/"],
-   ____________________________________________________________
-   ____________________________________________________________
-   ____________________________________________________________
-   Europe [icon-arrow.svg]
-   [["Croatie","https:\/\/atypikatours.com\/destination\/croati
-   ____________________________________________________________
-   ____________________________________________________________
-   ____________________________________________________________
-   Polynésie & Océanie [icon-arrow.svg]
-   [["Polyn\u00e9sie","https:\/\/atypikatours.com\/destination\
-   ____________________________________________________________
-   ____________________________________________________________
-   ____________________________________________________________
-   Proche & Moyen-Orient [icon-arrow.svg]
-   [["\u00c9gypte","https:\/\/atypikatours.com\/destination\/eg
-   ____________________________________________________________
-   ____________________________________________________________
-   ____________________________________________________________
-   Terres Polaires [icon-arrow.svg]
-   [["Antarctique","https:\/\/atypikatours.com\/destination\/an
-   ____________________________________________________________
-   ____________________________________________________________
-   ____________________________________________________________
-
-   [["Afrique du Sud","https:\/\/atypikatours.com\/destination\
-   ____________________________________________________________
-   ____________________________________________________________
-   ____________________________________________________________
-   Egypte
    ____________________
    Chercher
      * Nos Destinations
@@ -74,7 +20,7 @@ Qu’est ce que l’orientalisme?
    Proche & Moyen-Orient
    16 septembre 2021
    Share on
-   [icon-arrow.svg]
+   [icon-contact.svg]
 
    Table des matières
    Toggle

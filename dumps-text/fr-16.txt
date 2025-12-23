@@ -10,7 +10,7 @@
 
      * Accueil
      *
-     * Catalogue de 16011 livres
+     * Catalogue de 16012 livres
      *
      * Éditeurs
      *
@@ -30,7 +30,7 @@
           + X
 
      * Accueil
-     * Catalogue de 16011 livres
+     * Catalogue de 16012 livres
      * Éditeurs
      * Auteurs
 
