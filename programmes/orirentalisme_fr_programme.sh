@@ -17,16 +17,17 @@ echo "<table border='1'>
 <th>#</th><th>URL</th><th>HTTP</th><th>Encodage</th>
 <th>Mots</th><th>Occurrences orient*</th>
 <th>HTML</th><th>TXT UTF-8</th><th>Contextes</th>
+<th>Concordancier</th>
 </tr>" > "$HTML_OUT"
 
 # Lecture du fichier URL ligne par ligne
-    while read -r url; do
+while read -r url; do
     echo "Traitement $indice : $url"
 
     html="../aspirations/fr-$indice.html"
     dump="../dumps-text/fr-$indice.txt"
     contexte="../contextes/fr-$indice.txt"
-
+    Pals="../PALS/fr-$indice.tsv"
     # Téléchargement de la page
     http_code=$(curl -L -A "$USER_AGENT" -s \
         --connect-timeout 10 --max-time 20 \
@@ -64,6 +65,9 @@ echo "<table border='1'>
     # Extraction des contextes autour des mots recherchés
     egrep -Ei -C 5 '\borient\w*' "$dump" > "$contexte"
 
+    #cooccurent.py/$dump  /$dump
+    python3 cooccurrents.py $dump --target ".*[oO]rient.*|.ORIENT.*" --match-mode regex >> "$Pals" 2> /dev/null
+
     # Ajout d'une ligne dans le tableau HTML
     echo "<tr>
 <td>$indice</td>
@@ -75,6 +79,7 @@ echo "<table border='1'>
 <td><a href=\"$html\">HTML</a></td>
 <td><a href=\"$dump\">TXT</a></td>
 <td><a href=\"$contexte\">Contextes</a></td>
+<td><a href=\"$Pals\">Concordancier</a></td>
 </tr>" >> "$HTML_OUT"
 
     ((indice++))
