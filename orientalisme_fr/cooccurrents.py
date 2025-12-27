@@ -1,3 +1,4 @@
+from typing import Union
 """Description:
     Compute Lafon specificity of cooccurrent tokens of a given target. This will
     count the words occurring in before/after window within the sentence in
@@ -152,7 +153,7 @@ def lafon_specificity(T: int, t: int, F: int, f: int, tool_emulation: str = 'Non
 
 
 def read_corpus(
-    sources: list[str | Path],
+    sources: list[Union[str, Path]],
     target : str,
     punctuations: str = 'ignore',
     case_sensitivity: str = 'sensitive',
@@ -255,7 +256,7 @@ def get_counts(
 
 
 def run(
-    inputs: list[str | Path],
+    inputs: list[Union[str, Path]],
     target: str,
     match_mode: str='exact',
     n_firsts: int = 1000,

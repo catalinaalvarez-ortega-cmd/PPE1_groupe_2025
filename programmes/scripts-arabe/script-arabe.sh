@@ -84,7 +84,6 @@ sys.exit(1)
 PY
 }
 
-# HTML header
 cat > "$OUT" <<'HTML'
 <!doctype html>
 <html lang="fr">
@@ -193,3 +192,4 @@ cat >> "$OUT" <<'HTML'
 HTML
 
 log "HTML OK: $OUT"
+
