@@ -1,0 +1,640 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="es"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="es"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="es"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="es"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="es"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head data-template-set="6vstudio-theme">
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+	
+	<style type="text/css">@font-face {font-family:Source Sans Pro;font-style:normal;font-weight:400;src:url(/cf-fonts/s/source-sans-pro/5.0.11/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Source Sans Pro;font-style:normal;font-weight:400;src:url(/cf-fonts/s/source-sans-pro/5.0.11/greek-ext/400/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Source Sans Pro;font-style:normal;font-weight:400;src:url(/cf-fonts/s/source-sans-pro/5.0.11/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Source Sans Pro;font-style:normal;font-weight:400;src:url(/cf-fonts/s/source-sans-pro/5.0.11/greek/400/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Source Sans Pro;font-style:normal;font-weight:400;src:url(/cf-fonts/s/source-sans-pro/5.0.11/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Source Sans Pro;font-style:normal;font-weight:400;src:url(/cf-fonts/s/source-sans-pro/5.0.11/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Source Sans Pro;font-style:normal;font-weight:400;src:url(/cf-fonts/s/source-sans-pro/5.0.11/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/s/montserrat/5.0.16/latin-ext/300/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/s/montserrat/5.0.16/cyrillic-ext/300/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/s/montserrat/5.0.16/latin/300/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/s/montserrat/5.0.16/vietnamese/300/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:300;src:url(/cf-fonts/s/montserrat/5.0.16/cyrillic/300/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/s/montserrat/5.0.16/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/s/montserrat/5.0.16/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/s/montserrat/5.0.16/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/s/montserrat/5.0.16/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:400;src:url(/cf-fonts/s/montserrat/5.0.16/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/s/montserrat/5.0.16/vietnamese/500/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/s/montserrat/5.0.16/latin-ext/500/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/s/montserrat/5.0.16/latin/500/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/s/montserrat/5.0.16/cyrillic/500/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:500;src:url(/cf-fonts/s/montserrat/5.0.16/cyrillic-ext/500/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/s/montserrat/5.0.16/latin-ext/700/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/s/montserrat/5.0.16/cyrillic/700/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/s/montserrat/5.0.16/vietnamese/700/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/s/montserrat/5.0.16/latin/700/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:700;src:url(/cf-fonts/s/montserrat/5.0.16/cyrillic-ext/700/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}</style><link media="all" href="https://clubculturaarabe.com/wp-content/cache/autoptimize/css/autoptimize_b8a49885c67bfc68da1ed69beba7a174.css" rel="stylesheet"><link media="only screen and (max-width: 768px)" href="https://clubculturaarabe.com/wp-content/cache/autoptimize/css/autoptimize_541e2ced151704f4ff1844c6de47ec02.css" rel="stylesheet"><title>8 puntos para pensar el orientalismo y la deshumanización del &quot;otro&quot; - Club de la Cultura Arabe</title>
+	<meta name="title" content="8 puntos para pensar el orientalismo y la deshumanización del &quot;otro&quot; - Club de la Cultura Arabe">
+	<meta name="description" content="" />
+
+	
+	<meta name="yandex-verification" content="1e13e651b104863c" />
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1CNZW10Y1L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1CNZW10Y1L');
+</script>	
+	<meta name="Copyright" content="Copyright &copy; Club de la Cultura Arabe 2025. All Rights Reserved.">
+
+	
+			
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<link rel="pingback" href="" />
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.6 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>8 puntos para pensar el orientalismo y la deshumanización del &quot;otro&quot; - Club de la Cultura Arabe</title>
+	<meta name="description" content="Cómo o desde dónde opera el filtro orientalista del que somos usuarios involuntarios y que contribuye a la percepción de oriente como una amenaza." />
+	<link rel="canonical" href="https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="8 puntos para pensar el orientalismo y la deshumanización del &quot;otro&quot; - Club de la Cultura Arabe" />
+	<meta property="og:description" content="Cómo o desde dónde opera el filtro orientalista del que somos usuarios involuntarios y que contribuye a la percepción de oriente como una amenaza." />
+	<meta property="og:url" content="https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/" />
+	<meta property="og:site_name" content="Club de la Cultura Arabe" />
+	<meta property="article:publisher" content="https://www.facebook.com/ClubCulturaArabeArg" />
+	<meta property="article:published_time" content="2023-11-08T18:40:28+00:00" />
+	<meta property="article:modified_time" content="2023-11-14T03:57:13+00:00" />
+	<meta property="og:image" content="https://clubculturaarabe.com/wp-content/uploads/2023/11/AP23295541593309-e1697994862382.jpg" />
+	<meta property="og:image:width" content="1920" />
+	<meta property="og:image:height" content="1200" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Club de la Cultura Arabe" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="8 puntos para pensar el orientalismo y la deshumanización del &quot;otro&quot; - Club de la Cultura Arabe" />
+	<meta name="twitter:description" content="Cómo o desde dónde opera el filtro orientalista del que somos usuarios involuntarios y que contribuye a la percepción de oriente como una amenaza." />
+	<meta name="twitter:image" content="https://clubculturaarabe.com/wp-content/uploads/2023/11/AP23295541593309-e1697994862382.jpg" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Club de la Cultura Arabe" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="15 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/#article","isPartOf":{"@id":"https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/"},"author":{"name":"Club de la Cultura Arabe","@id":"https://clubculturaarabe.com/#/schema/person/23e5dbba93a0b97a2e40ceb408aee22c"},"headline":"8 puntos para pensar el orientalismo y la deshumanización del «otro»","datePublished":"2023-11-08T18:40:28+00:00","dateModified":"2023-11-14T03:57:13+00:00","mainEntityOfPage":{"@id":"https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/"},"wordCount":3134,"publisher":{"@id":"https://clubculturaarabe.com/#organization"},"image":{"@id":"https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/#primaryimage"},"thumbnailUrl":"https://clubculturaarabe.com/wp-content/uploads/2023/10/indiana-jones-arab-swordsman2.jpg","keywords":["Cultura"],"inLanguage":"es"},{"@type":["WebPage","ItemPage"],"@id":"https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/","url":"https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/","name":"8 puntos para pensar el orientalismo y la deshumanización del \"otro\" - Club de la Cultura Arabe","isPartOf":{"@id":"https://clubculturaarabe.com/#website"},"primaryImageOfPage":{"@id":"https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/#primaryimage"},"image":{"@id":"https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/#primaryimage"},"thumbnailUrl":"https://clubculturaarabe.com/wp-content/uploads/2023/10/indiana-jones-arab-swordsman2.jpg","datePublished":"2023-11-08T18:40:28+00:00","dateModified":"2023-11-14T03:57:13+00:00","description":"Cómo o desde dónde opera el filtro orientalista del que somos usuarios involuntarios y que contribuye a la percepción de oriente como una amenaza.","breadcrumb":{"@id":"https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/#primaryimage","url":"https://clubculturaarabe.com/wp-content/uploads/2023/10/indiana-jones-arab-swordsman2.jpg","contentUrl":"https://clubculturaarabe.com/wp-content/uploads/2023/10/indiana-jones-arab-swordsman2.jpg","width":1312,"height":738,"caption":"Escena de Indiana Jones y los cazadores del arca perdida"},{"@type":"BreadcrumbList","@id":"https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://clubculturaarabe.com/"},{"@type":"ListItem","position":2,"name":"Sobre cultura e idioma árabe","item":"https://clubculturaarabe.com/novedades/"},{"@type":"ListItem","position":3,"name":"8 puntos para pensar el orientalismo y la deshumanización del «otro»"}]},{"@type":"WebSite","@id":"https://clubculturaarabe.com/#website","url":"https://clubculturaarabe.com/","name":"Club de la Cultura Arabe","description":"","publisher":{"@id":"https://clubculturaarabe.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://clubculturaarabe.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://clubculturaarabe.com/#organization","name":"Club de la Cultura Árabe","url":"https://clubculturaarabe.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://clubculturaarabe.com/#/schema/logo/image/","url":"https://clubculturaarabe.com/wp-content/uploads/2020/10/ClubCulturaArabe-pos.png","contentUrl":"https://clubculturaarabe.com/wp-content/uploads/2020/10/ClubCulturaArabe-pos.png","width":329,"height":103,"caption":"Club de la Cultura Árabe"},"image":{"@id":"https://clubculturaarabe.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/ClubCulturaArabeArg","https://www.instagram.com/clubdelaculturaarabe/","https://www.youtube.com/channel/UCYwvzwi28cF92ItVo1uqYjA"]},{"@type":"Person","@id":"https://clubculturaarabe.com/#/schema/person/23e5dbba93a0b97a2e40ceb408aee22c","name":"Club de la Cultura Arabe","image":{"@type":"ImageObject","inLanguage":"es","@id":"https://clubculturaarabe.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/7673a7ad3ecc16b75b5d0a39a5bb8ea0?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/7673a7ad3ecc16b75b5d0a39a5bb8ea0?s=96&d=mm&r=g","caption":"Club de la Cultura Arabe"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//stats.wp.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Club de la Cultura Arabe &raquo; Feed" href="https://clubculturaarabe.com/feed/" />
+
+
+
+<style id='filebird-block-filebird-gallery-style-inline-css'>
+ul.filebird-block-filebird-gallery{margin:auto!important;padding:0!important;width:100%}ul.filebird-block-filebird-gallery.layout-grid{display:grid;grid-gap:20px;align-items:stretch;grid-template-columns:repeat(var(--columns),1fr);justify-items:stretch}ul.filebird-block-filebird-gallery.layout-grid li img{border:1px solid #ccc;box-shadow:2px 2px 6px 0 rgba(0,0,0,.3);height:100%;max-width:100%;-o-object-fit:cover;object-fit:cover;width:100%}ul.filebird-block-filebird-gallery.layout-masonry{-moz-column-count:var(--columns);-moz-column-gap:var(--space);column-gap:var(--space);-moz-column-width:var(--min-width);columns:var(--min-width) var(--columns);display:block;overflow:auto}ul.filebird-block-filebird-gallery.layout-masonry li{margin-bottom:var(--space)}ul.filebird-block-filebird-gallery li{list-style:none}ul.filebird-block-filebird-gallery li figure{height:100%;margin:0;padding:0;position:relative;width:100%}ul.filebird-block-filebird-gallery li figure figcaption{background:linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,.3) 70%,transparent);bottom:0;box-sizing:border-box;color:#fff;font-size:.8em;margin:0;max-height:100%;overflow:auto;padding:3em .77em .7em;position:absolute;text-align:center;width:100%;z-index:2}ul.filebird-block-filebird-gallery li figure figcaption a{color:inherit}
+
+</style>
+
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+
+
+
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+
+
+<script src='https://clubculturaarabe.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js' id='wp-polyfill-inert-js'></script>
+<script src='https://clubculturaarabe.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js' id='regenerator-runtime-js'></script>
+<script src='https://clubculturaarabe.com/wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+<script src='https://clubculturaarabe.com/wp-includes/js/dist/hooks.min.js' id='wp-hooks-js'></script>
+<script src='https://stats.wp.com/w.js' id='woo-tracks-js'></script>
+<script src='https://clubculturaarabe.com/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+
+<link rel="https://api.w.org/" href="https://clubculturaarabe.com/wp-json/" /><link rel="alternate" type="application/json" href="https://clubculturaarabe.com/wp-json/wp/v2/posts/6286" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://clubculturaarabe.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.7" />
+<meta name="generator" content="WooCommerce 7.8.2" />
+<link rel='shortlink' href='https://clubculturaarabe.com/?p=6286' />
+<link rel="alternate" type="application/json+oembed" href="https://clubculturaarabe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fclubculturaarabe.com%2F8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://clubculturaarabe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fclubculturaarabe.com%2F8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro%2F&#038;format=xml" />
+<!-- FAVHERO FAVICON START --><!-- For iPad with high-resolution Retina display running iOS ≥ 7: --><link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://clubculturaarabe.com/wp-content/uploads/2020/11/favicon-152.png"><!-- Standard: --><link rel="icon" sizes="152x152" href="https://clubculturaarabe.com/wp-content/uploads/2020/11/favicon-152.png"><meta name="msapplication-TileColor" content="#FFFFFF"><meta name="msapplication-TileImage" content="https://clubculturaarabe.com/wp-content/uploads/2020/11/favicon-144.png"><!-- For iPad with high-resolution Retina display running iOS ≤ 6: --><link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://clubculturaarabe.com/wp-content/uploads/2020/11/favicon-144.png"><!-- For iPhone with high-resolution Retina display running iOS ≥ 7: --><link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://clubculturaarabe.com/wp-content/uploads/2020/11/favicon-120.png"><!-- For first- and second-generation iPad: --><link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://clubculturaarabe.com/wp-content/uploads/2020/11/favicon-72.png"><!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: --><link rel="apple-touch-icon-precomposed" href="https://clubculturaarabe.com/wp-content/uploads/2020/11/favicon-57.png"><!-- FAVHERO FAVICON END -->	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	 
+</head>
+
+<body class="post-template-default single single-post postid-6286 single-format-standard wp-embed-responsive theme-clubdelaculturaarabe woocommerce-no-js">
+		<div id="wrapper">
+
+		<div class="overlay"></div>
+		<header class="fixed-top light-theme">
+	        <nav class="navbar">
+	            <div class="container-fluid">
+	                <div class="row">
+	                    <div class="col-6 col-md-auto logo-div">
+	                        <h1 class="site-title">
+	                        		                        	<style>
+	                        		/* Main logo - mobile xs */
+	                        		header.dark-theme .site-title .main-logo, header.light-theme .site-title .main-logo {
+	                        			background-image: url(https://clubculturaarabe.com/wp-content/uploads/2020/10/ClubCulturaArabe-alt-pos.png);
+	                        		}
+
+	                        		/* Logo mobile - md2lg */
+	                        				                        		@media (min-width: 768px) and (max-width: 991px) {
+		                        			header.dark-theme:not(.sticky) .site-title .main-logo {
+		                        				background-image: url(https://clubculturaarabe.com/wp-content/uploads/2020/10/ClubCulturaArabe-alt-neg.png);	
+		                        			}
+		                        		}
+		                        	
+		                        	/* Logo large */
+                        			@media (min-width: 992px) {
+                        				header.light-theme .site-title .main-logo, header.dark-theme.sticky .site-title .main-logo {
+                        					background-image: url(https://clubculturaarabe.com/wp-content/uploads/2020/10/ClubCulturaArabe-pos.png);
+                        				}
+                        							                        		header.dark-theme:not(.sticky) .site-title .main-logo {
+			                        			background-image: url(https://clubculturaarabe.com/wp-content/uploads/2020/10/ClubCulturaArabe-neg.png);
+			                        		}
+			                        			                        	}		                        	
+	                        	</style>
+	                            <a class="navbar-brand main-logo" href="https://clubculturaarabe.com/" rel="home">Club de la Cultura Arabe</a>
+                            	                            	
+	                        </h1>
+	                    </div>
+	                    <div class="col-6 col-md text-right">
+	                        <button class="navbar-toggler hamburger is-closed" type="button" data-toggle="offcanvas" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+	                            <span class="hamb-top"></span>
+	                            <span class="hamb-middle"></span>
+	                            <span class="hamb-bottom"></span>
+	                        </button>
+	                        
+	                        <nav class="navbar navbar-inverse navbar-fixed-top" id="main-menu" role="navigation">
+	                            <div class="nav sidebar-nav container-fluid">
+	                                <div class="menu-header-main-container"><ul id="menu-header-main" class="menu"><li id="menu-item-4079" class="menu-item menu-item-type-post_type_archive menu-item-object-eventos menu-item-has-children menu-item-4079"><a href="https://clubculturaarabe.com/eventos/">Actividades</a>
+<ul class="sub-menu">
+	<li id="menu-item-201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-201"><a href="https://clubculturaarabe.com/encuentros-de-poesia-arabe/">Encuentros de Poesía Árabe</a></li>
+	<li id="menu-item-4081" class="menu-item menu-item-type-post_type_archive menu-item-object-eventos menu-item-4081"><a href="https://clubculturaarabe.com/eventos/">Actividades / Eventos</a></li>
+	<li id="menu-item-6434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6434"><a href="https://clubculturaarabe.com/campana-dia-internacional-del-mate/">Campaña: Día Internacional del Mate</a></li>
+</ul>
+</li>
+<li id="menu-item-4166" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4166"><a href="https://clubculturaarabe.com/tienda-categoria/cursos/">Clases <span class="d-lg-none d-xl-inline">y cursos</span></a></li>
+<li id="menu-item-6248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6248"><a href="https://clubculturaarabe.com/sobre-el-club-de-la-cultura-arabe/">Quienes somos</a></li>
+<li id="menu-item-184" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-184"><a href="https://clubculturaarabe.com/novedades/">Artículos</a></li>
+<li id="menu-item-4165" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4165"><a href="https://clubculturaarabe.com/tienda-categoria/productos-cca/">Tienda</a></li>
+</ul></div>	                                <div class="menu-header-cta-container"><ul id="menu-header-cta" class="menu"><li id="menu-item-182" class="destacado menu-item menu-item-type-post_type menu-item-object-page menu-item-182"><a href="https://clubculturaarabe.com/asociate/">Asociate</a></li>
+<li id="menu-item-206" class="icon_link icono-contacto menu-item menu-item-type-post_type menu-item-object-page menu-item-206"><a href="https://clubculturaarabe.com/contacto/"><i class="contacto"><span>Contacto</span></i></a></li>
+</ul></div>	                                	                                <div class="col-auto px-0">
+	                                	<ul class="menu-cart menu">
+	                                		<li class="menu-item icon_link">
+		                                		<a class="custom-cart-cca" href="https://clubculturaarabe.com/carrito/" title="View your shopping cart">
+		                                					                                		</a>
+		                                	</li>
+		                                </ul>
+	                                </div>
+	                                
+	                                
+
+	                            </div>
+	                        </nav>
+	                    </div>
+	                </div>
+	            </div>
+	        </nav>
+	    </header>
+
+
+
+		<div id="content" class="site-content">
+
+
+	
+		<article class="post-6286 post type-post status-publish format-standard has-post-thumbnail hentry category-sin-categoria tag-cultura" id="post-6286">
+			<div class="container-fluid">
+				<div class="header-row">
+					<p class="epigrafe breadcrumbs">
+						<a href="https://clubculturaarabe.com/novedades/">Sobre cultura e idioma árabe</a>
+													<span class="separador">/</span><a href="https://clubculturaarabe.com/tag/cultura/" class="tag">Cultura</a>
+											</p>
+					<h1 class="entry-title">8 puntos para pensar el orientalismo y la deshumanización del «otro»</h1>
+					<div class="metadata">
+		              <div class="row">
+		                		                    <div class="autor col-auto">
+		                      <div class="img">
+		                        <img src="https://clubculturaarabe.com/wp-content/uploads/2021/06/nfw-foto3-150x150.jpg" alt="Nathalie Farías Wybert" class="img-fluid">
+		                      </div>
+		                      <p>Por Nathalie Farías Wybert</p>
+		                    </div>
+		                  		                <div class="col-auto date">
+		                  		                    <span class="">8 de noviembre de 2023</span>
+		                  		                </div>
+		              </div>
+		              
+		            </div>
+				</div>
+	        </div>
+	        <div class="container-fluid">
+	        	<img width="1156" height="650" src="https://clubculturaarabe.com/wp-content/uploads/2023/10/indiana-jones-arab-swordsman2-1156x650.jpg" class="img-responsive wp-post-image" alt="Escena de Indiana Jones y los cazadores del arca perdida" decoding="async" fetchpriority="high" srcset="https://clubculturaarabe.com/wp-content/uploads/2023/10/indiana-jones-arab-swordsman2-1156x650.jpg 1156w, https://clubculturaarabe.com/wp-content/uploads/2023/10/indiana-jones-arab-swordsman2-300x169.jpg 300w, https://clubculturaarabe.com/wp-content/uploads/2023/10/indiana-jones-arab-swordsman2-1024x576.jpg 1024w, https://clubculturaarabe.com/wp-content/uploads/2023/10/indiana-jones-arab-swordsman2-768x432.jpg 768w, https://clubculturaarabe.com/wp-content/uploads/2023/10/indiana-jones-arab-swordsman2-1200x675.jpg 1200w, https://clubculturaarabe.com/wp-content/uploads/2023/10/indiana-jones-arab-swordsman2-780x440.jpg 780w, https://clubculturaarabe.com/wp-content/uploads/2023/10/indiana-jones-arab-swordsman2-600x338.jpg 600w, https://clubculturaarabe.com/wp-content/uploads/2023/10/indiana-jones-arab-swordsman2.jpg 1312w" sizes="(max-width: 1156px) 100vw, 1156px" />	        </div>
+	        <div class="container-fluid main-article-content">
+	        	<div class="row">
+	        		<div class="share-links col-md-2">
+	        			<p class="secondary">Compartir</p>
+	        			<div class="redes">
+	<div class="st-custom-button facebook-color" data-network="facebook" >
+		<a class="socialPopUp" data-width="800" data-height="330" href="https://facebook.com/sharer.php?u=https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/" title="Facebook share">
+			<i class="fab fa-facebook"></i>
+			<span class="sr-only">Compartir en Facebook</span>
+		</a>
+	</div>
+	<div class="st-custom-button twitter-color" data-network="twitter" >
+		<a class="twitter-share-button socialPopUp" data-width="800" data-height="260" href="https://twitter.com/intent/tweet?text=Club de la Cultura Arabe - 8 puntos para pensar el orientalismo y la deshumanización del «otro» - https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/" data-count="none" data-lang="es">
+			<i class="fab fa-twitter" ></i>
+			<span class="sr-only">Compartir en Twitter</span>
+		</a>
+	</div>
+	<div class="st-custom-button linkedin-color" data-network="linkedin" >
+		<a class="socialPopUp" data-width="610" data-height="330" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://clubculturaarabe.com/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/&title=Club de la Cultura Arabe - 8 puntos para pensar el orientalismo y la deshumanización del «otro»">
+			<i class="fab fa-linkedin-in"></i>
+			<span class="sr-only">Compartir en Linkedin</span>
+		</a>
+	</div>
+</div>	        		</div>
+	        		<div class="entry-content col-lg-8 col-md-10">
+						<div class=" editor-text">
+														<p><strong>El orientalismo es una forma de ver y representar el mundo según la cual existen dos mitades: Oriente y Occidente. Esto determina que hay un nosotros —autodenominado Occidente, punto de vista del enunciador— y un ellos —Oriente, y, en particular, Medio Oriente—, como dos términos de un antagonismo natural; en donde ellos representan una versión menos civilizada y moralmente inferior de nosotros, y en donde es más normal sentir empatía con la condición humana de nosotros que con la de ellos.</strong></p>
+<p>Como pata intelectual del colonialismo, el orientalismo piensa a los orientales como unas masas abstractas de población cuyos miembros encajan en un puñado de estereotipos con atributos siempre asociados a la irracionalidad. Por esa deficiencia de racionalidad, se concluye que los orientales necesitan alguien que los represente, los gobierne y los salve de la barbarie. Oriente encarna todo lo que ese enunciador, Occidente, no quiere ni cree ser. Su contrario, su definición por oposición o insuficiencia.</p>
+<blockquote><p>Como pata intelectual del colonialismo, el orientalismo piensa a los orientales como unas masas abstractas de población cuyos miembros encajan en un puñado de estereotipos con atributos siempre asociados a la irracionalidad.</p></blockquote>
+<p>El discurso orientalista se manifiesta a través de herramientas de elocuencia como las artes plásticas, la literatura, las películas, los videojuegos, el discurso académico-escolar y los medios en general. Los estudios orientalistas se han caracterizado por una falta de rigor o precisión, dado que se desarrollaron hacia la confirmación de juicios de valor predeterminados y el refuerzo de los estereotipos, basándose en simplificaciones, generalizaciones culturales, prejuicios raciales y religiosos. El arte orientalista, por su parte, se toma sus licencias de la fantasía.</p>
+<p>Esta narrativa, que en realidad nace del etnocentrismo particular de las élites de Europa occidental —y de Estados Unidos, subiéndose más tarde al tren—, existe en otros pueblos, como los iberoamericanos, que fuimos formalmente colonia y que de un modo u otro heredamos una manera de pensar el mundo que, al final, es favorable para ellos. Está internalizada de modo tal que no nos damos cuenta de que somos usuarios involuntarios del filtro orientalista. Hasta un análisis, sea académico o periodístico, de algo relacionado con Medio Oriente está frecuentemente lleno de clichés racistas y estereotipos, muchas veces eximido de escrúpulos o matices.</p>
+<div style="margin: 16px; padding: 2px 20px 18px; border: 1px solid #ccc;">
+<p><a href="https://clubculturaarabe.com/producto/orientalismo-en-las-artes/" target="_blank" rel="noopener"><img decoding="async" class="alignleft wp-image-6226 size-thumbnail" src="https://clubculturaarabe.com/wp-content/uploads/2022/10/Imagen-425-150x150.jpg" alt="" width="150" height="150" srcset="https://clubculturaarabe.com/wp-content/uploads/2022/10/Imagen-425-150x150.jpg 150w, https://clubculturaarabe.com/wp-content/uploads/2022/10/Imagen-425-100x100.jpg 100w, https://clubculturaarabe.com/wp-content/uploads/2022/10/Imagen-425.jpg 265w" sizes="(max-width: 150px) 100vw, 150px" /></a></p>
+<div>
+<p style="font-size: 16px; opacity: 0.54; margin: 0; padding: 0;">Te puede interesar</p>
+<h4 style="margin: 0;"><a href="https://clubculturaarabe.com/producto/orientalismo-en-las-artes/" target="_blank" rel="noopener">Orientalismo en las artes</a></h4>
+<p style="margin-top: 0; font-size: 16px;">Clase especial online del Lic. Ismael Adriss (mirala a tu ritmo)</p>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>Por todo esto, es inevitable aludir al orientalismo cada vez que hablamos sobre cuestiones de ese Oriente, y más aún de Medio Oriente. ¿Por qué es necesario recordar la presencia de este filtro ideológico? Porque, dejando de lado cualquier posicionamiento político, <strong>el orientalismo nos trae este problema inapelable: dado que está basado en lugares comunes y estereotipos, perjudica nuestra capacidad de entendimiento y deforma nuestra visión de la realidad. Es decir, induce a errores y a interpretaciones que pueden ir desde lo inexacto a lo completamente falso.</strong></p>
+<p><em>Orientalismo </em>es un ensayo publicado en 1978, la primera obra que el pensador palestino-estadounidense Edward Said dedicó a desarrollar la tesis del pensamiento orientalista y a analizar cómo el colonialismo actúa a través de la cultura y las ideas. Una obra que marcó un antes y un después, pieza central en los estudios poscoloniales y muy vigente hoy en día.</p>
+<p>Vamos a ver algunas de las ideas e imágenes del pensamiento orientalista y por qué afectan nuestra comprensión del mundo e incluso de nosotros mismos.</p>
+<h3>1. Oriente &#8211; Occidente: El superclásico del mundo</h3>
+<p>Como adelantamos al principio, el orientalismo polariza el mundo dividiéndolo en dos. Pero va más allá de exagerar las diferencias, porque nos conduce a sentir una rivalidad inherente, un antagonismo por definición, dando por sentado que, en esencia, no puede haber puntos en común; ni históricos, ni culturales, ni de intereses. Es el partido de la civilización contra la barbarie, de la racionalidad contra la irracionalidad. Básicamente, del bien contra el mal.</p>
+<p>En esta épica de superclásico discursivo, siempre gana el equipo del Oeste. Porque en el plano simbólico logra mantener la suposición de que es normal posicionarse ante ese ‘otro’ con una empatía diferenciada y con una hostilidad latente. A pesar de que eso, al final, vaya en contra de esos tan defendidos valores humanos.</p>
+<p>En un plano más material, esta lógica posibilita los avasallamientos contra pueblos y vidas “no occidentales”, relativizando su gravedad, o incluso legitimándolos.</p>
+<figure id="attachment_7685" aria-describedby="caption-attachment-7685" style="width: 1818px" class="wp-caption aligncenter"><img decoding="async" class="wp-image-7685 size-full" src="https://clubculturaarabe.com/wp-content/uploads/2023/10/Netanyahu-tweet-2.jpg" alt="" width="1818" height="789" srcset="https://clubculturaarabe.com/wp-content/uploads/2023/10/Netanyahu-tweet-2.jpg 1818w, https://clubculturaarabe.com/wp-content/uploads/2023/10/Netanyahu-tweet-2-300x130.jpg 300w, https://clubculturaarabe.com/wp-content/uploads/2023/10/Netanyahu-tweet-2-1024x444.jpg 1024w, https://clubculturaarabe.com/wp-content/uploads/2023/10/Netanyahu-tweet-2-768x333.jpg 768w, https://clubculturaarabe.com/wp-content/uploads/2023/10/Netanyahu-tweet-2-1536x667.jpg 1536w, https://clubculturaarabe.com/wp-content/uploads/2023/10/Netanyahu-tweet-2-1200x521.jpg 1200w, https://clubculturaarabe.com/wp-content/uploads/2023/10/Netanyahu-tweet-2-600x260.jpg 600w" sizes="(max-width: 1818px) 100vw, 1818px" /><figcaption id="caption-attachment-7685" class="wp-caption-text">Una cita del discurso de Natanyahu ante la Knesset, donde dijo que la guerra contra Gaza era una <em>«lucha entre los hijos de la luz y los hijos de las tinieblas, entre la humanidad y la ley de la selva.»</em> El tweet fue eliminado al día siguiente después del bombardeo al hospital Al-Ahli en Gaza donde fueron asesinadas 471 personas.</figcaption></figure>
+<p>Además, como cualquier molde interpretativo reduccionista, tiene la otra ventaja de que nos conforma con una satisfactoria sensación de entendimiento y dominio intelectual sobre situaciones que no están al alcance de nuestro conocimiento empírico. Nos ofrece una explicación fácil ante realidades que son complejas y multicausales: “En Medio Oriente no pueden progresar porque son torpes y fanáticos”.</p>
+<p>Y, así como es cuestionable esencializar a ‘los orientales’, es cuestionable esencializar a cualquier pueblo o grupo humano. Sería caer en la misma simplificación determinista de dar por sentado que las personas, por el solo hecho de nacer de un lado u otro del mapa, son de una cierta cualidad.</p>
+<h3>2. Árabe es musulmán y musulmán es árabe</h3>
+<p>Aunque se insista en la distinción de que una cosa es ser árabe y otra es ser musulmán, esta idea persiste. Podríamos seguir repitiendo que el único requisito para ser árabe es tener el árabe como lengua materna, y, en todo caso, identificarse como tal. Sin embargo, conceptualmente los dos términos siguen ahí, encimados, <strong>árabe=musulmán;</strong> no como una dupla, sino como una sinonimia.</p>
+<figure id="attachment_7657" aria-describedby="caption-attachment-7657" style="width: 1920px" class="wp-caption alignnone"><img decoding="async" loading="lazy" class="wp-image-7657 size-full-size" src="https://clubculturaarabe.com/wp-content/uploads/2023/10/coptic-orthodox-church-egypt.jpg" alt="" width="1920" height="1280" /><figcaption id="caption-attachment-7657" class="wp-caption-text">Iglesia Ortodoxa Copta en Sharm El Sheikh, Egipto.</figcaption></figure>
+<p>Además de confundirnos, nos hace desconocer que se puede ser árabe y al mismo tiempo judío, cristiano de cualquier rama, musulmán, laico, ateo, etcétera.</p>
+<p>Y a la inversa, esta otra idea nos hace olvidar que el único requisito para ser musulmán es ser musulmán. Porque el islam es una religión, y no una etnia, ‘raza’ o identidad nacional.</p>
+<p>Si bien casi todos los países árabes tienen clara mayoría de población musulmana —con excepción del Líbano, en donde alrededor del 40% son cristianos—, la nacionalidad o la lengua materna no son inherentes ni excluyentes en una religión.</p>
+<p>En realidad, más de la mitad de la población musulmana del mundo no es árabe. Veamos algunos de los países no árabes y su población musulmana en números:</p>
+<ol>
+<li style="font-weight: 400; margin-bottom: 0;" aria-level="1"><span style="font-weight: 400;">Indonesia</span><span style="font-weight: 400;">: 230 millones de musulmanes</span></li>
+<li style="font-weight: 400; margin-bottom: 0;" aria-level="1"><span style="font-weight: 400;">India: </span><span style="font-weight: 400;">213 M</span></li>
+<li style="font-weight: 400; margin-bottom: 0;" aria-level="1"><span style="font-weight: 400;">Pakistán:</span><span style="font-weight: 400;"> 200 M</span></li>
+<li style="font-weight: 400; margin-bottom: 0;" aria-level="1"><span style="font-weight: 400;">Bangladesh:</span><span style="font-weight: 400;"> 153 M</span></li>
+<li style="font-weight: 400; margin-bottom: 0;" aria-level="1"><span style="font-weight: 400;">Nigeria: 95 M</span></li>
+<li style="font-weight: 400; margin-bottom: 0;" aria-level="1"><span style="font-weight: 400;">Irán: </span><span style="font-weight: 400;">81 M</span></li>
+<li style="font-weight: 400; margin-bottom: 0;" aria-level="1"><span style="font-weight: 400;">Turquía:</span><span style="font-weight: 400;"> 78 M</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Afganistán:</span><span style="font-weight: 400;"> 40 M</span></li>
+</ol>
+<p>El país árabe con mayor cantidad de musulmanes es Egipto, con 90 millones. Con esa cantidad, entraría recién sexto en el ranking anterior.</p>
+<p>Lo que nos muestran estos números es que, aunque la lengua del islam sea el árabe, la mayor parte de sus practicantes en todo el mundo no son árabes. Además, existen más países no árabes de mayoría musulmana que países árabes en total.</p>
+<h3>3. Oriente árabe: Misterio, sensualidad y exotismo</h3>
+<p>Existe un estereotipo estético ‘romantizado’ de Medio Oriente y el norte de África, tierras idílicas en su exotismo atrapante y seductor. Un desierto, unas pirámides, hombres con turbante, túnica y barba, música serpenteante y algún camello alrededor.</p>
+<p>A esta escena, se le suma la odalisca, de ojos grandes, semidesnuda, sensual y complaciente. En la época de oro de la pintura orientalista, la obsesión con el cuerpo de la mujer ‘oriental’ parece reflejar más las propias fantasías y deseos reprimidos de la sociedad victoriana moralista que la propia realidad de los supuestos harenes. Este cliché de la mujer árabe tiene como contraparte otro cliché, que veremos más adelante.</p>
+<figure id="attachment_7700" aria-describedby="caption-attachment-7700" style="width: 1280px" class="wp-caption aligncenter"><img decoding="async" loading="lazy" class="size-full wp-image-7700" src="https://clubculturaarabe.com/wp-content/uploads/2023/10/jean-leon-gerome-dance-of-the-almeh.jpg" alt="" width="1280" height="786" srcset="https://clubculturaarabe.com/wp-content/uploads/2023/10/jean-leon-gerome-dance-of-the-almeh.jpg 1280w, https://clubculturaarabe.com/wp-content/uploads/2023/10/jean-leon-gerome-dance-of-the-almeh-300x184.jpg 300w, https://clubculturaarabe.com/wp-content/uploads/2023/10/jean-leon-gerome-dance-of-the-almeh-1024x629.jpg 1024w, https://clubculturaarabe.com/wp-content/uploads/2023/10/jean-leon-gerome-dance-of-the-almeh-768x472.jpg 768w, https://clubculturaarabe.com/wp-content/uploads/2023/10/jean-leon-gerome-dance-of-the-almeh-1200x737.jpg 1200w, https://clubculturaarabe.com/wp-content/uploads/2023/10/jean-leon-gerome-dance-of-the-almeh-600x368.jpg 600w" sizes="(max-width: 1280px) 100vw, 1280px" /><figcaption id="caption-attachment-7700" class="wp-caption-text">La danza de Almeh, Jean-Léon Gérôme (1863).</figcaption></figure>
+<p>La imagen del Oriente misterioso tiene vigencia desde fines del siglo XVIII, pero en los últimos 50 años fue relativamente desplazada por otro estereotipo relacionado con el terrorismo, que veremos también más adelante. Este Medio Oriente romantizado está muy vinculado al consumo y al entretenimiento, pero el estereotipo, por insistencia, se convierte en definición de toda una región del mundo que abarca más de una veintena de países, con todos sus habitantes.</p>
+<p>No significa necesariamente que el producto del arte orientalista o con tintes orientalistas no sea artísticamente bueno o no produzca belleza. Pero, en el afán de satisfacer una sed de historias maravillosas en tierras mágicas y lejanas, entra la fantasía para dar vida a ese Oriente lleno imágenes falsas y lugares comunes, que luego se confunden con una definición de realidad.</p>
+<div class="responsive-container"><iframe loading="lazy" title="Noches de Arabia - Aladdin (Latino) HD ** Sin Censura** - Alan Arce" width="500" height="281" src="https://www.youtube.com/embed/03ZEHsut8ck?start=21&#038;feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<p class="figcaption-gallery" style="font-size: 1em; line-height: 1.5em; margin-top: 15px !important;"><em>“…y si allí les caes mal te van a mutilar, que barbarie, pero es mi hogar”</em> decía la versión original de la canción «Noches de Arabia» de la película de Disney, Aladdin. Luego de las críticas, Disney cambió esta frase por “Intenso calor no he visto algo peor, todo puede pasar”.</p>
+<h3>4. La mujer sin voz y sin agencia</h3>
+<p>Así como tenemos el estereotipo de la odalisca, tenemos otro estereotipo de la mujer árabe o de Medio Oriente. Mientras que la primera es libidinosa y vive semidesnuda, la otra es la mujer cubierta y reprimida. Dos figuras opuestas en cuanto a la visibilidad del cuerpo y a su sexualización. Ambas, sin voz y sin pensamiento propio, y entre las dos, cero matices.</p>
+<p>Además de racistas, estos estereotipos cosifican a la mujer, definiéndola por la cantidad de piel que muestra o no muestra. El orientalismo tiene además una obsesión con el velo, un trozo de tela que puede ser reivindicado por las propias usuarias como una manifestación de identidad, resistencia o fe.</p>
+<p>Pero en esa obsesión no se busca entender o escuchar, en palabras de las mujeres que lo usan, qué es el velo, cómo se usa, cuál es su historia y qué simboliza. Se prefiere opinar, desde un lugar de superioridad civilizatoria y autoridad intelectual, qué es lo mejor para ellas.</p>
+<figure id="attachment_7667" aria-describedby="caption-attachment-7667" style="width: 1080px" class="wp-caption aligncenter"><img decoding="async" loading="lazy" class="wp-image-7667 size-full" src="https://clubculturaarabe.com/wp-content/uploads/2023/10/Mona-El-Kurd-1.jpg" alt="" width="1080" height="720" srcset="https://clubculturaarabe.com/wp-content/uploads/2023/10/Mona-El-Kurd-1.jpg 1080w, https://clubculturaarabe.com/wp-content/uploads/2023/10/Mona-El-Kurd-1-300x200.jpg 300w, https://clubculturaarabe.com/wp-content/uploads/2023/10/Mona-El-Kurd-1-1024x683.jpg 1024w, https://clubculturaarabe.com/wp-content/uploads/2023/10/Mona-El-Kurd-1-768x512.jpg 768w, https://clubculturaarabe.com/wp-content/uploads/2023/10/Mona-El-Kurd-1-600x400.jpg 600w" sizes="(max-width: 1080px) 100vw, 1080px" /><figcaption id="caption-attachment-7667" class="wp-caption-text">La activista palestina Muna El Kurd, que se convirtió en la voz y cara visible del conflicto de Sheikh Jarrah en mayo de 2021. Foto: Instagram <a href="https://www.instagram.com/muna.kurd15/" target="_blank" rel="noopener">@muna.kurd15</a></figcaption></figure>
+<p>Se olvida también que el uso del velo es una práctica intercultural e interreligiosa histórica y preislámica, y que en las sociedades islámicas no es solo la mujer quien se cubre la cabeza, sino que también es una práctica reservada para los hombres de rango, por ejemplo el príncipe de Catar.</p>
+<p>Por otro lado, que una sociedad sea desigual no implica que la mujer —oriental u occidental— no actúe, no tenga ideas diversas al respecto o no se involucre en política.</p>
+<figure id="attachment_7805" aria-describedby="caption-attachment-7805" style="width: 1658px" class="wp-caption aligncenter"><img decoding="async" loading="lazy" class="wp-image-7805 size-full" src="https://clubculturaarabe.com/wp-content/uploads/2023/11/velos-en-tierra-santa.jpg" alt="el velo en tierra santa" width="1658" height="1041" srcset="https://clubculturaarabe.com/wp-content/uploads/2023/11/velos-en-tierra-santa.jpg 1658w, https://clubculturaarabe.com/wp-content/uploads/2023/11/velos-en-tierra-santa-300x188.jpg 300w, https://clubculturaarabe.com/wp-content/uploads/2023/11/velos-en-tierra-santa-1024x643.jpg 1024w, https://clubculturaarabe.com/wp-content/uploads/2023/11/velos-en-tierra-santa-768x482.jpg 768w, https://clubculturaarabe.com/wp-content/uploads/2023/11/velos-en-tierra-santa-1536x964.jpg 1536w, https://clubculturaarabe.com/wp-content/uploads/2023/11/velos-en-tierra-santa-1200x753.jpg 1200w, https://clubculturaarabe.com/wp-content/uploads/2023/11/velos-en-tierra-santa-600x377.jpg 600w" sizes="(max-width: 1658px) 100vw, 1658px" /><figcaption id="caption-attachment-7805" class="wp-caption-text">La exposición <a href="https://cmc-terrasanta.org/es/media/terra-santa-news/17454/jerusal%C3%A9n-el-velo,-en-una-exposici%C3%B3n" target="_blank" rel="noopener">«Mujeres con velo en Tierra Santa»</a>, explora las similitudes y diferencias actuales entre los velos que utilizan las mujeres piadosas judías, musulmanas, drusas y cristianas.</figcaption></figure>
+<h3>5. Malicia y violencia</h3>
+<p>‘Malicia y violencia’, porque suena menos serio y más cómico que ‘terrorista’, es el tópico más común en las últimas décadas para representar o imaginar a cualquier persona que sea árabe o musulmana. Violento, salvaje, sediento de sangre y ciego de venganza. Peligroso, ignorante, misógino, un villano, una amenaza. ¡Ni una buena, che! Debería resultar inverosímil, pero con todos rasgos deshumanizantes y degradantes, solo provoca miedo y desconfianza hacia cualquiera que tenga nombre o ‘aspecto’ árabe.</p>
+<p>En su libro <em>Reel Bad Arabs: How Hollywood Vilifies a People (2001),</em> el crítico y autor estadounidense Jack Shaheen identifica y analiza de qué manera son retratados los árabes y musulmanes en los medios estadounidenses. En 2006 se estrenó un documental con el mismo nombre, basado en ese libro, que impresiona por lo burdo de las escenas, compiladas uno tras otro, que usan el recurso del árabe malvado. Pero aunque algunos fragmentos puedan causarnos risa, estas películas solo alientan el racismo.</p>
+<div class="responsive-container"><iframe loading="lazy" title="Reel Bad Arabs: How Hollywood Vilifies a People +SPANISH SUBTITLES" width="500" height="375" src="https://www.youtube.com/embed/A-4c54p2yhA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<p class="figcaption-gallery" style="font-size: 1em; line-height: 1.5em; margin-top: 15px !important;">Reel Bad Arabs: Cómo Hollywood demoniza a un pueblo</p>
+<h3>6. Islam: El enemigo del judaísmo y el cristianismo</h3>
+<p>Hay una idea generalizada del islam como el opuesto perfecto del judaísmo y/o del cristianismo, dependiendo del momento histórico.</p>
+<p>La verdad es que más que enemigas, son religiones hermanas, dado que comparten un origen tanto geográfico —Medio Oriente— como profético semita—tronco abrahámico—, además de lo obvio —son las tres grandes monoteístas— y tienen, formalmente, muchos más elementos en común que diferencias. Comparten libros, santos y profetas.</p>
+<p>No es necesario ni deseable ocultar rivalidades políticas que se identifiquen con una u otra religión, pero es importante diferenciar que esa rivalidad viene dada, generalmente, por motivos políticos, y no intrínsecamente por religión o por decisión de sus practicantes.</p>
+<h3>7. Universalismo europeo</h3>
+<p>El orientalismo hace que tomemos lo que se considera más representativo del Occidente euroamericano como ‘lo universal’. Todo lo demás —incluso lo autóctono de América o los productos de las culturas latinoamericanas— es considerado como ‘lo otro’ o ‘lo étnico’. Aplica a ideas, sistemas sociales, de gobierno, filosóficos, de escritura, a cánones artísticos.</p>
+<blockquote><p>Esta lógica orientalista posibilita los avasallamientos contra pueblos y vidas no occidentales, relativizando su gravedad, o incluso legitimándolos.</p></blockquote>
+<p>En una clase, un profesor propuso un ejercicio: googlear ‘mejores obras de la literatura universal’. ¿Cuántas obras no occidentales se mencionan? ¿Cuán universal es el ranking que aparece?</p>
+<p>En la educación, en las noticias y en la moda, consumimos, escuchamos y estudiamos todo lo vinculado a una parte de Europa y Estados Unidos. Y, en casi toda Latinoamérica, conocemos más de Europa que de nuestro propio continente.</p>
+<h3>8. Islam: Enemigo de la modernidad</h3>
+<p>Se vuelve repetitiva la idea de que el islam es malo y es siempre enemigo de algo, y eso debería llamarnos la atención. El islam es presentado como enemigo de lo que más representa a Occidente: el judeocristianismo, el secularismo, la modernidad, la democracia, el progreso. En una línea, el mensaje es que el islam es el enemigo de Occidente.</p>
+<p>Hay que tener mucho cuidado cuando se hacen este tipo de afirmaciones en donde se responsabiliza a todo un grupo humano —un cuarto de la población mundial— de ser enemigo de algo, porque alimenta el miedo, el odio y el racismo. Estos discursos contra un grupo humano no son nuevos y han posibilitado catástrofes humanas. No se vislumbra en ellos una intención de acercamiento, entendimiento o ‘paz’.</p>
+<figure id="attachment_7672" aria-describedby="caption-attachment-7672" style="width: 980px" class="wp-caption aligncenter"><img decoding="async" loading="lazy" class="wp-image-7672 size-full" src="https://clubculturaarabe.com/wp-content/uploads/2023/10/Iraq_War.webp" alt="Invasión a Irak" width="980" height="726" srcset="https://clubculturaarabe.com/wp-content/uploads/2023/10/Iraq_War.webp 980w, https://clubculturaarabe.com/wp-content/uploads/2023/10/Iraq_War-300x222.webp 300w, https://clubculturaarabe.com/wp-content/uploads/2023/10/Iraq_War-768x569.webp 768w, https://clubculturaarabe.com/wp-content/uploads/2023/10/Iraq_War-600x444.webp 600w" sizes="(max-width: 980px) 100vw, 980px" /><figcaption id="caption-attachment-7672" class="wp-caption-text">Invasiones como la de Irak y Afganistán, se apoyan y justifican desde el discurso orientalista. Se concluye que los orientales necesitan alguien que los represente, los gobierne y los salve de la barbarie. Foto: Jerome Delay, AP.</figcaption></figure>
+<p>Tal vez la idea de la incompatibilidad del islam con la democracia nazca del rechazo que hubo, por ejemplo, en la sociedad egipcia cuando la ocupación británica llegó con sus fuerzas militares para imponer un sistema de gobierno propio de la modernidad europea. Un sistema extranjero, que cambió de un momento a otro la estructura administrativa preexistente, dejando totalmente de lado la religión, cuyos valores eran centrales en la estructura del Estado y en la vida cotidiana e identidad de los habitantes. Sabiendo esto, es fácil entender que exista un rechazo por la democracia —o por cualquier cosa— implantada a la fuerza y desde afuera.</p>
+<blockquote><p>La imagen del Oriente misterioso tiene vigencia desde fines del siglo XVIII, pero en los últimos 50 años fue relativamente desplazada por otro estereotipo relacionado con el terrorismo.</p></blockquote>
+<p>Pero también es cierto que la democracia en Medio Oriente le interesa a los poderes occidentales solo si sirve a sus fines. Mohamed Morsi, expresidente egipcio electo en 2012, fue derrocado por un golpe militar en 2013. Quien lideró el golpe de Estado, el actual presidente egipcio, Abdelfatah El Sisi, no inspiró el rechazo o la condena de esos poderes occidentales. Más bien son buenos aliados.</p>
+<p>Por otro lado, aunque las democracias islámicas son posibles, como ejemplifican los casos de Turquía e Indonesia, pensar que para todas las sociedades del mundo no puede haber una forma válida de gobierno que no sea la democracia occidentalmente concebida, solo reconfirma el etnocentrismo y el universalismo de Occidente.</p>
+<figure id="attachment_7856" aria-describedby="caption-attachment-7856" style="width: 1920px" class="wp-caption aligncenter"><img decoding="async" loading="lazy" class="wp-image-7856 size-full" src="https://clubculturaarabe.com/wp-content/uploads/2023/11/AP23295541593309-e1697994862382.jpg" alt="Palestinian lives matter" width="1920" height="1200" srcset="https://clubculturaarabe.com/wp-content/uploads/2023/11/AP23295541593309-e1697994862382.jpg 1920w, https://clubculturaarabe.com/wp-content/uploads/2023/11/AP23295541593309-e1697994862382-300x188.jpg 300w, https://clubculturaarabe.com/wp-content/uploads/2023/11/AP23295541593309-e1697994862382-1024x640.jpg 1024w, https://clubculturaarabe.com/wp-content/uploads/2023/11/AP23295541593309-e1697994862382-768x480.jpg 768w, https://clubculturaarabe.com/wp-content/uploads/2023/11/AP23295541593309-e1697994862382-1536x960.jpg 1536w, https://clubculturaarabe.com/wp-content/uploads/2023/11/AP23295541593309-e1697994862382-1200x750.jpg 1200w, https://clubculturaarabe.com/wp-content/uploads/2023/11/AP23295541593309-e1697994862382-600x375.jpg 600w" sizes="(max-width: 1920px) 100vw, 1920px" /><figcaption id="caption-attachment-7856" class="wp-caption-text">Manifestación en París contra los bombardeos e invasión israelí en Gaza. AP Photo/Aurelien Morissard.</figcaption></figure>
+<p>Por último, otro ejemplo sobre este punto es cómo los poderes occidentales definen al Estado de Israel como la única democracia en Medio Oriente, sabiendo que en realidad gobierna con un sistema de apartheid desde hace 75 años, ejerciendo de manera institucionalizada la dominación y la opresión hacia los palestinos y los árabes israelíes a través del castigo colectivo, la segregación, la fragmentación, la desposesión y la privación.</p>
+<p style="text-align: center;"><span style="font-weight: 400;">*****</span></p>
+<p>Estos 8 puntos nos ayudan a identificar algunas de las ideas orientalistas más comunes. Podemos verlas a diario en los medios, el entretenimiento y la educación. La imagen construida de ese <em>otro</em> imaginario, oriental o no occidental, representa todo lo que Occidente teme ser, “todo lo que está mal”.</p>
+<p>Pero no alcanza con entender que esa imagen construida sirvió y sirve para generar miedo, percibir al oriental y a Oriente como una amenaza y así legitimar intervenciones militares, colonización y deshumanización. Hay que recordar también el gran perjuicio que provoca a nivel intelectual, porque si al buscar explicaciones ante la realidad tomamos estos clichés como verdades, las conclusiones serán erróneas o totalmente falsas. En otras palabras: nos hacen más ignorantes.</p>
+						</div>
+												<div class="back-link d-none d-md-block">
+							<a href="https://clubculturaarabe.com/novedades/" class="before-arrow">Sobre cultura e idioma árabe</a>
+						</div>
+					</div>	
+	        	</div>
+				
+			
+			</div>
+		</article>
+
+	<div class="mas_novedades more-block">
+	<h3>Últimas novedades</h3>
+	<div class="row">
+			<article class="novedad listing-item col-md-4 col-sm-6 col-lg-4" id="post-38864">
+	<div class="listing-imagen nov-imagen">
+		<a href="https://clubculturaarabe.com/adab-al-mahyar-en-argentina/"><img width="780" height="440" src="https://clubculturaarabe.com/wp-content/uploads/2025/11/Cover-780x440.jpg" class="img-fluid wp-post-image" alt="Poetas de dos orillas: Juana Dib, Juan Yaser y la tradición Adab Al-Mahyar en Argentina" decoding="async" loading="lazy" srcset="https://clubculturaarabe.com/wp-content/uploads/2025/11/Cover-780x440.jpg 780w, https://clubculturaarabe.com/wp-content/uploads/2025/11/Cover-300x169.jpg 300w, https://clubculturaarabe.com/wp-content/uploads/2025/11/Cover-1024x576.jpg 1024w, https://clubculturaarabe.com/wp-content/uploads/2025/11/Cover-768x432.jpg 768w, https://clubculturaarabe.com/wp-content/uploads/2025/11/Cover-1536x864.jpg 1536w, https://clubculturaarabe.com/wp-content/uploads/2025/11/Cover-1200x675.jpg 1200w, https://clubculturaarabe.com/wp-content/uploads/2025/11/Cover-1156x650.jpg 1156w, https://clubculturaarabe.com/wp-content/uploads/2025/11/Cover-600x338.jpg 600w, https://clubculturaarabe.com/wp-content/uploads/2025/11/Cover.jpg 1920w" sizes="(max-width: 780px) 100vw, 780px" /></a>
+	</div>
+	<div class="listing-texto">
+		<a href="https://clubculturaarabe.com/adab-al-mahyar-en-argentina/">
+			<p class="nov-tipo epigrafe">Cultura</p>
+			<h4 class="titulo">Exilio y poesía: Juana Dib y Juan Yaser en el Adab Al-Mahyar argentino</h4>
+			<div class="nov-misc miscelaneas">
+				<p class="fecha">noviembre 2025</p>
+			</div>
+		</a>
+
+	</div>
+</article>			<article class="novedad listing-item col-md-4 col-sm-6 col-lg-4" id="post-11566">
+	<div class="listing-imagen nov-imagen">
+		<a href="https://clubculturaarabe.com/13-razones-para-aprender-arabe-el-idioma-del-futuro/"><img width="780" height="440" src="https://clubculturaarabe.com/wp-content/uploads/2024/12/razones-para-aprender-arabe-cover-780x440.jpg" class="img-fluid wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://clubculturaarabe.com/wp-content/uploads/2024/12/razones-para-aprender-arabe-cover-780x440.jpg 780w, https://clubculturaarabe.com/wp-content/uploads/2024/12/razones-para-aprender-arabe-cover-300x169.jpg 300w, https://clubculturaarabe.com/wp-content/uploads/2024/12/razones-para-aprender-arabe-cover-1024x576.jpg 1024w, https://clubculturaarabe.com/wp-content/uploads/2024/12/razones-para-aprender-arabe-cover-768x432.jpg 768w, https://clubculturaarabe.com/wp-content/uploads/2024/12/razones-para-aprender-arabe-cover-1536x864.jpg 1536w, https://clubculturaarabe.com/wp-content/uploads/2024/12/razones-para-aprender-arabe-cover-1200x675.jpg 1200w, https://clubculturaarabe.com/wp-content/uploads/2024/12/razones-para-aprender-arabe-cover-1156x650.jpg 1156w, https://clubculturaarabe.com/wp-content/uploads/2024/12/razones-para-aprender-arabe-cover-600x338.jpg 600w, https://clubculturaarabe.com/wp-content/uploads/2024/12/razones-para-aprender-arabe-cover.jpg 1920w" sizes="(max-width: 780px) 100vw, 780px" /></a>
+	</div>
+	<div class="listing-texto">
+		<a href="https://clubculturaarabe.com/13-razones-para-aprender-arabe-el-idioma-del-futuro/">
+			<p class="nov-tipo epigrafe">Idioma</p>
+			<h4 class="titulo">13 razones para aprender árabe: el idioma del futuro</h4>
+			<div class="nov-misc miscelaneas">
+				<p class="fecha">diciembre 2024</p>
+			</div>
+		</a>
+
+	</div>
+</article>			<article class="novedad listing-item col-md-4 col-sm-6 col-lg-4" id="post-11073">
+	<div class="listing-imagen nov-imagen">
+		<a href="https://clubculturaarabe.com/que-podemos-conocer-del-mundo-arabe-a-traves-del-cine-hecho-por-mujeres/"><img width="780" height="440" src="https://clubculturaarabe.com/wp-content/uploads/2024/11/libro-caro-bracco-cover-780x440.jpg" class="img-fluid wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://clubculturaarabe.com/wp-content/uploads/2024/11/libro-caro-bracco-cover-780x440.jpg 780w, https://clubculturaarabe.com/wp-content/uploads/2024/11/libro-caro-bracco-cover-300x169.jpg 300w, https://clubculturaarabe.com/wp-content/uploads/2024/11/libro-caro-bracco-cover-1024x576.jpg 1024w, https://clubculturaarabe.com/wp-content/uploads/2024/11/libro-caro-bracco-cover-768x432.jpg 768w, https://clubculturaarabe.com/wp-content/uploads/2024/11/libro-caro-bracco-cover-1536x864.jpg 1536w, https://clubculturaarabe.com/wp-content/uploads/2024/11/libro-caro-bracco-cover-1200x675.jpg 1200w, https://clubculturaarabe.com/wp-content/uploads/2024/11/libro-caro-bracco-cover-1156x650.jpg 1156w, https://clubculturaarabe.com/wp-content/uploads/2024/11/libro-caro-bracco-cover-600x338.jpg 600w, https://clubculturaarabe.com/wp-content/uploads/2024/11/libro-caro-bracco-cover.jpg 1920w" sizes="(max-width: 780px) 100vw, 780px" /></a>
+	</div>
+	<div class="listing-texto">
+		<a href="https://clubculturaarabe.com/que-podemos-conocer-del-mundo-arabe-a-traves-del-cine-hecho-por-mujeres/">
+			<p class="nov-tipo epigrafe">Cultura</p>
+			<h4 class="titulo">¿Qué podemos conocer del Mundo Árabe a través del cine hecho por mujeres?</h4>
+			<div class="nov-misc miscelaneas">
+				<p class="fecha">noviembre 2024</p>
+			</div>
+		</a>
+
+	</div>
+</article>			<article class="novedad listing-item col-md-4 col-sm-6 col-lg-4" id="post-10873">
+	<div class="listing-imagen nov-imagen">
+		<a href="https://clubculturaarabe.com/a-contramano-del-mundo-los-huties-y-una-hazana-imposible/"><img width="780" height="440" src="https://clubculturaarabe.com/wp-content/uploads/2024/10/cover_huties-780x440.jpg" class="img-fluid wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://clubculturaarabe.com/wp-content/uploads/2024/10/cover_huties-780x440.jpg 780w, https://clubculturaarabe.com/wp-content/uploads/2024/10/cover_huties-300x169.jpg 300w, https://clubculturaarabe.com/wp-content/uploads/2024/10/cover_huties-1024x576.jpg 1024w, https://clubculturaarabe.com/wp-content/uploads/2024/10/cover_huties-768x432.jpg 768w, https://clubculturaarabe.com/wp-content/uploads/2024/10/cover_huties-1536x864.jpg 1536w, https://clubculturaarabe.com/wp-content/uploads/2024/10/cover_huties-1200x675.jpg 1200w, https://clubculturaarabe.com/wp-content/uploads/2024/10/cover_huties-1156x650.jpg 1156w, https://clubculturaarabe.com/wp-content/uploads/2024/10/cover_huties-600x338.jpg 600w, https://clubculturaarabe.com/wp-content/uploads/2024/10/cover_huties.jpg 1920w" sizes="(max-width: 780px) 100vw, 780px" /></a>
+	</div>
+	<div class="listing-texto">
+		<a href="https://clubculturaarabe.com/a-contramano-del-mundo-los-huties-y-una-hazana-imposible/">
+			<p class="nov-tipo epigrafe">Cultura</p>
+			<h4 class="titulo">A contramano del mundo: los hutíes y una hazaña imposible</h4>
+			<div class="nov-misc miscelaneas">
+				<p class="fecha">octubre 2024</p>
+			</div>
+		</a>
+
+	</div>
+</article>		
+	</div>
+</div>
+	</div>			<section class="comunidad">
+	<div class="row">
+		<div class="imagen col-auto">
+			<img width="265" height="265" src="https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9208-265x265.jpg" class="attachment-cca-comunidad_small size-cca-comunidad_small" alt="" decoding="async" loading="lazy" srcset="https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9208-265x265.jpg 265w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9208-100x100.jpg 100w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9208-150x150.jpg 150w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9208-780x780.jpg 780w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9208-340x340.jpg 340w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9208-300x300.jpg 300w" sizes="(max-width: 265px) 100vw, 265px" />					</div>
+		<div class="imagen col-md-4 main-col">
+			<img width="780" height="780" src="https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9765-780x780.jpg" class="attachment-cca-square-medium size-cca-square-medium" alt="" decoding="async" loading="lazy" srcset="https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9765-780x780.jpg 780w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9765-100x100.jpg 100w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9765-150x150.jpg 150w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9765-265x265.jpg 265w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9765-340x340.jpg 340w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9765-300x300.jpg 300w" sizes="(max-width: 780px) 100vw, 780px" />					</div>
+		<div class="comunidad-texto col-sm-5 col-md-4 main-col">
+						<h3 class="title">Sé parte de la comunidad del Club de la Cultura Árabe!</h3>
+							<p class="bajada">Beneficios exclusivos para socios</p>
+						<a href="https://clubculturaarabe.com/asociate/" target="" class="btn btn-tertiary">Asociate!</a>		</div>
+		<div class="imagen col-auto">
+			<img width="265" height="265" src="https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9592-265x265.jpg" class="attachment-cca-comunidad_small size-cca-comunidad_small" alt="" decoding="async" loading="lazy" srcset="https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9592-265x265.jpg 265w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9592-100x100.jpg 100w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9592-150x150.jpg 150w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9592-780x780.jpg 780w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9592-340x340.jpg 340w, https://clubculturaarabe.com/wp-content/uploads/2020/10/IMG_9592-300x300.jpg 300w" sizes="(max-width: 265px) 100vw, 265px" />					</div>
+		<div class="imagen col-auto">
+			<img width="265" height="265" src="https://clubculturaarabe.com/wp-content/uploads/2020/08/Enmascarar-grupo-135-265x265.jpg" class="attachment-cca-comunidad_small size-cca-comunidad_small" alt="Bailando en grupo" decoding="async" loading="lazy" srcset="https://clubculturaarabe.com/wp-content/uploads/2020/08/Enmascarar-grupo-135-265x265.jpg 265w, https://clubculturaarabe.com/wp-content/uploads/2020/08/Enmascarar-grupo-135-100x100.jpg 100w, https://clubculturaarabe.com/wp-content/uploads/2020/08/Enmascarar-grupo-135-150x150.jpg 150w, https://clubculturaarabe.com/wp-content/uploads/2020/08/Enmascarar-grupo-135-340x340.jpg 340w, https://clubculturaarabe.com/wp-content/uploads/2020/08/Enmascarar-grupo-135-300x300.jpg 300w, https://clubculturaarabe.com/wp-content/uploads/2020/08/Enmascarar-grupo-135-540x540.jpg 540w" sizes="(max-width: 265px) 100vw, 265px" />					</div>
+	</div>
+</section><section class="apoyo">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="apoyo-texto col-md-6 col-lg-7">
+				<h3 class="title">Apoyá al Club de la Cultura Árabe</h3>
+				<p class="bajada">Con tu donación nos ayudas a mantener al Club para poder desarrollar eventos y continuar la labor de crear puentes culturales.</p>
+			</div>
+			<div class="apoyo-donaciones col-md-6 col-lg-5">
+				<p>Quiero dar mi apoyo con una donación de:</p>
+				<div class="btn-set">
+											<a href="https://clubculturaarabe.com/producto/donacion/?attribute_pa_donacion=5000" class="btn btn-primary">$ 5000</a>
+											<a href="https://clubculturaarabe.com/producto/donacion/?attribute_pa_donacion=10000" class="btn btn-primary">$ 10000</a>
+											<a href="https://clubculturaarabe.com/producto/donacion/?attribute_pa_donacion=25000" class="btn btn-primary">$ 25000</a>
+											<a href="https://clubculturaarabe.com/producto/donacion/?attribute_pa_donacion=50000" class="btn btn-primary">$ 50000</a>
+									</div>
+			</div>
+		</div>
+	</div>
+</section>			<footer>
+				<div class="container-fluid">
+					<div class="row">
+																			<div class="col-auto footer-logo">
+								<div class="logo">
+									<a href="https://clubculturaarabe.com/">
+										<img class="img-fluid" src="https://clubculturaarabe.com/wp-content/uploads/2020/10/ClubCulturaArabe-pos.png" alt="Club de la Cultura Arabe">
+									</a>
+								</div>
+								<div class="copy block">© 2025 Club de la Cultura Arabe</div>
+							</div>
+																		<div class="col-auto footer-menu">
+							<div class="menu-footer-main-menu-container"><ul id="footer-menu" class="menu"><li id="menu-item-4235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4235"><a href="https://clubculturaarabe.com/actividades/">Actividades</a></li>
+<li id="menu-item-4237" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4237"><a href="https://clubculturaarabe.com/tienda-categoria/cursos/">Clases y cursos</a></li>
+<li id="menu-item-6249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6249"><a href="https://clubculturaarabe.com/sobre-el-club-de-la-cultura-arabe/">Quienes somos</a></li>
+<li id="menu-item-4236" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4236"><a href="https://clubculturaarabe.com/tienda-categoria/productos-cca/">Tienda</a></li>
+<li id="menu-item-4200" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-4200"><a href="https://clubculturaarabe.com/novedades/">Artículos</a></li>
+<li id="menu-item-4238" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4238"><a href="https://clubculturaarabe.com/asociate/">Asociate</a></li>
+<li id="menu-item-4865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4865"><a href="https://clubculturaarabe.com/mi-cuenta/">Mi cuenta</a></li>
+</ul></div>    
+						</div>
+																		<div class="col-auto info-contacto">
+															<p class="email">
+									<span class="titulo">Contactanos: </span>
+									<a href="/cdn-cgi/l/email-protection#345d5a525b74575841565741584041465555465556511a575b59" class="color-secondary"><span class="__cf_email__" data-cfemail="91f8fff7fed1f2fde4f3f2e4fde5e4e3f0f0e3f0f3f4bff2fefc">[email&#160;protected]</span></a>
+
+								</p>
+														<div class="legales">
+								<div class="menu-legales-container"><ul id="footer-legal-menu" class="menu"><li id="menu-item-4244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4244"><a href="https://clubculturaarabe.com/preguntas-frecuentes/">Preguntas frecuentes</a></li>
+<li id="menu-item-4243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4243"><a href="https://clubculturaarabe.com/terminos-y-condiciones/">Términos y condiciones</a></li>
+<li id="menu-item-4245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-4245"><a rel="privacy-policy" href="https://clubculturaarabe.com/politica-privacidad/">Política de privacidad</a></li>
+</ul></div>  
+							</div>
+						</div>
+												<div class="col-auto col-sm-4 newsletter-signup">
+							<h5>Newsletter</h5>
+							<p class="bajada">Mantenete al día con nuestras últimas novedades</p>
+							<div class="cf7-newsletter">
+								 
+<div class="wpcf7 no-js" id="wpcf7-f4269-o1" lang="es-ES" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/8-puntos-para-pensar-el-orientalismo-y-la-deshumanizacion-del-otro/#wpcf7-f4269-o1" method="post" class="wpcf7-form init" aria-label="Formulario de contacto" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="4269" />
+<input type="hidden" name="_wpcf7_version" value="5.9.8" />
+<input type="hidden" name="_wpcf7_locale" value="es_ES" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4269-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+<input type="hidden" name="_wpcf7_recaptcha_response" value="" />
+</div>
+<p><label class="sr-only">Tu correo electrónico</label><span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Tu email" value="" type="email" name="your-email" /></span><button type="submit" class="wpcf7-form-control wpcf7-submit btn btn-primary"><span class="sr-only">Enviar</span><i class="far fa-arrow-right"></i></button>
+</p><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+							</div>
+						</div>
+						
+						<div class="col-auto social-networks">
+														<div class="d-flex share">
+								<ul class="social-networks">
+				<li><a href="https://www.instagram.com/clubdelaculturaarabe/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.youtube.com/channel/UCYwvzwi28cF92ItVo1uqYjA" target="_blank"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="https://www.facebook.com/ClubCulturaArabeArg" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+		</ul>							</div>
+						</div>
+						<div class="copy d-lg-none d-xl-none">© 2025 Club de la Cultura Arabe</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	    <style>
+        .non-interactive {
+            pointer-events: none;
+            background-color: #f0f0f0;
+        }
+        .disabled-checkbox {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+    </style>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+    jQuery(document).ready(function($) {
+
+        let wasProvinceOrBranchVisible = false;
+
+        function toggleShippingAddress() {
+            var provinceSelectVisible = $('#ca_container_select_provinces').is(':visible');
+            var branchSelectVisible = $('#ca_container_select_branches').is(':visible');
+
+            if (provinceSelectVisible || branchSelectVisible) {
+                
+                wasProvinceOrBranchVisible = true; 
+               
+                $('#ship-to-different-address-checkbox').prop('checked', true); 
+                $('.shipping_address').show(); 
+                $('.shipping_address :input:not([type="checkbox"]), .shipping_address textarea').prop('readonly', true);
+                $('.shipping_address select').addClass('non-interactive');
+                $('#shipping_first_name, #shipping_last_name').prop('readonly', false); 
+            } else {
+                
+                $('.shipping_address :input:not([type="checkbox"]), .shipping_address textarea').prop('readonly', false);
+                $('.shipping_address select').removeClass('non-interactive');
+                $('#correo_argentino_review_order_section_address').hide();
+
+                if (wasProvinceOrBranchVisible) {
+                    loadShippingAddressData(); 
+                    wasProvinceOrBranchVisible = false;
+                }
+            }
+        }
+
+        function loadShippingAddressData() {
+                            $('#shipping_first_name').val($('#billing_first_name').val());
+                $('#shipping_last_name').val($('#billing_last_name').val());
+                $('#shipping_company').val($('#billing_company').val());
+                $('#shipping_address_1').val($('#billing_address_1').val());
+                $('#shipping_address_2').val($('#billing_address_2').val());
+                $('#shipping_city').val($('#billing_city').val());
+                $('#shipping_state').val($('#billing_state').val()).trigger('change');
+                $('#shipping_postcode').val($('#billing_postcode').val());
+                $('#shipping_phone').val($('#billing_phone').val());
+                    }
+
+        
+        toggleShippingAddress();
+
+        $('#ca_container_select_provinces, #ca_container_select_branches').on('change', function() {
+            toggleShippingAddress();
+        });
+
+        $('#ship-to-different-address-checkbox').on('change', function() {
+            if (!$('#ca_container_select_provinces').is(':visible') && !$('#ca_container_select_branches').is(':visible')) {
+                toggleShippingAddress();
+            }
+        });
+
+        $(document.body).on('updated_checkout', function() {
+            toggleShippingAddress();
+        });
+    });
+    </script>
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/33d0b63533c58edace58f760d/21a993ac39306a127e8fc04cf.js");</script>	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script src='https://clubculturaarabe.com/wp-includes/js/dist/i18n.min.js' id='wp-i18n-js'></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+
+<script id='contact-form-7-js-extra'>
+var wpcf7 = {"api":{"root":"https:\/\/clubculturaarabe.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+</script>
+<script id='contact-form-7-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2024-07-17 09:00:42+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es"},"This contact form is placed in the wrong place.":["Este formulario de contacto est\u00e1 situado en el lugar incorrecto."],"Error:":["Error:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+</script>
+
+
+<script id='wc-add-to-cart-js-extra'>
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrito","cart_url":"https:\/\/clubculturaarabe.com\/carrito\/","is_cart":"","cart_redirect_after_add":"no"};
+</script>
+
+
+<script id='woocommerce-js-extra'>
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+</script>
+
+<script id='mailchimp-woocommerce-js-extra'>
+var mailchimp_public_data = {"site_url":"https:\/\/clubculturaarabe.com","ajax_url":"https:\/\/clubculturaarabe.com\/wp-admin\/admin-ajax.php","disable_carts":"","subscribers_only":"","language":"es","allowed_to_set_cookies":"1"};
+</script>
+
+
+<script src='https://www.google.com/recaptcha/api.js?render=6LdYYM8ZAAAAALBYKB1eFVMjPXZ2nnHEToTVu7r-&#038;ver=3.0' id='google-recaptcha-js'></script>
+<script id='wpcf7-recaptcha-js-extra'>
+var wpcf7_recaptcha = {"sitekey":"6LdYYM8ZAAAAALBYKB1eFVMjPXZ2nnHEToTVu7r-","actions":{"homepage":"homepage","contactform":"contactform"}};
+</script>
+
+
+	<script defer src="https://clubculturaarabe.com/wp-content/cache/autoptimize/js/autoptimize_caa6d0afad3db45f721314473942fcde.js"></script></body>
+
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Almacenamiento en caché de páginas con Disk: Enhanced 
+
+Served from: clubculturaarabe.com @ 2025-12-27 00:42:31 by W3 Total Cache
+-->

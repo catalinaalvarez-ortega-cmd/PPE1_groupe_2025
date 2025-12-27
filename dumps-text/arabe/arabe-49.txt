@@ -1,0 +1,5 @@
+   REFRESH(360 sec):
+   file://localhost/Users/benhadjsghaier.my/PPE1_groupe_2025/aspirations/a
+   rabe/arabe-49.html
+
+   Enable JavaScript and cookies to continue

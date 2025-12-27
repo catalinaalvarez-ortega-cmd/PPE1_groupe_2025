@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حوار مع المستشرق برنارد لويس</title>
+  <!-- Bootstrap RTL أولاً -->
+  <link rel="stylesheet" href="/css/bootstrap.rtl.min.css">
+  <style>
+    a {
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+    body { 
+      font-size: 1.05em;
+      line-height: 1.25em;
+      font-family: 'Arabic Transparent', Arial, Helvetica;
+      background: #f9f9f9;
+      color: #555;
+    }
+    .gcse-search { margin-top: 0 !important; padding-top: 0 !important; }
+    .gsc-control-cse { padding: 0 !important; margin: 0 !important; }
+    .blf { color: #004080; text-decoration: none; }
+    .blf:hover { text-decoration: underline; color: #000; }
+    footer { background: #eee; text-align: center; padding: 10px; margin-top: 20px; }
+
+    @media print {
+      .print-header {
+        display: block !important;
+      }
+      header, footer, nav, .related, .btn, .no-print {
+        display: none !important;
+      }
+      main {
+        width: 100% !important;
+        box-shadow: none !important;
+      }
+    }
+    .ticker-container {
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        white-space: nowrap;
+        direction: rtl;
+        padding: 10px;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .ticker-content {
+        display: inline-block;
+        padding-right: 100%;
+        animation: scrollTicker 50s linear infinite;
+    }
+
+    .ticker-content:hover {
+        animation-play-state: paused;
+    }
+
+    .ticker-content a {
+        color: #336497;
+        text-decoration: none;
+        font-size: 14px;
+        margin-left: 30px;
+    }
+
+    @keyframes scrollTicker {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+  </style>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="print-header d-none">
+    <h3 style="text-align: center; margin-bottom: 30px;">
+      شبكة صيد الفوائد الإسلامية<br>
+      <small>www.saaid.org</small>
+    </h3>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const links = document.querySelectorAll(".article-body a, .article-body u, .article-body ins");
+      links.forEach(el => {
+        el.style.textDecoration = "none";
+      });
+
+      const underlines = document.querySelectorAll(".article-body u, .article-body ins");
+      underlines.forEach(el => {
+        const parent = el.parentNode;
+        while (el.firstChild) parent.insertBefore(el.firstChild, el);
+        parent.removeChild(el);
+      });
+    });
+  </script>
+
+  <header>
+
+<!-- ✅ روابط مصورة - لأجهزة سطح المكتب فقط -->
+<div class="d-none d-lg-block text-center">
+  <img
+    src="/img3/IMG_0917.PNG"
+    alt="خريطة روابط صيد الفوائد"
+    usemap="#site-map"
+    style="width: 1112px; height: auto; display: block; margin: auto;"
+  >
+
+  <map name="site-map">
+    <area alt="الرئيسية" href="https://saaid.org/" shape="rect" coords="760,102,940,187">
+    <area alt="المكتبة" href="https://saaid.org/book/index.php" shape="rect" coords="550,102,750,187">
+    <area alt="اتصل بنا" href="https://saaid.org/contact.php" shape="rect" coords="385,102,540,187" target="_blank">
+    <area alt="البحث" href="https://saaid.org/bahth/search.html" shape="rect" coords="185,102,370,187">
+  </map>
+</div>
+
+  <!-- ✅ قائمة الجوال فقط -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-top border-bottom d-block d-lg-none">
+    <div class="container-fluid">
+      <a href="/">
+        <img class="w-100" src="https://saaid.org/img3/Banner11.jpeg" alt="Banner">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="عرض القائمة">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mobileMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="/">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="/mohamed/">اعرف نبيك</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Warathah/">العلماء وطلبة العلم</a></li>
+          <li class="nav-item"><a class="nav-link" href="/afkar/">أفكار دعوية</a></li>
+          <li class="nav-item"><a class="nav-link" href="/fawaed/">فوائد وفرائد</a></li>
+          <li class="nav-item"><a class="nav-link" href="/book/">مكتبة صيد الفوائد</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Anshatah/">الأنشطة الدعوية</a></li>
+          <li class="nav-item"><a class="nav-link" href="/aldawah/">زاد الداعية</a></li>
+          <li class="nav-item"><a class="nav-link" href="/alminbar/">زاد الخطيب</a></li>
+          <li class="nav-item"><a class="nav-link" href="/3rod/">العروض الدعوية</a></li>
+          <li class="nav-item"><a class="nav-link" href="/female/">للنساء فقط</a></li>
+          <li class="nav-item"><a class="nav-link" href="/daeyat/">ملتقى الداعيات</a></li>
+          <li class="nav-item"><a class="nav-link" href="/rasael/">رسائل دعوية</a></li>
+          <li class="nav-item"><a class="nav-link" href="/arabic/">مقالات</a></li>
+          <li class="nav-item"><a class="nav-link" href="/wahat/">واحة الأدب</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Minute/">منوعات</a></li>
+          <li class="nav-item"><a class="nav-link" href="/mktarat/">مختارات</a></li>
+          <li class="nav-item"><a class="nav-link" href="/bahoth/">بحوث علمية</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ محرك البحث يظل ظاهرًا للجميع -->
+   <!--<div class="container my-3">
+    <script async src="https://cse.google.com/cse.js?cx=4437b2c35696f4864"></script>
+  <div class="gcse-search"></div>
+  </div>-->
+</header>
+
+<div class="container-fluid mt-3" style="width: 100%;">
+  <div class="row" style="margin: 0;">
+
+    <!-- ✅ العمود الأيمن (القائمة الجانبية الرئيسية) -->
+          <aside class="d-none d-md-block col-md-2">
+
+        <div class="sidebar-section mb-4">
+          <img class="w-100" src="/img3/IMG_0941.PNG" alt="رأس القائمة">
+          <div class="p-2" style="background: url('/img3/IMG_0907.PNG');">
+            <ul class="list-unstyled m-0">
+              <li><a class="blf" href="/mohamed/index.htm">اعرف نبيك</a></li>
+              <li><a class="blf" href="/book/index.php">مكتبة صيد الفوائد</a></li>
+              <li><a class="blf" href="/afkar/index.htm">أفكار دعوية</a></li>
+              <li><a class="blf" href="/daeyat/index.htm">ملتقى الداعيات</a></li>
+              <li><a class="blf" href="/Warathah/index.htm">العلماء وطلبة العلم</a></li>
+              <li><a class="blf" href="/female/index.htm">للنساء فقط</a></li>
+              <li><a class="blf" href="/fawaed/index.htm">فوائد وفرائد</a></li>
+              <li><a class="blf" href="/rasael/index.htm">رسائل دعوية</a></li>
+              <li><a class="blf" href="/arabic/index.htm">مقالات</a></li>
+              <li><a class="blf" href="/Minute/index.htm">منوعات</a></li>
+              <li><a class="blf" href="/twitter/index.htm">تغريدات</a></li>
+              <li><a class="blf" href="/wahat/index.htm">واحة الأدب</a></li>
+              <li><a class="blf" href="/mktarat/alzawaj/index.htm">البيت السعيد</a></li>
+              <li><a class="blf" href="/tarbiah/index.htm">تربية الأبناء</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebar-section mb-4">
+          <img class="w-100" src="/img3/IMG_0939.PNG" alt="رأس القائمة">
+          <div class="p-2" style="background: url('/img3/IMG_0907.PNG');">
+            <ul class="list-unstyled m-0">
+              <li><a class="blf" href="/Anshatah/dorah/index.htm">الدورات العلمية</a></li>
+              <li><a class="blf" href="/Anshatah/dole/index.htm">تفعيل العمل الخيري</a></li>
+              <li><a class="blf" href="/Anshatah/m/index.htm">المسابقات الثقافية</a></li>
+              <li><a class="blf" href="/Anshatah/mk/index.htm">المخيمات الدعوية</a></li>
+              <li><a class="blf" href="/Anshatah/matsh/index.htm">الألعاب الحركية والذهنية</a></li>
+              <li><a class="blf" href="/Anshatah/r/index.htm">الرحلات الدعوية</a></li>
+              <li><a class="blf" href="/Quran/index.htm">حلقات تحفيظ القرآن</a></li>
+              <li><a class="blf" href="/afkar/shabab/index.htm">الدعوة في المنتديات</a></li>
+              <li><a class="blf" href="/islam/index.htm">ساهم في نشر الإسلام</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebar-section mb-4">
+          <img class="w-100" src="/img3/IMG_0940.PNG" alt="رأس القائمة">
+          <div class="p-2" style="background: url('/img3/IMG_0907.PNG');">
+            <ul class="list-unstyled m-0">
+              <li><a class="blf" href="/gesah/index.htm">قصص مؤثرة</a></li>
+              <li><a class="blf" href="/flash/index.htm">الفلاش الدعوي</a></li>
+              <li><a class="blf" href="/video/index.htm">الفيديو الدعوي</a></li>
+              <li><a class="blf" href="/jwal/index.htm">الجوال الدعوي</a></li>
+              <li><a class="blf" href="/Anshatah/maarid/index.htm">المعارض الدعوية</a></li>
+              <li><a class="blf" href="/PowerPoint/index.htm">الباوربوينت الدعوية</a></li>
+              <li><a class="blf" href="/mktarat/abahiah/index.htm">المواقع الإباحية وأثرها</a></li>
+              <li><a class="blf" href="/mktarat/thekra/index.htm">وقفة تأمل ومحاسبة</a></li>
+              <li><a class="blf" href="/mktarat/m/index.htm">يا روادَ منتديات الحوار</a></li>
+              <li><a class="blf" href="/rasael/r39.htm">الشرح الفقهي المصور</a></li>
+              <li><a class="blf" href="/Mktb/">مكتبة الصور</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </aside>
+      <!-- منطقة المحتوى الرئيسية -->
+    <main class="col-md-10 col-12">
+      <div class="content article-body p-3 bg-white shadow-sm border rounded">
+        
+        <!-- ENCODING: UTF-8 -->
+
+
+<center><table width="98%" border="0" cellspacing="0" cellpadding="5">
+	<tr><td height="10">
+	<tr><td height="10">
+    <p align="center" dir="rtl"><font size="5" color="#0000FF">حوار مع المستشرق 
+	برنارد لويس</font><tr><td height="10">
+	<p align="left" dir="rtl">
+    <tr><td height="10">
+	<p dir="rtl" align="justify">
+      <font size="4" color="#800000">د.مازن بن صلاح مطبقاني<br>
+		‏@mazinmotabagani</font><tr><td height="10" dir="rtl">
+      <font size="4"></td</tr>
+      </font>
+  <p align="justify" style="line-height: 200%">
+  <font size="4" color="#000000"><br>
+	عندما شرعت في إعداد بحث الدكتوراه حول منهج المستشرق برنارد لويس كان لا بد من 
+	الإعداد للقائه، وقد زرته في مكتبه في جامعة برنستون التي كان قد تقاعد منها 
+	ولكنه كان يحتفظ بمكتب فخم كبير. وأجريت معه لقاءً مطولاً قدمت له فيه عدة 
+	أسئلة فأجاب عنها وسجلتها في آلة التسجيل ثم نسخت المادة وبعثتها إليه 
+	لتوثيقها. وفيما يأتي الأسئلة وإجابات لويس ثم تعليقي على الإجابات. وعلى الرغم 
+	من أنني ناقشت تلك الإجابات في طيات رسالتي للدكتوراه لكني هنا جمعت تلك 
+	التعليقات في مكان واحد.<br>
+  </font><font size="4" color="#FF0000"><br>
+	الأسئلة والإجابات:</font><font size="4" color="#000000"><br>
+	<br>
+	لهذا الحوار قصة طريفة، فقد سبقه مراسلات بين الباحث والمستشرق، وقد اتسم رد 
+	لويس بالتردد والممانعة. كما إنه كال التهم جزافاً للباحثين والمؤرخين في دول 
+	العالم (غير الحر) من حيث عدم تمتعهم بما يتمتع به الباحثون في (العالم الحر) 
+	من حرية الرأي، وأن بحوثهم لا تخضع للرقابة أو التوجيه من أي جهة دينية أو 
+	غيرها.<br>
+	<br>
+	وكان من أسباب تردده في قبول لقاء الباحث أولاً اعتقاده بأن منهجه لا يكفي أن 
+	يكتب فيه بحث دكتوراه؛ فمنهجه لا يختلف عن منهج الباحثين في &quot;العالم الحر&quot;، وقد 
+	أوضحه في أحد كتبه. وثانياً خوفه من أن يكون الباحث متعصباً ضد المستشرقين، 
+	وأنه ينطلق في بحثه من وجهة نظر مسبقة ويبحث عن أية أدلة تؤيده. وطلب لذلك أن 
+	يطلع على فصل من الرسالة. ولما أبلغته بأنني لم أشرع في الكتابة بعد، أصرّ على 
+	أنه لا يستطيع أن يرتب معي موعداً حتى يطمئن إلى توجهي بالرغم من أنني بعثت 
+	إليه بصورة معدّلة من خطة البحث وترجمتها إلى اللغة الإنجليزية.<br>
+	<br>
+	ولمّا أدركت صعوبة إقناعه بإعطائي موعداً وكنت في حاجة للمادة العلمية لبحثي، 
+	فقد قررت السفر. وحالما وصلت برنستون كان لويس قد غادرها في رحلة إلى جنوب شرق 
+	آسيا مدة أسبوعين. فكانت فرصة مناسبة أن أنشغل بجمع المادة العلمية، وإجراء 
+	المقابلات مع المستشرقين الآخرين في الجامعة وحضور النشاطات الاستشراقية. وما 
+	إن رجع حتى أدرك أنني مصرٌ على اللقاء فكانت هذه الأسئلة وإجابات لويس عليها، 
+	وبالرغم من أنني ناقشت هذه الإجابات في ثنايا رسالتي للدكتوراه لكنني أقدّم 
+	تعليقاً موجزاً عليها هنا.<br>
+  </font><font size="4" color="#FF0000"><br>
+	تقسيم العالم إلى(عالم حر) و(عالم غير حر)</font><font size="4" color="#000000"><br>
+	<br>
+	إن هذا التقسيم قصد به أصلاًَ التمييز بين الغرب الرأسمالي والعالم الشيوعي، 
+	ولم يقصد به التفريق بين المؤرخين في العالم الإسلامي والعالم الغربي. ولويس 
+	هنا أو في كتاباته الأخرى لم يقدم أي دليل على صحة هذا التقسيم. والحقيقة أنه 
+	كم من مؤرخ من ما يسمى (العالم الحر) كان أبعد عن الموضوعية والإنصاف من 
+	المؤرخين من البلاد الأخرى. وهذا الرأي يدل على تعصب لويس للغرب.<br>
+  </font><font size="4" color="#FF0000"><br>
+	إنكار لويس وجود الأرشيفات والوثائق<br>
+  </font><font size="4" color="#000000"><br>
+	لاشك أن مسألة الوثائق والأرشيفات من المسائل المهمة للمؤرخ، ولئن كانت معظم 
+	الوثائق الإسلامية قد ضاعت بسبب الظروف التي مرت بها الأمة الإسلامية، لكن 
+	المؤرخين الذين دونّوا لنا هذا التاريخ الضخم لم يغب عن أذهانهم أهمية الوثائق. 
+	فقد اطلع بعضهم على هذه الوثائق ودونها في مؤلفاته فهي موجودة بمضمونها وإن 
+	ضاعت. وقد أطنب لويس في الحديث عن أهمية الوثائق ليوهم المستمع إليه بأن 
+	التاريخ الإسلامي ليس موثوقاً كما هو الحال مع التاريخ الأوروبي أو تاريخ 
+	الدولة العثمانية. وقد نسي لويس أهمية وثائق البردي، أو وثائق الجنيزة التي 
+	أخذها الأوروبيون واحتفظوا فيها في متاحفهم ومكتباتهم. ومما يثبت وجود الوثائق 
+	في التاريخ الإسلامي كتاب الدكتور محمد حميد الله مجموعة الوثائق السياسية 
+	للعهد الأموي والخلافة الراشدة، وينبغي الإشارة كذلك لجهود محمد ماهر حمادة في 
+	مجلداته المتعددة حول الوثائق الإسلامية، حيث بنى هذه المجلدات على احتفاظ 
+	المصادر الإسلامية بنصوص الوثائق.<br>
+	<br>
+  </font><font size="4" color="#FF0000">ثانيا: موقفه من الحديث</font><font size="4" color="#000000"><br>
+	<br>
+	كرر لويس هنا تشكيكه في الحديث الشريف،وهو ليس بدعاً في هذا الأمر فقد سبقه 
+	كثير من المستشرقين في هذا. ولكن لويس وغيره لا يكلفون أنفسهم عناء معرفة 
+	الجهود العظيمة التي بذلها العلماء المسلمون لحفظ الحديث والحكم عليه. كما إنهم 
+	نسوا أن المحافظة على الحديث تعد ديناً عند المسلمين. وزيادة على كل ذلك فقد 
+	عرف العرب بالقدرة العجيبة على الحفظ فقد كانوا يحفظون القصائد الطوال، ويحفظون 
+	الأنساب، ويحفظون وقائع العرب. ولذلك فحفظ حديث الرسول صلى الله عليه وسلم كان 
+	أولى.<br>
+	<br>
+	أمّا تفضيله كتب الطبقات على الحديث وعدها أكثر موثوقية، فهذا مما يعجب له 
+	الإنسان. فالطبقات كتبها أناس قد تخضع أو لا تخضع لمعايير علم الحديث في التثبت 
+	من السند والرواية. وإن كنّا نعتقد أن صفة الصدق هي ألزم صفات المسلم.<br>
+  </font><font size="4" color="#FF0000"><br>
+	التغيرات في منهج لويس</font><font size="4" color="#000000"><br>
+	<br>
+	أكد لويس أن منهجه تعرض للتغير بزيادة نضجه بتقدمه في السن وبازدياد معرفته. 
+	وأشار إلى بعض أساتذته ونصحهم له بقراءة كتب عن الثورة الرومانية لفهم الثورة 
+	العباسية. وهذا من منهج الإسقاط فكيف يمكن للتغير في الحكم في الدولة الإسلامية 
+	أن يشبه التغير في الدولة الرومانية؟ وكذلك أشار لويس إلى أن الأسوة الحسنة 
+	تكون في الدين فقط أما في كتابة التاريخ أو أمور الدنيا فهناك اكتشافات جديدة 
+	...الخ. وهذا عكس المفهوم الإسلامي المبني على قوله تعالى {قل إن صلاتي ونسكي 
+	ومحياي ومماتي لله رب العالمين لا شريك له وبذلك أمرت وأنا أول المسلمين.} 
+	فالأسوة الحسنة في جميع أمور الحياة.<br>
+  </font><font size="4" color="#FF0000"><br>
+	التناقض بين إجابة لويس وواقع كتابته للتاريخ الإسلامي</font><font size="4" color="#000000"><br>
+	<br>
+	أسهب لويس في انتقاد بعض المستشرقين في تعصبهم وعدم نزاهتهم، ومن الأمثلة التي 
+	أوردها المستشرق هنري لامانس، وكذلك موقف المستشرقين الشيوعيين من الإسلام. 
+	ولكن لويس نفسه من أكثر المستشرقين تعصباً ضد التاريخ الإسلامي، وبخاصة عند 
+	تناوله لقضايا الصراع العربي الإسرائيلي وفي تناوله لموضوع الصحوة الإسلامية. 
+	وهو مثل لامانس في إثقال حواشي صفحاته بالمراجع والتوثيق بينما يهمل التوثيق في 
+	القضايا الحساسة المهمة. وقد أشار طيباوي الى هذه المسألة.<br>
+	<br>
+	والموضوعية التي يزعمها لويس لنفسه قد ناقضها في معظم ما كتب، ومن أول شروط 
+	الموضوعية احترام المسلمات التي يؤمن بها القوم الذي تكتب تاريخهم. فلم يكن 
+	مطلوباً من لويس أن يؤمن بالنبوة -مثلاً- كما يؤمن بها المسلمون، ولكن كان عليه 
+	أن يحترم عقيدة المسلمين في هذه المسألة. ومن مجافاة لويس للموضوعية أنه أهمل 
+	كل الجهود التي بذلها العلماء المسلمون في الحفاظ على نقل حديث الرسول صلى الله 
+	عليه وسلم إلينا ليزعم أن النقد الحديث أثبت عدم موثوقية الحديث. وكأن النقد 
+	الحديث أفضل من جهود العلماء المسلمين.<br>
+	<br>
+	<br>
+&nbsp;</font></p></table>      </div>
+
+      <div class="container my-4">
+  <div class="row text-center g-3">
+
+    <!-- زر الطباعة (تحديث باستخدام window.print()) -->
+    <div class="col-md-3 col-6">
+      <button onclick="window.print();" class="btn btn-outline-secondary w-100">
+        🖨️ طباعة الصفحة
+      </button>
+    </div>
+
+    <!-- زر واتساب -->
+    <div class="col-md-3 col-6">
+      <a class="btn btn-outline-success w-100"
+         href="https://wa.me/?text=ألق نظرة على هذا الرابط: https%3A%2F%2Fsaaid.org%2FDoat%2Fmazin%2F20.htm"
+         target="_blank">
+        📲 مشاركة واتساب
+      </a>
+    </div>
+
+    <!-- زر تويتر -->
+    <div class="col-md-3 col-6">
+      <a class="btn btn-outline-primary w-100"
+         href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsaaid.org%2FDoat%2Fmazin%2F20.htm&text=رابط مفيد من صيد الفوائد"
+         target="_blank">
+        🐦 مشاركة تويتر
+      </a>
+    </div>
+
+    <!-- إرسال لصديق -->
+    <div class="col-md-3 col-6">
+      <a href="#"
+         onclick="window.open('https://saaid.org/glblstf.php?site_url=%2FDoat%2Fmazin%2F20.htm','popup','width=400,height=100'); return false;"
+         class="btn btn-outline-dark w-100">
+        📧 إرسال لصديق
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+              <div class="related mt-4">
+          <h5 class="text-primary">📌 روابط ذات صلة</h5>
+          <div class="p-2 bg-light border rounded">
+            <!-- ENCODING: UTF-8 -->
+
+<li><font size="4"><a class="blf" href="http://saaid.net/Doat/mazin/k.htm">الكتب والبحوث</a></font></li>
+<li><font size="4"><a class="blf" href="http://saaid.net/Doat/mazin/m.htm">المقالات</a></font></li>
+<li><font size="4"><a class="blf" href="http://saaid.net/Doat/mazin/m-s.htm">مقالات حول الاستشراق</a></font></li>
+<li><font size="4"><a class="blf" href="http://saaid.net/Doat/mazin/t.htm">تقارير المؤتمرات</a></font></li>
+<li><font size="4"><a class="blf" href="http://saaid.net/Doat/mazin/m-g.htm">دراسات الغرب - الاستغراب</a></font></li>
+<li><font size="4"><a class="blf" href="mailto:mazen_mutabagani@hotmail.com">
+للتواصل مع الدكتور</a></font></li>
+<li><font size="4"><a class="blf" href="http://saaid.net/Doat/mazin/index.htm">الصفحة الرئيسية</a></font></li>          </div>
+        </div>
+          </main>
+
+    
+  <footer class="text-center mt-4">
+    <img class="w-100" src="/img3/IMG_0885.PNG" alt="Footer">
+  </footer>
+
+  </div>
+</div>
+
+</body>
+</html>
