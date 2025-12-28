@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# --- Réglages ---
 ROOT="$HOME/PPE1_groupe_2025"
 URLS="$ROOT/URLs/arabe.txt"
 
@@ -13,13 +12,10 @@ OUT="$ROOT/tableaux/orientalisme_ar_simple.html"
 
 mkdir -p "$ASP_DIR" "$DUMP_DIR" "$CTX_DIR" "$CONC_DIR" "$ROOT/tableaux"
 
-# Motifs à repérer
 MOTIFS='استشراق(ي|ية)|مستشرق(ون|ين)'
 
-# User-Agent simple pour limiter certains blocages
 UA="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15"
 
-# --- Petites fonctions ---
 need(){ command -v "$1" >/dev/null 2>&1 || { echo "Commande manquante: $1" >&2; exit 1; }; }
 need curl; need lynx; need grep; need sed; need wc; need tr
 
@@ -34,7 +30,6 @@ html_escape() {
 # Nettoyage minimal arabe: on enlève juste le tatweel
 filtrer_ar(){ sed 's/ـ//g'; }
 
-# --- En-tête HTML ---
 cat > "$OUT" <<'HTML'
 <!doctype html>
 <html lang="fr">
@@ -62,7 +57,6 @@ mark { background: #ffe36e; padding: 0 .12em; border-radius: .2em; }
 </tr>
 HTML
 
-# --- Traitement URL par URL ---
 i=1
 while IFS= read -r url || [[ -n "$url" ]]; do
   [[ -z "$url" ]] && continue
@@ -76,23 +70,18 @@ while IFS= read -r url || [[ -n "$url" ]]; do
 
   echo "[INFO] [$i] $url" >&2
 
-  # 1) Télécharger HTML
-  CODE="$(curl -sS -L --connect-timeout 10 --max-time 35 -A "$UA" \
+ CODE="$(curl -sS -L --connect-timeout 10 --max-time 35 -A "$UA" \
           -o "$PAGE" -w "%{http_code}" "$url" || echo "000")"
 
-  # 2) Extraire texte brut (lynx)
   : > "$TXT"
   if [[ -s "$PAGE" ]]; then
     lynx -assume_charset=utf-8 -display_charset=utf-8 -dump -nolist "$PAGE" > "$TXT" 2>/dev/null || true
   fi
 
-  # 3) Compter occurrences du motif
   OCC="$(cat "$TXT" | filtrer_ar | grep -Eo "$MOTIFS" | wc -l | tr -d ' ' || echo 0)"
 
-  # 4) Extraire lignes-contexte (avec numéros de ligne)
   cat "$TXT" | filtrer_ar | grep -En "$MOTIFS" > "$CTX" || true
 
-  # 5) Générer une page concordance (surlignage)
   {
     echo "<!doctype html><html><head><meta charset='utf-8'>"
     echo "<title>Concordance #$i</title>"
@@ -106,7 +95,6 @@ while IFS= read -r url || [[ -n "$url" ]]; do
     echo "</pre></body></html>"
   } > "$CONC"
 
-  # 6) Ajouter une ligne au tableau HTML principal
   {
     echo "<tr>"
     echo "<td>$i</td>"
@@ -126,7 +114,6 @@ while IFS= read -r url || [[ -n "$url" ]]; do
   i=$((i+1))
 done < "$URLS"
 
-# --- Pied HTML ---
 cat >> "$OUT" <<'HTML'
 </table>
 </body>
