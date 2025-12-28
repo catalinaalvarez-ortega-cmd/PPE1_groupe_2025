@@ -27,7 +27,6 @@ html_escape() {
       -e "s/'/\&#39;/g"
 }
 
-# Nettoyage minimal arabe: on enlève juste le tatweel
 filtrer_ar(){ sed 's/ـ//g'; }
 
 cat > "$OUT" <<'HTML'
@@ -88,7 +87,7 @@ while IFS= read -r url || [[ -n "$url" ]]; do
     echo "<style>body{font-family:system-ui;padding:1rem} mark{background:#ffe36e;padding:0 .12em;border-radius:.2em} pre{white-space:pre-wrap}</style>"
     echo "</head><body><h2>Concordance #$i</h2>"
     echo "<p class='small'>URL: $(printf '%s' "$url" | html_escape)</p><pre>"
-    # on surligne dans le texte, puis on échappe, puis on réactive <mark>
+    
     sed -E "s/($MOTIFS)/<mark>\1<\/mark>/g" "$CTX" \
       | html_escape \
       | sed 's/&lt;mark&gt;/<mark>/g; s/&lt;\/mark&gt;/<\/mark>/g'
