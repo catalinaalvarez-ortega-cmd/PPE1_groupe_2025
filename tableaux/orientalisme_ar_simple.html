@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Orientalisme – Arabe (pipeline simple)</title>
+<style>
+body { font-family: system-ui; padding: 1rem; }
+table { border-collapse: collapse; width: 100%; }
+td, th { border: 1px solid #ddd; padding: .45em .55em; vertical-align: top; }
+th { background: #f6f6f6; }
+pre { white-space: pre-wrap; margin: 0; }
+mark { background: #ffe36e; padding: 0 .12em; border-radius: .2em; }
+.small { font-size: .9em; color: #444; }
+.bad { color: #a40000; font-weight: 700; }
+.ok  { color: #0b6b0b; font-weight: 700; }
+</style>
+</head>
+<body>
+<h1>Orientalisme – Arabe (pipeline simple)</h1>
+<table>
+<tr>
+  <th>N°</th><th>URL</th><th>Code</th><th>Occ.</th>
+  <th>HTML</th><th>Dump</th><th>Concordance</th>
+</tr>
+<tr>
+<td>1</td>
+<td class='small'>https://ar.wikipedia.org/wiki/استشراق</td>
+<td class='ok'>200</td>
+<td>2
+0</td>
+<td><a href="arabe-1.html">page</a></td>
+<td><a href="arabe-1.txt">dump</a></td>
+<td><a href="arabe-1.html">conc</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td class='small'>https://www.aljazeera.net/blogs/2018/3/6/الاستشراق-في-ضوء-ما-كتبه-إدوارد-سعيد</td>
+<td class='ok'>200</td>
+<td>13</td>
+<td><a href="arabe-2.html">page</a></td>
+<td><a href="arabe-2.txt">dump</a></td>
+<td><a href="arabe-2.html">conc</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td class='small'>https://m.iicss.iq/?id=12&amp;sid=7</td>
+<td class='ok'>200</td>
+<td>41</td>
+<td><a href="arabe-3.html">page</a></td>
+<td><a href="arabe-3.txt">dump</a></td>
+<td><a href="arabe-3.html">conc</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td class='small'>https://www.alukah.net/spotlight/0/70799/أهداف-الدراسات-الاستشراقية/</td>
+<td class='ok'>200</td>
+<td>11
+0</td>
+<td><a href="arabe-4.html">page</a></td>
+<td><a href="arabe-4.txt">dump</a></td>
+<td><a href="arabe-4.html">conc</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td class='small'>https://www.almaany.com/ar/dict/ar-ar/استشراقية/</td>
+<td class='bad'>403</td>
+<td>0
+0</td>
+<td><a href="arabe-5.html">page</a></td>
+<td><a href="arabe-5.txt">dump</a></td>
+<td><a href="arabe-5.html">conc</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td class='small'>https://www.habous.gov.ma/daouat-alhaq/item/8210</td>
+<td class='ok'>200</td>
+<td>36</td>
+<td><a href="arabe-6.html">page</a></td>
+<td><a href="arabe-6.txt">dump</a></td>
+<td><a href="arabe-6.html">conc</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td class='small'>https://www.aljazeera.net/opinions/2022/11/12/الغرب-والاستشراق</td>
+<td class='ok'>200</td>
+<td>8</td>
+<td><a href="arabe-7.html">page</a></td>
+<td><a href="arabe-7.txt">dump</a></td>
+<td><a href="arabe-7.html">conc</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td class='small'>https://www.alaraby.co.uk/opinion/الظاهرة-الاستشراقية-وخرائط-الأسئلة</td>
+<td class='ok'>200</td>
+<td>0
+0</td>
+<td><a href="arabe-8.html">page</a></td>
+<td><a href="arabe-8.txt">dump</a></td>
+<td><a href="arabe-8.html">conc</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td class='small'>https://tawaseen.com/?p=2189</td>
+<td class='ok'>200</td>
+<td>18</td>
+<td><a href="arabe-9.html">page</a></td>
+<td><a href="arabe-9.txt">dump</a></td>
+<td><a href="arabe-9.html">conc</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td class='small'>https://iqsaweb.org/2017/01/09/futureorientalism/</td>
+<td class='ok'>200</td>
+<td>25
+0</td>
+<td><a href="arabe-10.html">page</a></td>
+<td><a href="arabe-10.txt">dump</a></td>
+<td><a href="arabe-10.html">conc</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td class='small'>https://m.iicss.iq/?id=79&amp;sid=121</td>
+<td class='ok'>200</td>
+<td>78</td>
+<td><a href="arabe-11.html">page</a></td>
+<td><a href="arabe-11.txt">dump</a></td>
+<td><a href="arabe-11.html">conc</a></td>
+</tr>
+<tr>
+<td>12</td>
+<td class='small'>https://atharah.net/orientalism-issues/</td>
+<td class='ok'>200</td>
+<td>8
+0</td>
+<td><a href="arabe-12.html">page</a></td>
+<td><a href="arabe-12.txt">dump</a></td>
+<td><a href="arabe-12.html">conc</a></td>
+</tr>
+<tr>
+<td>13</td>
+<td class='small'>https://arrabiaa.net/المدرسة-الإستشراقية-الألمانية-تاريخ/</td>
+<td class='ok'>200</td>
+<td>0
+0</td>
+<td><a href="arabe-13.html">page</a></td>
+<td><a href="arabe-13.txt">dump</a></td>
+<td><a href="arabe-13.html">conc</a></td>
+</tr>
+<tr>
+<td>14</td>
+<td class='small'>https://elbassair.dz/18251/</td>
+<td class='ok'>200</td>
+<td>10</td>
+<td><a href="arabe-14.html">page</a></td>
+<td><a href="arabe-14.txt">dump</a></td>
+<td><a href="arabe-14.html">conc</a></td>
+</tr>
+<tr>
+<td>15</td>
+<td class='small'>https://www.hespress.com/الاستشراق-414115.html</td>
+<td class='ok'>200</td>
+<td>17
+0</td>
+<td><a href="arabe-15.html">page</a></td>
+<td><a href="arabe-15.txt">dump</a></td>
+<td><a href="arabe-15.html">conc</a></td>
+</tr>
+<tr>
+<td>16</td>
+<td class='small'>https://saaid.org/Doat/mazin/7.htm</td>
+<td class='ok'>200</td>
+<td>13</td>
+<td><a href="arabe-16.html">page</a></td>
+<td><a href="arabe-16.txt">dump</a></td>
+<td><a href="arabe-16.html">conc</a></td>
+</tr>
+<tr>
+<td>17</td>
+<td class='small'>https://sufirfan.org/أبعاد-ومحد%D9%90ّدات-الرؤية-الاستشراقيَّ/</td>
+<td class='ok'>200</td>
+<td>62
+0</td>
+<td><a href="arabe-17.html">page</a></td>
+<td><a href="arabe-17.txt">dump</a></td>
+<td><a href="arabe-17.html">conc</a></td>
+</tr>
+<tr>
+<td>18</td>
+<td class='small'>https://www.islamweb.net/ar/article/236854/المُسْتَشْر%D9%90قون-والس%D9%90يرة-النبوية</td>
+<td class='ok'>200</td>
+<td>12</td>
+<td><a href="arabe-18.html">page</a></td>
+<td><a href="arabe-18.txt">dump</a></td>
+<td><a href="arabe-18.html">conc</a></td>
+</tr>
+<tr>
+<td>19</td>
+<td class='small'>https://www.ikhwan.wiki/index.php?title=الإستشراق_والمستشرقون</td>
+<td class='bad'>400</td>
+<td>0
+0</td>
+<td><a href="arabe-19.html">page</a></td>
+<td><a href="arabe-19.txt">dump</a></td>
+<td><a href="arabe-19.html">conc</a></td>
+</tr>
+<tr>
+<td>20</td>
+<td class='small'>https://saaid.org/Doat/aldgithr/31.htm</td>
+<td class='ok'>200</td>
+<td>17</td>
+<td><a href="arabe-20.html">page</a></td>
+<td><a href="arabe-20.txt">dump</a></td>
+<td><a href="arabe-20.html">conc</a></td>
+</tr>
+<tr>
+<td>21</td>
+<td class='small'>https://artcollege.uoanbar.edu.iq/News_Details.php?ID=119</td>
+<td class='ok'>200</td>
+<td>15</td>
+<td><a href="arabe-21.html">page</a></td>
+<td><a href="arabe-21.txt">dump</a></td>
+<td><a href="arabe-21.html">conc</a></td>
+</tr>
+<tr>
+<td>22</td>
+<td class='small'>https://www.aljazeera.net/culture/2024/9/6/المستشرق-مرجليوث-أفعي-المحاصرة</td>
+<td class='ok'>200</td>
+<td>2</td>
+<td><a href="arabe-22.html">page</a></td>
+<td><a href="arabe-22.txt">dump</a></td>
+<td><a href="arabe-22.html">conc</a></td>
+</tr>
+<tr>
+<td>23</td>
+<td class='small'>https://jcoart.uobaghdad.edu.iq/index.php/2075-3047/article/view/976</td>
+<td class='ok'>200</td>
+<td>51</td>
+<td><a href="arabe-23.html">page</a></td>
+<td><a href="arabe-23.txt">dump</a></td>
+<td><a href="arabe-23.html">conc</a></td>
+</tr>
+<tr>
+<td>24</td>
+<td class='small'>https://saaid.org/Doat/mazin/20.htm</td>
+<td class='ok'>200</td>
+<td>7</td>
+<td><a href="arabe-24.html">page</a></td>
+<td><a href="arabe-24.txt">dump</a></td>
+<td><a href="arabe-24.html">conc</a></td>
+</tr>
+<tr>
+<td>25</td>
+<td class='small'>https://www.aljarida.com/articles/1462269327926886200</td>
+<td class='ok'>000000</td>
+<td>6</td>
+<td><a href="arabe-25.html">page</a></td>
+<td><a href="arabe-25.txt">dump</a></td>
+<td><a href="arabe-25.html">conc</a></td>
+</tr>
+<tr>
+<td>26</td>
+<td class='small'>https://saaid.org/Doat/aldgithr/29.htm</td>
+<td class='ok'>200</td>
+<td>25</td>
+<td><a href="arabe-26.html">page</a></td>
+<td><a href="arabe-26.txt">dump</a></td>
+<td><a href="arabe-26.html">conc</a></td>
+</tr>
+<tr>
+<td>27</td>
+<td class='small'>https://www.islamweb.net/ar/library/content/1505/213/أهداف-المستشرقين</td>
+<td class='ok'>200</td>
+<td>27
+0</td>
+<td><a href="arabe-27.html">page</a></td>
+<td><a href="arabe-27.txt">dump</a></td>
+<td><a href="arabe-27.html">conc</a></td>
+</tr>
+<tr>
+<td>28</td>
+<td class='small'>https://islamonline.net/الاستشراق-مجالات-عمل-2-3/</td>
+<td class='ok'>200</td>
+<td>12</td>
+<td><a href="arabe-28.html">page</a></td>
+<td><a href="arabe-28.txt">dump</a></td>
+<td><a href="arabe-28.html">conc</a></td>
+</tr>
+<tr>
+<td>29</td>
+<td class='small'>https://www.islamweb.net/ar/article/163161/الاستشراق-بين-الغايات-المسبقة-والرؤى-النقدية</td>
+<td class='ok'>200</td>
+<td>9</td>
+<td><a href="arabe-29.html">page</a></td>
+<td><a href="arabe-29.txt">dump</a></td>
+<td><a href="arabe-29.html">conc</a></td>
+</tr>
+<tr>
+<td>30</td>
+<td class='small'>https://binbaz.org.sa/fatwas/2682/معنى-الاستشراق-المستشرقين</td>
+<td class='ok'>200</td>
+<td>5
+0</td>
+<td><a href="arabe-30.html">page</a></td>
+<td><a href="arabe-30.txt">dump</a></td>
+<td><a href="arabe-30.html">conc</a></td>
+</tr>
+<tr>
+<td>31</td>
+<td class='small'>https://engzketab.com/كتاب%20الاستشراق</td>
+<td class='ok'>200</td>
+<td>5</td>
+<td><a href="arabe-31.html">page</a></td>
+<td><a href="arabe-31.txt">dump</a></td>
+<td><a href="arabe-31.html">conc</a></td>
+</tr>
+<tr>
+<td>32</td>
+<td class='small'>https://madinacenter.com/wp/تعريف-الاستشراق/</td>
+<td class='ok'>200</td>
+<td>9
+0</td>
+<td><a href="arabe-32.html">page</a></td>
+<td><a href="arabe-32.txt">dump</a></td>
+<td><a href="arabe-32.html">conc</a></td>
+</tr>
+<tr>
+<td>33</td>
+<td class='small'>https://tafsir.net/interview/42/al-astshraq-waldrasat-al-qr-aanyt-1-2-al-astshraq-mfhwmh-wnsh-at-h-wtarykhh</td>
+<td class='ok'>200</td>
+<td>40
+0</td>
+<td><a href="arabe-33.html">page</a></td>
+<td><a href="arabe-33.txt">dump</a></td>
+<td><a href="arabe-33.html">conc</a></td>
+</tr>
+<tr>
+<td>34</td>
+<td class='small'>https://midad.com/article/217490/مقدمة-حول-الاستشراق-والمستشرقين</td>
+<td class='ok'>200</td>
+<td>17
+0</td>
+<td><a href="arabe-34.html">page</a></td>
+<td><a href="arabe-34.txt">dump</a></td>
+<td><a href="arabe-34.html">conc</a></td>
+</tr>
+<tr>
+<td>35</td>
+<td class='small'>https://www.alriyadh.com/2054807</td>
+<td class='ok'>200</td>
+<td>3</td>
+<td><a href="arabe-35.html">page</a></td>
+<td><a href="arabe-35.txt">dump</a></td>
+<td><a href="arabe-35.html">conc</a></td>
+</tr>
+<tr>
+<td>36</td>
+<td class='small'>https://islamqa.info/ar/answers/210282/اهداف-الاستشراق-ودوافعه</td>
+<td class='ok'>200</td>
+<td>4</td>
+<td><a href="arabe-36.html">page</a></td>
+<td><a href="arabe-36.txt">dump</a></td>
+<td><a href="arabe-36.html">conc</a></td>
+</tr>
+<tr>
+<td>37</td>
+<td class='small'>https://www.marefa.org/استشراق</td>
+<td class='ok'>200</td>
+<td>46</td>
+<td><a href="arabe-37.html">page</a></td>
+<td><a href="arabe-37.txt">dump</a></td>
+<td><a href="arabe-37.html">conc</a></td>
+</tr>
+<tr>
+<td>38</td>
+<td class='small'>https://islamanar.com/what-is-orientalism/</td>
+<td class='ok'>200</td>
+<td>3
+0</td>
+<td><a href="arabe-38.html">page</a></td>
+<td><a href="arabe-38.txt">dump</a></td>
+<td><a href="arabe-38.html">conc</a></td>
+</tr>
+<tr>
+<td>39</td>
+<td class='small'>https://tagepedia.org/Entry.aspx?id=234566&amp;title=الإستشراق_&amp;lang=ar</td>
+<td class='bad'>404</td>
+<td>0
+0</td>
+<td><a href="arabe-39.html">page</a></td>
+<td><a href="arabe-39.txt">dump</a></td>
+<td><a href="arabe-39.html">conc</a></td>
+</tr>
+<tr>
+<td>40</td>
+<td class='small'>https://faculty.uobasrah.edu.iq/uploads/teaching/1635456888.pdf</td>
+<td class='ok'>200</td>
+<td>0
+0</td>
+<td><a href="arabe-40.html">page</a></td>
+<td><a href="arabe-40.txt">dump</a></td>
+<td><a href="arabe-40.html">conc</a></td>
+</tr>
+<tr>
+<td>41</td>
+<td class='small'>https://www.aljazeera.net/culture/2019/10/28/الاستشراق-وصورة-الشرق-الأوسط-غير</td>
+<td class='ok'>200</td>
+<td>7</td>
+<td><a href="arabe-41.html">page</a></td>
+<td><a href="arabe-41.txt">dump</a></td>
+<td><a href="arabe-41.html">conc</a></td>
+</tr>
+<tr>
+<td>42</td>
+<td class='small'>https://www.alukah.net/spotlight/0/98882/مفهوم-الاستشراق-والمستشرقين/</td>
+<td class='ok'>200</td>
+<td>15
+0</td>
+<td><a href="arabe-42.html">page</a></td>
+<td><a href="arabe-42.txt">dump</a></td>
+<td><a href="arabe-42.html">conc</a></td>
+</tr>
+<tr>
+<td>43</td>
+<td class='small'>https://islamonline.net/الاستشراق-في-العالم-الإسلامي/</td>
+<td class='ok'>200</td>
+<td>19</td>
+<td><a href="arabe-43.html">page</a></td>
+<td><a href="arabe-43.txt">dump</a></td>
+<td><a href="arabe-43.html">conc</a></td>
+</tr>
+<tr>
+<td>44</td>
+<td class='small'>https://www.alukah.net/culture/0/106453/الاستشراق-والمستشرقون-نظرة-تحليلية/</td>
+<td class='ok'>200</td>
+<td>35
+0</td>
+<td><a href="arabe-44.html">page</a></td>
+<td><a href="arabe-44.txt">dump</a></td>
+<td><a href="arabe-44.html">conc</a></td>
+</tr>
+<tr>
+<td>45</td>
+<td class='small'>https://www.islamweb.net/ar/library/content/1505/198/عصر-ازدهار-الاستشراق</td>
+<td class='ok'>200</td>
+<td>11
+0</td>
+<td><a href="arabe-45.html">page</a></td>
+<td><a href="arabe-45.txt">dump</a></td>
+<td><a href="arabe-45.html">conc</a></td>
+</tr>
+<tr>
+<td>46</td>
+<td class='small'>https://www.almasryalyoum.com/news/details/3486257</td>
+<td class='ok'>200</td>
+<td>0
+0</td>
+<td><a href="arabe-46.html">page</a></td>
+<td><a href="arabe-46.txt">dump</a></td>
+<td><a href="arabe-46.html">conc</a></td>
+</tr>
+<tr>
+<td>47</td>
+<td class='small'>https://www.islamweb.net/ar/library/content/1505/200/الاستشراق-والاستعمار</td>
+<td class='ok'>200</td>
+<td>27
+0</td>
+<td><a href="arabe-47.html">page</a></td>
+<td><a href="arabe-47.txt">dump</a></td>
+<td><a href="arabe-47.html">conc</a></td>
+</tr>
+<tr>
+<td>48</td>
+<td class='small'>https://www.alukah.net/sharia/0/80131/وسائل-الاستشراق/</td>
+<td class='ok'>200</td>
+<td>12
+0</td>
+<td><a href="arabe-48.html">page</a></td>
+<td><a href="arabe-48.txt">dump</a></td>
+<td><a href="arabe-48.html">conc</a></td>
+</tr>
+<tr>
+<td>49</td>
+<td class='small'>https://shamela.ws/book/11180/8</td>
+<td class='bad'>403</td>
+<td>0
+0</td>
+<td><a href="arabe-49.html">page</a></td>
+<td><a href="arabe-49.txt">dump</a></td>
+<td><a href="arabe-49.html">conc</a></td>
+</tr>
+<tr>
+<td>50</td>
+<td class='small'>https://www.islamweb.net/ar/library/content/1505/202/مستقبل-الاستشراق</td>
+<td class='ok'>200</td>
+<td>45
+0</td>
+<td><a href="arabe-50.html">page</a></td>
+<td><a href="arabe-50.txt">dump</a></td>
+<td><a href="arabe-50.html">conc</a></td>
+</tr>
+</table>
+</body>
+</html>
