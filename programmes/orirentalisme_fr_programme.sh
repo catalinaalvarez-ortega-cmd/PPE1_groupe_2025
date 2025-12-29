@@ -2,90 +2,118 @@
 
 # Vérification du nombre d'arguments
 if [[ $# -ne 1 ]]; then
-    echo "Usage: $0 url_orientalismefr.txt"
+    echo "Usage: $0 urls_fr.txt"
     exit 1
 fi
 
-fichier="$1"
+URL_FILE="$1"
 USER_AGENT="Mozilla/5.0 (X11; Linux x86_64)"
-
-indice=1
-
+INDICE=1
 HTML_OUT="../tableaux/orientalismefr.html"
-echo "<table border='1'>
+
+# Création du tableau HTML principal
+echo "<html><body><table border='1'>
 <tr>
 <th>#</th><th>URL</th><th>HTTP</th><th>Encodage</th>
 <th>Mots</th><th>Occurrences orient*</th>
 <th>HTML</th><th>TXT UTF-8</th><th>Contextes</th>
-<th>Concordancier</th>
+<th>Concordance</th><th>Dump-token</th>
+<th>Contexte-token</th>
+
+
 </tr>" > "$HTML_OUT"
 
-# Lecture du fichier URL ligne par ligne
-while read -r url; do
-    echo "Traitement $indice : $url"
 
-    html="../aspirations/fr-$indice.html"
-    dump="../dumps-text/fr-$indice.txt"
-    contexte="../contextes/fr-$indice.txt"
-    Pals="../PALS/fr-$indice.tsv"
+# Lecture du fichier URL ligne par ligne
+while read -r URL; do
+    echo "Traitement $INDICE : $URL"
+
+    HTML_FILE="../aspirations/francais_aspiration/fr-$INDICE.html"
+    DUMP_FILE="../dumps-text/francais_dump/fr-$INDICE.txt"
+    CONTEXTE_FILE="../contextes/francais_contexte/fr-$INDICE.txt"
+    CONCORD_HTML="../concordances/francais_concordance/fr-$INDICE.html"
+    Token_dump="../Token/dump/fr-$INDICE.txt"
+    Token_contexte="../Token/contextes/fr-$INDICE.txt"
+
     # Téléchargement de la page
-    http_code=$(curl -L -A "$USER_AGENT" -s \
+    HTTP_CODE=$(curl -L -A "$USER_AGENT" -s \
         --connect-timeout 10 --max-time 20 \
-        -o "$html" -w "%{http_code}" "$url")
+        -o "$HTML_FILE" -w "%{http_code}" "$URL")
 
     # Vérification du code HTTP
-    if [[ "$http_code" != "200" ]]; then
-        echo "Erreur HTTP $http_code pour $url"
-        rm -f "$html"
-        ((indice++))
+    if [[ "$HTTP_CODE" != "200" ]]; then
+        echo "Erreur HTTP $HTTP_CODE pour $URL"
+        rm -f "$HTML_FILE"
+        ((INDICE++))
         continue
     fi
 
     # Détection de l'encodage
-    encodage=$(file --mime-encoding --brief "$html")
+    ENCODAGE=$(file --mime-encoding --brief "$HTML_FILE")
 
-    # Extraction du texte
-    if [[ "$encodage" =~ utf-8|us-ascii ]]; then
-        lynx -dump -nolist "$html" > "$dump"
+    # Lecture uniquement si UTF-8 ou ASCII
+    if [[ "$ENCODAGE" =~ utf-8|us-ascii ]]; then
+        lynx -dump -nolist "$HTML_FILE" > "$DUMP_FILE"
     else
-        if iconv -f "$encodage" -t UTF-8 "$html" 2>/dev/null \
-            | lynx -stdin -dump -nolist > "$dump"; then
-            :
-        else
-            echo "Impossible de convertir $html en UTF-8"
-            ((indice++))
-            continue
-        fi
+        echo "Page $URL non UTF-8, ignorée."
+        ((INDICE++))
+        continue
     fi
 
     # Comptage des mots et occurrences
-    MOTS=$(wc -w < "$dump")
-    OCC=$(grep -Eio '\borient\w*' "$dump" | wc -l)
+    MOTS=$(wc -w < "$DUMP_FILE")
+    OCC=$(grep -Eio '\borient\w*' "$DUMP_FILE" | wc -l)
 
     # Extraction des contextes autour des mots recherchés
-    egrep -Ei -C 5 '\borient\w*' "$dump" > "$contexte"
+    egrep -Ei -C 5 '\borient\w*' "$DUMP_FILE" > "$CONTEXTE_FILE"
 
-    #cooccurent.py/$dump  /$dump
-    python3 cooccurrents.py $dump --target ".*[oO]rient.*|.ORIENT.*" --match-mode regex >> "$Pals" 2> /dev/null
+    ./concordance.sh "[oO]rient" "$CONTEXTE_FILE" "$CONCORD_HTML"
 
-    # Ajout d'une ligne dans le tableau HTML
+ #python3 tsv_to_html_table.py "$DUMP_FILE" "$CONCORD_HTML"
+
+    #Tokenization dump/ contexte
+    python3 tokenizer.py  "$DUMP_FILE" "$Token_dump"
+    python3 tokenizer.py  "$CONTEXTE_FILE" "$Token_contexte"
+
+    # Ajout d'une ligne danspals_corpus le tableau principal
     echo "<tr>
-<td>$indice</td>
-<td><a href=\"$url\">$url</a></td>
-<td>$http_code</td>
-<td>$encodage</td>
+<td>$INDICE</td>
+<td><a href=\"$URL\">$URL</a></td>
+<td>$HTTP_CODE</td>
+<td>$ENCODAGE</td>
 <td>$MOTS</td>
 <td>$OCC</td>
-<td><a href=\"$html\">HTML</a></td>
-<td><a href=\"$dump\">TXT</a></td>
-<td><a href=\"$contexte\">Contextes</a></td>
-<td><a href=\"$Pals\">Concordancier</a></td>
+<td><a href=\"$HTML_FILE\">HTML</a></td>
+<td><a href=\"$DUMP_FILE\">TXT</a></td>
+<td><a href=\"$CONTEXTE_FILE\">Contextes</a></td>
+<td><a href=\"$CONCORD_HTML\">Concordance</a></td>
+<td><a href=\"$Token_dump\">Dump-token</a></td>
+<td><a href=\"$Token_contexte\">Contexte-token</a></td>
+
 </tr>" >> "$HTML_OUT"
 
-    ((indice++))
+    ((INDICE++))
     sleep 2
-done < "$fichier"
+done < "$URL_FILE"
 
-# Fermeture du tableau HTML
-echo "</table>" >> "$HTML_OUT"
+# Fermeture du tableau HTML principal
+echo "</table></body></html>" >> "$HTML_OUT"
 echo "Terminé"
+
+
+#analyse des resultats 1 partition 2cooc
+
+python3 partition.py  -i ../Token/dump/fr-*.txt >../frequences/francais/d-freq-fr.tsv
+python3 tsv_to_html_table.py "../frequences/francais/d-freq-fr.tsv" "../frequences/francais/d-freq-fr.html"
+
+python3 partition.py  -i ../Token/contextes/fr-*.txt >../frequences/francais/c-freq-fr.tsv
+python3 tsv_to_html_table.py "../frequences/francais/c-freq-fr.tsv" "../frequences/francais/c-freq-fr.html"
+
+python3 cooccurrent.py ../Token/dump/fr-*.txt --target ".*[oO]rient.*" --match-mode regex >../PALS/francais_pals/cooc-dump-fr.tsv
+python3 tsv_to_html_table.py "../PALS/francais_pals/cooc-dump-fr.tsv" "../PALS/francais_pals/cooc-dump-fr.html"
+
+python3 cooccurrent.py ../Token/contextes/fr-*.txt --target ".*[oO]rient.*" --match-mode regex >../PALS/francais_pals/cooc-contextes-fr.tsv-fr.tsv
+python3 tsv_to_html_table.py "../PALS/francais_pals/cooc-contextes-fr.tsv-fr.tsv" "../PALS/francais_pals/cooc-contextes-fr.tsv-fr.html"
+
+
+python3 wordcloud.py
