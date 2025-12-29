@@ -1,0 +1,1481 @@
+   #alternate
+
+   Pasar al contenido principal
+
+     * Iniciar sesión
+     * Universidad Digital
+          + Secretaría virtual
+          + Enseñanza virtual
+          + Sede electrónica
+          + Acceso portafirma
+          + Correo
+          + Tablón elect. oficial
+          + Cita previa
+
+     * La US
+          + Mensaje del Rector
+          + Ejes Estratégicos
+               o Bienvenidos a la US
+               o Plan estratégico
+               o Rankings
+               o Igualdad
+               o Emprendimiento
+          + La US en cifras
+               o Anuario estadístico
+               o Oficina de Análisis y Prospectiva
+          + Historia
+          + Cultura y Patrimonio
+          + Secretaría general
+               o Agenda, Documentos y FAQ
+               o Órganos Colegiados
+               o Órganos dependientes
+               o Elecciones
+               o Convenios
+               o Normativas
+               o Consulta a la comunidad universitaria
+               o Apertura de cursos
+               o BOUS
+               o Registro General
+               o Portal de transparencia
+               o Asuntos Generales
+               o Protección de datos
+               o Contacto
+          + Imagen corporativa
+     * Estudiar
+          + Estudiar en la US
+          + Qué estudiar
+               o Grados
+               o Másteres
+               o Doctorado
+               o Dobles titulaciones internacionales
+               o Reconocimiento de créditos
+               o Otros estudios
+          + Acceso a la US
+               o Acceso
+               o Admisión
+               o Matrícula
+          + Orientación universitaria
+          + Expedición de títulos
+          + Becas y ayudas
+               o Becas y ayudas
+               o Ayudas al estudio
+               o Becas asistenciales
+               o Becas y ayudas de formación
+               o Becas y ayudas de movilidad
+               o Becas y ayudas culturales y deportivas
+               o Premios y distinciones
+          + Movilidad de estudiantes
+          + Estudiar en Sevilla
+          + Estudiantes visitantes
+          + Prácticas y empleo
+          + Bibliotecas y salas de estudio
+     * Investigar
+          + Investigar en la US
+               o Investigar
+               o Datos de investigación
+               o CRAI
+               o Espacios de investigación
+               o Centros mixtos
+               o Institutos de investigación
+               o Unidad de Cultura Científica
+               o OGPI y OPEA
+               o FIUS
+          + Plan propio
+          + Convocatorias
+          + Atención al investigador
+          + Captación de talento
+          + Movilidad de investigadores
+          + Doctorado
+          + Biblioteca
+          + Human Resources Strategy for Researchers
+     * Vivir la US
+          + La US en Sevilla
+          + Atención social
+          + Participación estudiantil
+          + Cultura
+          + Deportes
+          + Bibliotecas
+          + Agenda
+          + Campus
+          + Centros y departamentos
+          + Comunicación en la US
+     * Empresas
+          + Prácticas y Empleo
+          + Emprendimiento
+          + EBC
+          + Patentes
+          + Cátedras
+          + Mecenazgo y colaboraciones
+          + Perfil del contratante
+     * Internacional
+          + US internacional
+               o Datos y cifras
+               o Alianzas
+               o Convenios
+               o OGPI
+               o Rankings
+               o Captación de talento
+               o Delegaciones internacionales
+          + Oficina Welcome
+               o Antes de llegar
+               o Vivir en Sevilla
+               o Vivir la US
+               o Guías de Bienvenida
+               o Centro internacional
+               o Docencia en inglés
+          + Study abroad
+          + Movilidad internacional
+               o Dobles titulaciones internacionales
+               o Soy estudiante de la US
+               o Soy PDI
+               o Soy PTGAS
+          + Política lingüistica
+               o La política lingüística de la US
+               o Estudiar un idioma
+               o Acreditar un idioma
+               o Docencia en inglés
+               o Servicio de traducción
+          + Cooperación
+     * Trabaja en la US
+          + Profesorado
+               o Información General
+               o Planificación y selección
+               o Gestión Administrativa
+               o Docentia
+               o Ordenación académica
+          + PTGAS
+          + Directorio
+          + Servicios Centrales
+
+   Inicio
+     * Información para mí
+          + Estudiantes
+          + Futuros estudiantes
+          + Profesorado
+          + PTGAS
+          + Alumni
+
+   Buscar _______________
+   Buscar
+
+     * La US
+          + Mensaje del Rector
+          + Ejes Estratégicos
+               o Bienvenidos a la US
+               o Plan estratégico
+               o Rankings
+               o Igualdad
+               o Emprendimiento
+          + La US en cifras
+               o Anuario estadístico
+               o Oficina de Análisis y Prospectiva
+          + Historia
+          + Cultura y Patrimonio
+          + Equipo de gobierno
+          + Secretaría general
+               o Agenda, Documentos y FAQ
+               o Órganos Colegiados
+               o Órganos dependientes
+               o Elecciones
+               o Convenios
+               o Normativas
+               o Consulta a la comunidad universitaria
+               o Apertura de cursos
+               o BOUS
+               o Registro General
+               o Portal de transparencia
+               o Asuntos Generales
+               o Protección de datos
+               o Contacto
+          + Imagen corporativa
+     * Estudiar
+          + Estudiar en la US
+          + Qué estudiar
+               o Grados
+               o Másteres
+               o Doctorado
+               o Dobles titulaciones internacionales
+               o Reconocimiento de créditos
+               o Otros estudios
+          + Acceso a la US
+               o Acceso
+               o Admisión
+               o Matrícula
+          + Orientación universitaria
+          + Expedición de títulos
+          + Becas y ayudas
+               o Becas y ayudas
+               o Ayudas al estudio
+               o Becas asistenciales
+               o Becas y ayudas de formación
+               o Becas y ayudas de movilidad
+               o Becas y ayudas culturales y deportivas
+               o Premios y distinciones
+          + Movilidad de estudiantes
+          + Estudiar en Sevilla
+          + Estudiantes visitantes
+          + Prácticas y empleo
+          + Bibliotecas y salas de estudio
+     * Investigar
+          + Investigar en la US
+               o Investigar
+               o Datos de investigación
+               o Espacios de investigación
+               o CRAI
+               o Centros mixtos
+               o Institutos de investigación
+               o Unidad de Cultura Científica
+               o OGPI y OPEA
+               o FIUS
+          + Plan propio
+          + Convocatorias
+          + Atención al investigador
+          + Captación de talento
+          + Movilidad de investigadores
+          + Doctorado
+          + Biblioteca
+          + Human Resources Strategy for Researchers
+     * Vivir la US
+          + La US en Sevilla
+          + Atención social
+          + Participación estudiantil
+          + Cultura
+          + Deportes
+          + Bibliotecas
+          + Agenda
+          + Campus
+          + Centros y departamentos
+          + Comunicación en la US
+     * Empresas
+          + Prácticas y Empleo
+          + Emprendimiento
+          + EBC
+          + Patentes
+          + Cátedras
+          + Mecenazgo y colaboraciones
+          + Perfil del contratante
+     * Internacional
+          + US internacional
+               o Datos y cifras
+               o Alianzas
+               o Convenios
+               o OGPI
+               o Rankings
+               o Captación de talento
+               o Delegaciones internacionales
+          + Oficina Welcome
+               o Antes de llegar
+               o Vivir en Sevilla
+               o Vivir la US
+               o Guías de Bienvenida
+               o Centro internacional
+               o Docencia en inglés
+          + Study abroad
+          + Movilidad internacional
+               o Dobles titulaciones internacionales
+               o Soy estudiante de la US
+               o Soy PDI
+               o Soy PTGAS
+          + Política lingüistica
+               o La política lingüística de la US
+               o Estudiar un idioma
+               o Acreditar un idioma
+               o Docencia en inglés
+               o Servicio de traducción
+          + Cooperación
+     * Trabaja en la US
+          + Profesorado
+               o Información General
+               o Planificación y selección
+               o Gestión Administrativa
+               o Docentia
+               o Ordenación académica
+          + PTGAS
+          + Directorio
+          + Servicios Centrales
+
+     * Información para mí
+          + Estudiantes
+          + Futuros estudiantes
+          + Profesorado
+          + PTGAS
+          + Alumni
+
+Sobrescribir enlaces de ayuda a la navegación
+
+    1. Inicio
+    2. Estudiar
+    3. Qué estudiar
+    4. Grados
+    5. Grado en Estudios de Asia Oriental por la Universidad de Sevilla y
+       la Universidad de Málaga
+
+Grado en Estudios de Asia Oriental por la Universidad de Sevilla y la
+Universidad de Málaga
+
+   PRESENTACIÓN Y GUÍA
+
+Presentación y guía
+
+   La configuración de Asia Oriental como área geopolítica influyente en
+   el nuevo contexto de mundialización cultural y globalización económica
+   constituye ya una realidad ineludible y, más aún, una oportunidad que
+   Andalucía ni quiere ni debe desconocer.
+   Existe en nuestra sociedad una demanda por un mayor conocimiento, tanto
+   académico como científico, de Asia Oriental que se fundamenta en el
+   mayor protagonismo que dicha región ha adquirido en un nuevo marco
+   internacional multipolar.
+   El Grado de Estudios en Asia Oriental pretende responder a esta demanda
+   mediante la formación y preparación, con enfoque pluridisciplinar, de
+   Asia Oriental, abarcando los caracteres culturales (arte, religión,
+   literatura, pensamiento filosófico…), las lenguas (chino, japonés y
+   coreano), la evolución de sus sistemas y contextos políticos, el
+   desarrollo histórico, la organización territorial (sistema de ciudades,
+   estructuras regionales…), las condiciones económicas y comerciales,
+   etc.
+   Estas nuevas realidades suscitan la necesidad de contar con
+   profesionales capacitados en las relaciones con China, Japón y Corea en
+   todos los ámbitos demandados (comercio, economía, relaciones
+   internacionales, diplomacia, intercambio cultural, medio ambiente,
+   ciencia e innovación).
+   Las/os estudiantes matriculadas/os en este Grado deberán acreditar,
+   antes de solicitar la expedición del título, la obtención de un nivel
+   de competencias lingüísticas en un idioma extranjero equivalente al
+   nivel B1 del MCERL (Marco Común Europeo de Referencia para las
+   Lenguas). Más información.
+   Esta titulación es conjunta con la Universidad de Málaga, puede acceder
+   a toda la información disponible del título en este enlace.
+   También tiene a su disposición el folleto del Grado.
+
+Guía de Estudiantes
+
+Plan de Estudios
+
+   Información adicional
+
+Registro de Universidades, Centros y Títulos (RUCT):
+
+   Puede encontrar más información visitando la página de este grado en el
+   Registro de Universidades, Centros y Títulos (RUCT).
+   ACCESO Y NORMATIVA ACADÉMICA
+
+Acceso y Normativa académica
+
+Oferta y demanda
+
+             Tabla de Oferta y Demanda de plazas
+                                   Demanda
+     Curso   Oferta 1ª Preferencia 2ª y 3ª Preferencia Total
+   2024-2025 60    62             64                  236
+   2023-2024 60    85             79                  275
+   2022-2023 60    100            111                 367
+   2021-2022 60    137            149                 444
+   2020-2021 60    175            147                 503
+   2019-2020 60    173            141
+   2018-2019 60    150            131
+   2017-2018 50    171            119
+   2016-2017 50    146            109
+   2015-2016 50    146            96
+   2014-2015 50    99             78
+   2013-2014 50    124            116
+   2012-2013 50    163            128
+   2011-2012 50    118            60
+
+Sistemas de información preuniversitarios
+
+   El Área de Orientación Universitaria y Participación Estudiantil,
+   perteneciente al Vicerrectorado de Estudiantes, a través de
+   actividades, materiales y atención personalizada ofrece un servicio
+   centralizado de información y orientación al alumnado preuniversitario
+   con el objetivo de facilitar los elementos precisos que le permitan
+   decidir coherentemente sobre su futuro académico y profesional.
+   Entendemos que el colectivo preuniversitario engloba tanto al alumnado
+   de centros de enseñanzas preuniversitarias, extranjeros y a personas
+   que acceden por la vía de mayores de 25, 40 o 45 años.
+   Las distintas etapas de las que disfruta el alumnado desde antes de
+   llegar a las aulas hasta después de su graduación serán más
+   enriquecedoras si el estudiantado realiza una inmersión plena en la
+   vida universitaria. Por ello, la Universidad de Sevilla le ofrece
+   diferentes acciones para aprovechar las sinergias, potenciar las
+   posibilidades de participación y promover el mejor conocimiento de la
+   universidad.
+   Para ampliar esta información y conocer los distintos eventos y
+   encuentros, puede acceder al área de Orientación universitaria del
+   portal.
+   En el Centro de Atención a Estudiantes (CAT) se ofrece información
+   sobre la Universidad de Sevilla y de los diferentes procedimientos
+   establecidos para el estudiantado durante las distintas fases de su
+   paso por la universidad. Además, puede consultar la información sobre
+   el proceso de preinscripción, admisión, fechas, etc.
+   Asimismo, la Facultad de Filosofía dispone de una página web que
+   incluye información relevante sobre el centro, las titulaciones y las
+   actividades que se desarrollan (como las prácticas de empresas y los
+   acuerdos de relaciones internacionales) que se actualiza continuamente.
+
+Perfil recomendado
+
+   Es recomendable que la formación del alumno sea de perfil de Artes y
+   Humanidades y/o Ciencias Sociales y Jurídicas y que posea conocimientos
+   de Historia, Geografía, Literatura, Filosofía, Idiomas, Economía, entre
+   otros, de nivel de segundo de bachillerato.
+   No se exigen conocimientos previos de idioma chino o japonés que se
+   deberán obtener durante el desarrollo del Grado, si bien es muy
+   recomendable e importante el dominio de la lengua inglesa, que puede
+   incrementarse durante la realización del Grado.
+   Por otra parte, cualidades tales como el compromiso social y ético, la
+   capacidad para las relaciones interpersonales, la capacidad de análisis
+   y trabajo en equipo, la competencia en resolución de problemas y toma
+   de decisiones, la constancia en el trabajo, la capacidad de adaptación
+   a nuevas técnicas, la curiosidad científica, la capacidad de
+   observación, el interés por el conocimiento son adecuadas como perfil
+   personal del estudiante de este título de Grado, aunque no son
+   imprescindibles, ni su ausencia supone hándicap alguno para el ingreso.
+   Más aún, la adquisición de las competencias y contenidos incluidos en
+   el título favorecerá la adquisición de dichas cualidades.
+
+Requisitos de acceso y procedimiento de admisión
+
+Vías de acceso
+
+Ejemplo de cálculo de notas
+
+     * Cálculo de notas
+     * Fase general
+     * Fase específica
+
+En el siguiente enlace obtendrá información sobre los parámetros de
+ponderación según la titulación:
+
+   Parámetros de ponderación
+
+Planes de acogida
+
+   La Universidad de Sevilla dispone de un amplio conjunto de actividades
+   destinadas a facilitar la llegada y los primeros pasos de estudiantes
+   de nueva matriculación, llevando a cabo un apoyo y acompañamiento que
+   les permita una rápida integración y les dé a conocer las posibilidades
+   de participación universitaria.
+   Puede conocer estas actividades, así como las diferentes jornadas de
+   acogida, en el siguiente enlace.
+   En la página web del centro (Facultad de Filosofía) se despliega más
+   información sobre los planes de acogida.
+
+Sistemas de apoyo, orientación y tutoría al estudiantado matriculado
+
+   La Universidad de Sevilla articula a través de diferentes planes un
+   sistema de apoyo, orientación y tutoría de sus estudiantes. De este
+   modo, desde el área de Orientación universitaria, se ofrecen varios
+   servicios universitarios integrados para el apoyo al estudiante.
+   Por su parte y con el objetivo de mantener a la comunidad de
+   estudiantes activa, la Universidad de Sevilla impulsa diferentes tipos
+   de actividades que garantizan una formación integral y el desarrollo de
+   habilidades artísticas, culturales y sociales en su estudiantado. En la
+   página de Participación estudiantil puede conocer la programación.
+   Para conocer el Plan de orientación y acción tutorial disponible en la
+   Facultad de Filosofía puede consultar el siguiente enlace.
+
+Normas de matrícula, permanencia y evaluación
+
+   Acceder a las Normas de matrícula
+   Acceder a las Normas de permanencia
+   Acceder a las Normas de evaluación
+
+Reconocimiento y transferencia de créditos
+
+   Ver normativa sobre Reconocimiento y transferencia de créditos
+   DATOS DEL TÍTULO
+
+Datos generales, objetivos y competencias
+
+Centro(s) responsables del título
+
+     * FACULTAD DE FILOSOFÍA
+
+Centro(s) en los que se oferta el título
+
+   Centro Internacional - Facultad de Filosofía (Universidad de Sevilla)
+   Facultad de Estudios Sociales y del Trabajo (Universidad de Málaga)
+
+Convenio titulaciones conjuntas
+
+   Convenio Específico entre la Universidad de Málaga y la Universidad de
+   Sevilla para la Implantación y Desarrollo de la Titulación Conjunta de
+   Graduado o Graduada en Estudios de Asia Oriental
+   Acceder al Convenio
+
+Fecha de publicación en el RUCT
+
+   Fecha Consejo de ministro: 16/12/2011
+   Fecha BOE: 06/01/2012
+
+Curso de implantación
+
+   El programa comienza en el curso 2011-2012
+
+Rama de conocimiento
+
+   Artes y Humanidades
+
+Duración del programa
+
+   Créditos: 240.00
+   Años: 4
+
+Tipo de enseñanza
+
+   Presencial
+
+Lenguas utilizadas
+
+   Español
+
+Información sobre horarios, aulas y exámenes
+
+   Los horarios están disponibles en la Facultad de Filosofía
+
+Procedimiento para la expedición del suplemento Europeo al título
+
+   BOE del procedimiento
+
+Perfil del profesorado
+
+   Perfil del profesorado
+   Categoría Número Doctores/as ECTS Quinquenios Sexenios Áreas de
+   conocimiento
+   Catedrático de Universidad 6 6 23 28 23 100_Composición Arquitectónica
+   135_Derecho Constitucional
+   225_Economía Aplicada
+   465_Historia del Arte
+   Prof Permanente Laboral-Mod PCD Interino 1 1 21 0 0 568_Estudios de
+   Asia Oriental
+   Profesor Ayudante Doctor 8 8 64 6 3 568_Estudios de Asia Oriental
+   375_Filosofía
+   445_Historia Antigua
+   450_Historia Contemporanea
+   485_Historia Medieval
+   650_Organización de Empresas
+   740_Psicología Social
+   Profesor Contratado Doctor 3 3 22 8 2 030_Antropología Social
+   105_Comunicación Audiovisual y Publicidad
+   568_Estudios de Asia Oriental
+   Profesor Emérito 1 1 6 0 0 430_Geografía Física
+   Profesor Permanente Laboral - Mod. PCD 1 1 16 2 0 568_Estudios de Asia
+   Oriental
+   Profesor Sustituto 5 4 28 0 2 135_Derecho Constitucional
+   568_Estudios de Asia Oriental
+   490_Historia Moderna
+   455_Historia de América
+   695_Prehistoria
+   Profesor Titular de Universidad 9 9 55.6 41 12 010_Análisis Geográfico
+   Regional
+   225_Economía Aplicada
+   375_Filosofía
+   445_Historia Antigua
+   450_Historia Contemporanea
+   485_Historia Medieval
+   583_Literatura Española
+
+Otros recursos humanos disponibles
+
+   Recursos humanos
+
+Recursos materiales disponibles asignados
+
+   Recursos materiales
+
+Cronograma
+
+   El título de Grado en Estudios de Asia Oriental se implanta curso a
+   curso a partir del curso académico 2011/12.
+   - 2011-2012: Primer curso
+   - 2012-2013: Segundo curso
+   - 2013-2014: Tercer curso
+   - 2014-2015: Cuarto cuarto
+
+Objetivos y Resultados
+
+Objetivos
+
+   El programa ofrece la adquisición de las habilidades y conocimientos
+   necesarios para resolver las situaciones de contacto intercultural y
+   desenvolverse en el nuevo mundo globalizado de la comunicación con
+   dicha área:
+   - Conocer las lenguas hegemónicas en el Asia Oriental (chino y japonés,
+   que ya se imparten en el Instituto de Idiomas de la Universidad de
+   Sevilla, y coreano, en la Universidad de Málaga).
+   - Conocer y valorar la historia, arte, literatura, geografía,
+   antropología, pensamiento, así como los sistemas de valores, ideologías
+   y creencias de Asia Oriental que agilicen las relaciones en situaciones
+   de interculturalidad (cooperación y desarrollo, protocolo, negociación,
+   toma de decisiones, intercambios culturales, políticas de igualdad,
+   etc.).
+   - Conocer las particularidades históricas del desarrollo cultural,
+   político, social y económico de Asia Oriental (modelo chino, modelo
+   japonés y modelo coreano), valorar su emergencia actual y la
+   importancia de esta evolución en las relaciones con la UE, España y
+   Andalucía (empresas, mercados, importación-exportación, ocio y
+   desarrollo cultural).
+   - Comprender el fenómeno del movimiento humano (en contextos tanto de
+   inmigración como de turismo ambos fundamentales para la comunidad
+   andaluza) así como las cuestiones sociales de género, de diversidad y
+   de identidad étnica y cultural en las sociedades de Asia Oriental.
+
+Resultados del proceso de formación y de aprendizaje
+
+   Competencias Básicas RD 1393/2007
+   CB1 Que los estudiantes hayan demostrado poseer y comprender
+   conocimientos en un área de estudio que parte de la base de la
+   educación secundaria general, y se suele encontrar a un nivel que, si
+   bien se apoya en libros de texto avanzados, incluye también algunos
+   aspectosque implican conocimientos procedentes de la vanguardia de su
+   campo de estudio.
+   CB2 Que los estudiantes sepan aplicar sus conocimientos a su trabajo o
+   vocación de una forma profesional y posean las competencias que suelen
+   demostrarse por medio de la elaboración y defensa de argumentos y la
+   resolución de problemas dentro de su área de estudio.
+   CB3 Que los estudiantes tengan la capacidad de reunir e interpretar
+   datos relevantes (normalmente dentro de su área de estudio) para emitir
+   juicios que incluyanuna reflexión sobre temas relevantes de índole
+   social, científica o ética.
+   CB4 Que los estudiantes puedan transmitir información, ideas, problemas
+   y soluciones a un público tanto especializado como no especializado.
+   CB5 Que los estudiantes hayan desarrollado aquellas habilidades de
+   aprendizaje necesarias para emprender estudios posteriores con un alto
+   grado de autonomía.
+   COMPETENCIAS GENERALES (G) y TRANSVERSALES (CT):
+   G6 Compromiso ético (capacidad crítica y autocrítica y adopción de
+   actitudes coherentes con los principios éticos y profesionales).
+   G7 Capacidad de aprendizaje (capacidad de análisis, de síntesis, de
+   visión global y de aplicación de los conocimientos a la práctica).
+   G8 Capacidad de tomar decisiones y resolución de problemas, así como de
+   adaptarse a situaciones nuevas.
+   G9 Capacidad de trabajar en equipo y de contribuir a un proyecto común
+   (incluyendo la participación en proyectos interdisciplinares y el
+   trabajo en equipos multiculturales e internacionales).
+   G10 Sostenibilidad (capacidad de valorar el impacto social y
+   medioambiental de actuaciones en su ámbito).
+   G11 Capacidad comunicativa (capacidad de comprensión, de expresión oral
+   y escrita en castellano e inglés, dominio del lenguaje especializado,
+   realización de presentaciones).
+   G12 Capacidad de búsqueda, uso e integración de información, incluyendo
+   el conocimiento de las nuevas tecnologías de información.
+   G13 Capacidad para la planificación y gestión del tiempo.
+   G14 Preocupación por la calidad.
+   G15 Fomentar una actitud reflexiva y crítica basada en la tolerancia y
+   en el respeto hacia las formas socioculturales distintas a la propia.
+   G16 Desarrollar una actitud receptiva y crítica hacia la información
+   procedente de otros contextos culturales y utilizar dicha información
+   para eliminar prejuicios y estereotipos y para reflexionar sobre el
+   contexto sociocultural propio.
+   CT1 Fomentar el espíritu emprendedor.Capacidad creativa y emprendedora
+   (capacidad de formular, diseñar y gestionar proyectos, de asimilar
+   nuevos conocimientos y de asumir nuevos retos).
+   CT2 Fomentar y garantizar el respeto a los Derechos Humanos y a los
+   principios de accesibilidad universal, igualdad, no discriminación y
+   los valores democráticos y de la cultura de la paz.
+   COMPETENCIAS ESPECÍFICAS MÓDULO DE FORMACIÓN BÁSICA:
+   E1 Identificar los principales accidentes geográficos así como las
+   principales características de las sociedades de Asia Oriental en su
+   relación con los espacios y territorios.
+   E2 Valorar los fundamentos clásicos del desarrollo histórico y los
+   diferentes sistemas religiosos de Asia Oriental.
+   E3 Valorar las principales manifestaciones artísticas, estéticas y
+   literarias de Asia Oriental.
+   E4 Emplear las estrategias de la negociación y la mediación
+   intercultural en relación con Asia Oriental.
+   E5 Analizar la situación económica y los flujos comerciales en Asia
+   Oriental y su influencia en el mundo en época contemporánea.
+   E6 Identificar los diferentes sistemas y corrientes de pensamiento
+   clásico de Asia Oriental así como sus pensadores de referencia más
+   destacados.
+   E7 Analizar las características de los diferentes sistemas políticos de
+   Asia Oriental en época contemporánea.
+   COMPETENCIAS ESPECÍFICAS MÓDULO DE IDIOMA:
+   E8 Comprender textos orales y escritos en la lengua estudiada dentro de
+   un contexto o registro concreto (situaciones cotidianas, contextos
+   profesionales, etc.).
+   E9 Conocer y comprender las reglas de funcionamiento y sabe utilizarlas
+   para comunicarse de manera adecuada a su nivel de competencia
+   lingüística.
+   E10 Producir e interpretar textos orales y escritos adecuándolos a un
+   contexto o registro completo, haciendo uso rápido y activo dela lengua,
+   y aplicando estrategias apropiadas para compensar, en una situación de
+   comunicación oral o escrita, deficiencias en el dominio del código
+   lingüístico u otras lagunas de comunicación.
+   E11 Apreciar los significados sociales y culturales que transmite la
+   lengua estudiada, ya que esto supone otra manera distinta de establecer
+   las relaciones sociales e interpersonales.
+   COMPETENCIAS ESPECÍFICAS MÓDULO DE SOCIEDADES Y CULTURAS:
+   E12 Situar los flujos migratorios vinculados a Asia Oriental en el
+   mundo actual.
+   E13 Identificar las obras y autores principales de la literatura
+   contemporánea en Asia Oriental.
+   E14 Analizar las múltiples interacciones culturales entre Occidente y
+   Asia Oriental en época moderna y contemporánea.
+   E15 Analizar e implementar, en su caso, la importancia de las nuevas
+   tecnologías de la información y la comunicación en el panorama actual
+   de Asia Oriental.
+   E16 Comprender los procesos del desarrollo histórico de Asia Oriental
+   en los siglos de la modernidad.
+   E17 Comprender la dirección de producción/operaciones, y relaciones de
+   comercio exterior de Asia Oriental.
+   E18 Identificar las pautas de la cultura urbana y del desarrollo de la
+   arquitectura de Asia Oriental en época contemporánea.
+   E19 Analizar la conjunción de elementos tradicionales y de modernidad
+   que se manifiestan en la cultura contemporánea de Asia Oriental
+   E20 Comprender los procesos del desarrollo histórico de Asia Oriental
+   en la edad contemporánea.
+   E21 Analizar la diversidad étnica de Asia Oriental y la importancia de
+   la preservación de su legado cultural frente a los peligros que la
+   amenazan.
+   E22 Valorar la presencia empresarial de Asia Oriental en los espacios
+   europeos e iberoamericanos.
+   E23 Capacidad de reflexión crítica sobre la creación, la experiencia
+   estética y la naturaleza del arte.
+   E24 Capacidad de comprensión, transmisión y comunicación del sentido
+   artístico de lo real y de la experiencia artística y estética.
+   E25 Capacidad para manejar y ampliar la información recibida sobre las
+   épocas, obras, autores y géneros literarios esenciales de Corea en sus
+   contextos y procesos de desarrollo e interacción.
+   E26 Capacidad para manejar y ampliar la información recibida sobre las
+   épocas, obras, autores y escuelas de pensamiento y religiosas
+   esenciales de Corea en sus contextos y procesos de desarrollo e
+   interacción.
+   E27 Capacidad para manejar y ampliar la información recibida sobre la
+   política y las geoestrategias en la península coreana.
+   E28 Identificar los principales corrientes y sistemas del pensamiento
+   moderno y contemporáneo en Asia Oriental.
+   COMPETENCIAS ESPECÍFICAS MÓDULO DE OPTATIVAS:
+   E29 Emplear las habilidades directivas y culturales en ámbitos de
+   organizaciones multinacionales vinculadas a Asia Oriental.
+   E30 Conocer la evolución de la medicina tradicional china, japonesa y
+   coreana desde las primeras evidencias gráficas hasta la actualidad.
+   E31 Valorar el legado cultural y el patrimonio ligado a las rutas de la
+   seda que atravesaban Eurasia e interconectaban los espacios asiáticos y
+   mediterráneos, fundamentalmente en la Antigüedad.
+   E32 Valorar el patrimonio artístico y literario vinculado a las artes
+   escénicas y la poesía en China y Japón.
+   E33 Identificar las principales tendencias y géneros del cine y la
+   comunicación audiovisual en Asia Oriental.
+   E34 Conocer y valorar la importancia del conjunto patrimonial artístico
+   de las culturas de Asia Oriental.
+   E35 Analizar los fundamentos de la construcción de género y de la
+   construcción de parentesco en las sociedades de Asia Oriental.
+   E36 Valorar las tradiciones históricas de los vínculos entre España,
+   Iberoamérica y Asia Oriental.
+   E37 Identificar las pautas del movimiento humano en los procesos de
+   cambios urbanos y territoriales de Asia Oriental en época actual.
+   E38 Efectuar un uso rápido, activo y frecuente de la lengua china
+   acorde con el nivel estudiado.
+   E39 Efectuar un uso rápido, activo y frecuente de la lengua japonesa
+   acorde con el nivel estudiado.
+   E40 Capacidad para manejar y ampliar la información recibida sobre
+   chamanismo y prácticas religiosas en su contexto y procesos de
+   desarrollo e interacción
+   E41 Capacidad para manejar y ampliar la información recibida sobre la
+   cultura escénica de Corea.
+   E42 Tener competencia en el uso de la lengua coreana en un contexto de
+   negocios.
+   E43 Conocer y manejar las claves de la educación como mercado,
+   vinculando España, Corea, Iberoamérica.
+   E44 Capacidad para conocer las pautas del auge de las nuevas
+   tecnologías en Corea, así como sus fortalezas y debilidades. Impacto en
+   el medio ambiente.
+   E45 Capacidad de conocer los principios teóricos fundamentales para la
+   mediación y negociación en el ámbito de los negocios en Corea.
+   Superación de barreras culturales.
+   E46 Capacidad de conocer las principales causas históricas que han
+   determinado las relaciones entre España, Latino América y Asia
+   Oriental.
+   E47 Capacidad de conocer las claves principales de las relaciones
+   políticas, diplomáticas, económicas y culturales entre España, Latino
+   América y Asia Oriental.
+   E48 Aplicar los conocimientos adquiridos en los demás módulos a través
+   de estancias en instituciones relacionadas con Asia Oriental, tomando
+   contacto con la realidad profesional a través de la propia experiencia.
+   E49 Capacidad para manejar y ampliar la información recibida sobre la
+   cultura popular y contemporánea en Corea.
+   E50 Identificar las principales construcciones míticas y heroicas
+   vinculadas a las religiones y a los procesos históricos de la
+   Antigüedad china y japonesa.
+   COMPETENCIAS ESPECÍFICAS MÓDULO DE TFG:
+   E51 Ejercicio original a realizar individualmente y presentar y
+   defender ante un tribunal universitario, consistente en un proyecto en
+   el ámbito de los Estudios de Asia Oriental en el que se sinteticen e
+   integren las competencias adquiridas en las enseñanzas de los módulos
+   del Plan de Estudios.
+
+Salidas profesionales y académicas
+
+Salidas profesionales
+
+   - Agente intermediario en las relaciones entre personas de Andalucía y
+   Asia y entre entidades públicas y privadas de los países implicados.
+   - Formalizar análisis de países asiáticos a petición de las
+   instituciones o empresas (asesoramiento en los ámbitos de políticas de
+   promoción cultural, turística, lingüística, educativa, industrial o
+   comercial).
+   - Trabajo, asesoramiento y colaboración en empresas que deseen
+   instalarse o ya estén instaladas en China, Japón o Corea, así como con
+   fundaciones, organismos e instituciones ya presentes en Asia Oriental o
+   Andalucía (por ej. Agencias Oficiales de Turismo, “Institutos
+   Cervantes” en Asia o “Institutos Confucio” en España).
+   - Promover las relaciones y la integración entre personas de Asia
+   Oriental y la UE, España y Andalucía.
+   - Docencia e investigación en el ámbito de los estudios asiáticos y
+   humanísticos.
+   - Asesoramiento y colaboración en el ámbito del mundo de la cultura
+   (museos, fundaciones privadas, etc.) de la educación (Enseñanza,
+   Universidades, Centros de Investigación, etc.) y de los medios de
+   comunicación (prensa, radio, televisión, plataformas digitales, etc.)
+   que requieran conocimientos específicos sobre mundo asiático.
+
+Salidas académicas
+
+   - Máster Universitario en Enseñanza del Español como Lengua Extranjera
+   y de Otras Lenguas Modernas.
+   - Máster Universitario en Estudios Hispánicos Superiores.
+   - Máster Universitario en Traducción e Interculturalidad.
+   - Máster Universitario en Profesorado de Educación Secundaria
+   Obligatoria y Bachillerato, Formación Profesional y Enseñanzas de
+   Idiomas.
+   Para más información sobre másteres oficiales puede consultar el
+   siguiente enlace (clic aquí).
+
+Sistema de garantía de calidad
+
+Memoria
+
+     * Memoria de verificación
+     * Informe de verificación
+     * Informe de modificación 2016_0
+     * Informe de modificación 2021_0
+
+Resultados del título
+
+   Tasa de graduación Porcentaje de estudiantes que finalizan la enseñanza
+   en el tiempo previsto en el plan de estudios o en un año académico más
+   en relación a su cohorte de entrada.
+   Tasa de abandono Relación porcentual entre el número total de
+   estudiantes de una cohorte de nuevo ingreso que debieron obtener el
+   título el año académico anterior y que no se han matriculado ni en ese
+   año académico ni en el anterior.
+   Tasa de eficiencia Relación porcentual entre el número total de
+   créditos del plan de estudios a los que debieron haberse matriculado a
+   lo largo de sus estudios el conjunto de graduados de un determinado año
+   académico y el número total de créditos en los que realmente han tenido
+   que matricularse.
+   Tasa de rendimiento Relación porcentual entre el número total de
+   créditos superados (excluidos adaptados, convalidados y reconocidos)
+   por el alumnado en un estudio y el número total de créditos
+   matriculados.
+   Tasa de éxito Relación porcentual de créditos superados por el alumnado
+   en un curso y el número de créditos correspondientes a las asignaturas
+   a las que se ha presentado.
+     Descripción     2019-2020 2020-2021 2021-2022 2022-2023 2023-2024 2024-2025
+ Tasa de graduación  61.29     52.83     52.63     54.69     60.00     58.21
+ Tasa de abandono    16.13     9.43      28.07     17.19     18.46     23.88
+ Tasa de eficiencia  94.89     95.15     94.01     92.91     90.93     89.08
+ Tasa de rendimiento 88.94     86.16     83.21     83.85     81.86     78.70
+ Tasa de éxito       97.70     95.20     95.74     94.30     93.84     92.54
+   Descripción 2019-2020 2020-2021 2021-2022 2022-2023 2023-2024 2024-2025
+   Estudiantes de nuevo ingreso en el Título 61.00 66.00 64.00 61.00 59.00
+   53.00
+   Nota media de ingreso 10.92 11.47 11.04 10.80 9.91 8.85
+   Duración media de los estudios 4.86 4.72 4.95 6.19 4.82
+   Satisfacción del alumnado con los estudios    (*) 2.31 2.04 3.27 3.26
+   2.98 3.49
+   Satisfacción del PDI 3.50 3.25 3.86 3.75 3.67 3.15
+   Satisfacción del personal de apoyo 4.22 4.50 4.29 4.53 4.36 4.67
+   Satisfacción de los egresados 3.25 3.00 3.26 3.08 2.74
+   Satisfacción de los empleadores 4.60 4.25 4.25 4.92
+   Satisfacción del estudiantado con la IPD del título 2.50 2.59 3.25 3.25
+   2.98 3.40
+   Satisfacción del profesorado con la IPD del título 3.90 3.55 4.00 4.13
+   3.83 3.62
+   Satisfacción del PTGAS con la IPD del título 4.50 4.00 4.40 4.47 4.29
+   4.61
+   Grado de inserción laboral de titulados y tituladas 20.59 25.00 26.32
+   25.71 57.50 26.92
+   Movilidad internacional de alumnos
+   % o número de alumnos de movilidad entrantes 3.75 2.16 2.20 2.21 4.09
+   4.02
+   % o número de alumnos de movilidad salientes 8.24 1.80 6.59 10.33 9.67
+   10.04
+   Oferta plazas de prácticas externas 31.00 41.00 14.00 42.00 27.00
+   Nivel de satisfacción con las prácticas externas 4.17 4.17 4.26 4.10
+   4.42 4.58
+   Total de alumnos matriculados SIN créditos reconocido 260.00 268.00
+   264.00 246.00 247.00 221.00
+   Total de alumnos matriculados 267.00 278.00 273.00 276.00 269.00 248.00
+   (*) A partir del curso 2016/2017 se puntúa sobre 5.
+
+Información sobre el Sistema de Garantía de Calidad del Título
+
+Sistema de Garantía de Calidad de los Títulos
+
+     * SGCT
+
+Seguimientos:
+
+     * Informe de seguimiento de la DEVA 2010-2011
+     * Autoinforme de seguimiento y/o Plan de mejora del Título 2011-2012
+          + Informe de seguimiento de la DEVA 2011-2012
+     * Autoinforme de seguimiento y/o Plan de mejora del Título 2012-2013
+          + Informe de seguimiento de la DEVA 2012-2013
+     * Autoinforme de seguimiento y/o Plan de mejora del Título 2013-2014
+          + Informe de seguimiento de la DEVA 2013-2014
+     * Autoinforme de seguimiento y/o Plan de mejora del Título 2014-2015
+          + Informe de seguimiento de la DEVA 2014-2015
+     * Autoinforme de seguimiento y/o Plan de mejora del Título 2016-2017
+     * Autoinforme de seguimiento y/o Plan de mejora del Título 2017-2018
+          + Informe de seguimiento de la DEVA 2017-2018
+     * Autoinforme de seguimiento y/o Plan de mejora del Título 2020-2021
+          + Informe de seguimiento de la DEVA 2020-2021
+
+Renovación de la acreditación:
+
+     * Autoinforme global 2015-2016
+          + Informe final 2015-2016
+
+     Autoinforme global 2021-2022
+     * Informe final 2021-2022
+
+Plan de Mejora:
+
+     * Plan de mejora del título
+
+   Sugerencias y reclamaciones
+   Buzón de quejas, sugerencias, felicitaciones e incidencias Expon@us
+   PLANIFICACIÓN DE LA ENSEÑANZA
+
+Plan de Estudios
+
+                             Estructura general
+
+                                  Créditos
+
+   Formación Básica 60
+   Obligatorios 48
+   Optativos 126
+   Prácticas externas Practicum obligatorio 0.00
+   Prácticas en empresas (optativas) 18.00
+   Trabajo Fin de Grado 6
+
+Organización de las asignaturas
+
+   Hoja informativa del Plan de Estudios
+
+   CAPTION: Asignaturas
+
+   Curso Código Asig. Asignatura Créditos Tipo
+   1 2190001 Arte y Estética en Asia Oriental 6.00 Formación Básica
+   1 2190002 Chino I 6.00 Optativa
+   1 2190008 Chino II 6.00 Optativa
+   1 2190004 Economía Contemporánea de Asia Oriental 6.00 Formación Básica
+   1 2190005 Geografía de Asia 6.00 Formación Básica
+   1 2190075 Historia Antigua de Asia Oriental 6.00 Formación Básica
+   1 2190006 Historia de las Religiones de Asia Oriental 6.00 Formación
+   Básica
+   1 2190076 Historia Medieval de Asia Oriental 6.00 Formación Básica
+   1 2190013 Japonés I 6.00 Optativa
+   1 2190014 Japonés II 6.00 Optativa
+   1 2190007 Literaturas Clásicas de Asia Oriental 6.00 Formación Básica
+   1 2190077 Modelos de Pensamiento en Asia Oriental 6.00 Formación Básica
+   2 2190015 Chino III 6.00 Optativa
+   2 2190022 Chino IV 6.00 Optativa
+   2 2190016 Comercio y Relaciones Internacionales de Asia Oriental 6.00
+   Formación Básica
+   2 2190024 Cultura Digital y Nuevas Tecnologías de la Información y la
+   Comunicación en Asia Oriental 6.00 Obligatoria
+   2 2190025 Economía y Finanzas de Asia Oriental 6.00 Obligatoria
+   2 2190018 Escrituras Contemporáneas de Asia Oriental 6.00 Obligatoria
+   2 2190026 Historia Moderna de Asia Oriental 6.00 Obligatoria
+   2 2190019 Japonés III 6.00 Optativa
+   2 2190027 Japonés IV 6.00 Optativa
+   2 2190020 Mediación y Negociación Intercultural con Asia Oriental 6.00
+   Formación Básica
+   2 2190021 Teorías del Diálogo y la Interculturalidad 6.00 Obligatoria
+   2 2190028 Turismo y Flujos Migratorios en Asia Oriental 6.00
+   Obligatoria
+   3 2190029 Arquitectura y Ciudad en Asia Oriental 6.00 Optativa
+   3 2190030 Chino V 6.00 Optativa
+   3 2190031 Chino VI 6.00 Optativa
+   3 2190040 Chino VII 6.00 Optativa
+   3 2190041 Chino VIII 6.00 Optativa
+   3 2190044 Cultura Contemporánea de Asia Oriental 6.00 Optativa
+   3 2190034 Diversidad e Identidades Étnicas de Asia Oriental 6.00
+   Optativa
+   3 2190045 Economía de las Empresas Asiáticas y su Penetración en España
+   e Iberoámerica 6.00 Obligatoria
+   3 2190036 Historia Contemporánea de Asia Oriental 6.00 Obligatoria
+   3 2190037 Japonés V 6.00 Optativa
+   3 2190038 Japonés VI 6.00 Optativa
+   3 2190046 Japonés VII 6.00 Optativa
+   3 2190047 Japonés VIII 6.00 Optativa
+   3 2190048 Pensamiento Moderno y Contemporáneo de Asia Oriental 6.00
+   Optativa
+   4 2190051 Artes Escénicas y Poesía en China y Japón 6.00 Optativa
+   4 2190066 Cambio Urbano y Territorial en Asia Oriental 6.00 Optativa
+   4 2190054 Chino IX 6.00 Optativa
+   4 2190067 Chino X 6.00 Optativa
+   4 2190055 Cine y Cultura Audiovisual en Asia Oriental 6.00 Optativa
+   4 2190078 Coreano IX 6.00 Optativa
+   4 2190079 Coreano X 6.00 Optativa
+   4 2190069 Género y Familia en Asia Oriental 6.00 Optativa
+   4 2190058 Habilidades Directivas y Culturales en Organizaciones de Asia
+   Oriental 6.00 Optativa
+   4 2190080 Historia Actual de Asia Oriental 6.00 Optativa
+   4 2190081 Introducción a la Traducción Coreano-Español 6.00 Optativa
+   4 2190059 Japonés IX 6.00 Optativa
+   4 2190070 Japonés X 6.00 Optativa
+   4 2190060 La Ruta de la Seda 6.00 Optativa
+   4 2190071 Mitologías de China y Japón 6.00 Optativa
+   4 2190063 Patrimonio Artístico de Asia Oriental 6.00 Optativa
+   4 2190072 Prácticas Externas 18.00 Optativa
+   4 2190064 Relaciones Internacionales de España, Latinoamérica y Asia
+   Oriental 6.00 Optativa
+   4 2190082 Sistemas Constitucionales en Asia Oriental 6.00 Optativa
+   4 2190074 Trabajo Fin de Grado 6.00 Trabajo fin de grado
+
+Plan de estudios del título publicado en BOE
+
+   Plan de Estudios Publicado en BOE
+
+Menciones (grados) / Especialidades (másteres)
+
+   El Plan de Estudios está dirigido a la Obtención del Grado en Estudios
+   de Asia Oriental, con tres menciones:
+   - Mención China.
+   - Mención Japón.
+   - Mención Corea.
+   Las menciones tanto de China como la de Japón tendrán lugar en la sede
+   de la Universidad de Sevilla mientras que la Mención Corea se llevará a
+   cabo en la sede de la Universidad de Málaga.Para la matriculación de
+   las distintas menciones del módulo de idiomas del Grado en Estudios de
+   Asia Oriental el procedimiento establecido será el siguiente:
+   En el caso de la elección de la mención China en la sede de Sevilla,
+   el/la alumno/a deberá únicamente automatricular las asignaturas de
+   Chino establecidas en el plan de estudios (Chino I, II, III, IV, V, VI,
+   VII y VIII). De manera habitual el alumnado suele matricularse el
+   primer curso de dos asignaturas de mención (Chino I y Chino II).
+   Progresivamente cursarán el resto en los demás cursos.
+   En el caso de que la elección sea la mención Japón (sede de Sevilla
+   también), el/la alumno/a automatriculará las asignaturas de Japonés
+   (Japonés I, II, III, IV, V, VI, VII y VIII). Igualmente el primer curso
+   el alumnado matricula sólo las dos primeras y sucesivamente las cursa
+   todas.
+   De igual manera si la elección es la mención Corea a cursar en la sede
+   de Málaga. (Coreano I, II, III, IV, V, VI, VII y VIII).
+   Si finalmente el/la alumno/a elige cursar las dos menciones de la sede
+   de Sevilla (China y Japón), deberá automatricular las asignaturas de
+   Chino y de Japonés. Esto implica que el alumno deberá matricular ocho
+   asignaturas de Chino y ocho de japonés a lo largo de los diferentes
+   cursos.
+   Por lo tanto los alumnos que cursen una mención realizarán 240 créditos
+   ECTS mientras que los alumnos de doble mención cursarán 288 créditos
+   ECTS.
+
+Coordinación docente horizontal y vertical
+
+   Coordinación docente
+
+Prácticas externas y Trabajo Fin de Grado
+
+Curriculares
+
+Descripción del Prácticum
+
+   Este Grado no contempla prácticas OBLIGATORIAS.
+   Las Prácticas Externas constituyen una materia OPTATIVA en el Grado en
+   Estudios de Asia Oriental, que tiene como objeto proporcionar al alumno
+   la posibilidad de aplicar los conocimientos adquiridos de acuerdo a las
+   competencias que marca la presente memoria. Se pretende que el futuro
+   Graduado tome contacto con el ámbito profesional, preparándolo para
+   realizar actividades a las que se van a dedicar en su futuro.
+   Las Prácticas Externas se podrán realizar en instituciones relacionadas
+   con Asia Oriental, como por ejemplo Fundación ADEC JAP-AN, que promueve
+   numerosas actividades de estudio y difusión de la cultura japonesa en
+   Andalucía, y fundaciones similares en el ámbito de China y Corea, entre
+   otros. Para ello, se firmarán los correspondientes convenios de
+   formación académica.
+   Por otro lado, y al estar este Grado dedicado al estudio
+   multidisciplinar de China, Japón y Corea, las Universidades de Málaga y
+   Sevilla fomentarán la movilidad de sus estudiantes a Universidades de
+   los países fruto de estudio. Esto se articulará mediante estancias
+   cortas, que podrán ser convalidadas por las prácticas externas (18
+   ECTS). A tal objeto, se formalizarán convenios específicos con
+   Universidades de los tres países, con algunas de las cuales ya existen
+   convenios marco de colaboración académica y científica.
+   Las condiciones de los convenios con entidades externas para la
+   realización de las Prácticas tuteladas incluyen la exigencia de que
+   cuenten con por lo menos con un profesional experto o mentor externo,
+   que actuará como tutor de los estudiantes en prácticas durante su
+   período de permanencia en el Centro/Universidad, y un tutor académico
+   vinculado a la universidad de Sevilla/Málaga.
+   La supervisión general de las Prácticas externas correrá a cargo de los
+   Decanatos de los Centros responsables, que velarán por la correcta
+   coordinación entre los tutores académicos y los tutores
+   profesionales/externos con objeto de que el alumno adquiera las
+   competencias previstas en las prácticas externas, y de que se evalúen
+   adecuadamente los resultados de su formación.
+   En la página web del centro (Facultad de Filosofía) se encuentra
+   información más detallada sobre las prácticas, convenios y
+   documentación complementaria.
+
+¿Se pueden hacer en otra Universidad española o en el extranjero?
+
+   No
+
+Extracurriculares
+
+Descripción e interés de las mismas en la formación del estudiante
+
+   La Universidad de Sevilla (US) ofrece a sus estudiantes y titulados la
+   posibilidad de completar su formación académica y adquirir una
+   experiencia profesional a través de la realización de prácticas en
+   empresas e instituciones.
+   Estas prácticas son inmersiones profesionales en empresas o
+   instituciones que tienen la finalidad de proporcionar:
+   - Un conocimiento más cercano del entorno laboral.
+   - El desarrollo de aptitudes y actitudes profesionales.
+   - La adquisición de hábitos, prácticas y valores propios del mundo del
+   trabajo.
+   Constituyen un importante complemento de la formación académica, un
+   rodaje orientado a facilitar la posterior inserción laboral.
+   La gestión de los programas de prácticas de la US se desarrolla a
+   través del Secretariado de Prácticas en Empresa y Empleo (SPEE) y sus
+   Centros Universitarios.
+
+¿Se pueden hacer en otra Universidad española o en el extranjero?
+
+   Sí
+
+Normativa
+
+   Normativa
+
+Convenios o empresas donde realizar
+
+   Convenios de prácticas
+
+Trabajo fin de Grado
+
+   El Trabajo Fin de Grado (6 ECTS) consistirá en un ejercicio original
+   que será realizado individualmente y presentado y defendido ante un
+   tribunal universitario. El ejercicio deberá consistir en un proyecto en
+   el ámbito de alguna de las menciones específicas de los Estudios en
+   Asia Oriental, en el que se sinteticen e integren las competencias
+   adquiridas en las enseñanzas.
+   Esta materia completa la formación del estudiante y se realizará en la
+   última parte de los estudios. Los estudiantes deberán desarrollar un
+   trabajo que sintetice los conocimientos y las competencias asociados al
+   título. Se creará una comisión de TFG que coordinará todo el proceso y
+   asignará un tutor a cada estudiante que le orientará en todo momento.
+   La comisión organizará seminarios específicos para orientar al
+   estudiante en la elaboración del trabajo.
+   Independientemente de la normativa que regule la organización del
+   Trabajo Fin de Grado, se deberá nombrar un tutor académico que vele por
+   el desarrollo adecuado del mismo, y no podrá defenderse sin haber
+   superado previamente todas las materias del Grado.
+   Las actividades formativas de esta materia consistirán fundamentalmente
+   en tutorización y trabajo autónomo del estudiante. No obstante, podrán
+   establecerse algunas clases presenciales previas para la presentación
+   de elementos genéricos sobre la realización del Trabajo Fin de Grado.
+   En la página web de la Facultad de Filosofía se detallan las fases y
+   procedimientos para el TFG, así como el calendario de convocatorias.
+   Para más información, puede consultar la normativa propia del centro
+   sobre Trabajos Fin de Estudios en el siguiente enlace (clic aquí). Del
+   mismo modo, se encuentra disponible la normativa reguladora TFE de la
+   Universidad de Sevilla aquí.
+
+Movilidad
+
+   La movilidad de los estudiantes se realiza en base a los convenios de
+   cooperación que la Universidad de Sevilla tiene con el resto de
+   universidades extranjeras y nacionales con garantía de reconocimiento
+   académico y aprovechamiento.
+   Los alumnos podrán cursar parte de sus estudios en otras Facultades que
+   los oferten del territorio nacional a través del Sistema de Intercambio
+   entre Centros Universitarios Españoles (SICUE).
+   Erasmus es el programa que trata la cooperación transnacional en la
+   Enseñanza Superior, entre cuyas acciones se contempla el fomento, a
+   través de becas, de la movilidad de estudiantes.
+
+Movilidad nacional
+
+¿Convenios SICUE para realizar 1 año en una Universidad Española?
+
+   Sí
+   El Sistema de Intercambio entre Centros Nacionales Españoles (SICUE) es
+   el Programa de Movilidad Nacional promovido por la Conferencia de
+   Rectores de las Universidades Españolas (CRUE).
+   Por medio de este programa los estudiantes de las universidades
+   españolas pueden realizar una parte de sus estudios de Grado en otra
+   universidad distinta a la suya, con garantías de reconocimiento
+   académico y de aprovechamiento, así como de adecuación a su perfil
+   curricular.
+   El intercambio de estudiantes se basa en la confianza entre
+   instituciones, la transparencia informativa, la reciprocidad y la
+   flexibilidad.
+   Para acceder a toda la información de los Programas de movilidad
+   nacional, consulte el siguiente enlace. Del mismo modo, también puede
+   conocer los datos de contacto de la persona responsable de relaciones
+   internacionales de cada centro.
+
+Movilidad internacional
+
+¿Convenios ERASMUS para Universidades Extranjeras?
+
+   Sí
+
+Normativa
+
+   Programas de Movilidad
+   Toda la información relacionada con la movilidad de estudiantes se
+   recoge anualmente en la Guía de estudiantes.
+   Para más información sobre Movilidad Internacional consulte el Centro
+   Internacional de la Universidad de Sevilla. Además, en el siguiente
+   enlace encontrará información sobre los programas de movilidad
+   internacional y las convocatorias vigentes.
+
+Formación, innovación y evaluación del profesorado
+
+Programas de formación, e innovación del profesorado
+
+   El Secretariado de Innovación Educativa planifica y desarrolla su
+   actividad formativa con sujeción a las diferentes actuaciones previstas
+   dentro del IV Plan Propio de Docencia de la Universidad de Sevilla.
+   Esta actuación del PPD pretende continuar la reflexión y el análisis en
+   la mejora docente y en la renovación metodológica, como un trabajo
+   conjunto, en el que intervengan equipos docentes (transversales y
+   multidisciplinares), líderes institucionales (equipos de gobierno de
+   centros y departamentos) y, por supuesto el alumnado. En concreto,
+   dicha actividad formativa se realiza en base a los siguientes Programas
+   y Actuaciones:
+   - Acciones formativas para la adquisición y mejora del diseño de la
+   enseñanza, el aprendizaje de los estudiantes, metodologías didácticas,
+   competencias digitales, tutoría y evaluación (Actuación 2.1.2 del IV
+   PPD)
+   - Creación, desarrollo y consolidación de Grupos de Apoyo entre
+   Docentes Actuación 2.1.3 del IV PPD)
+   - Impulso a la docencia bilingüe (Actuación 2.1.5 del IV PPD)
+   - Apoyo a la innovación docente (Actuación 2.2.1 del IV PPD)
+   Puede encontrar más información en la página web del Secretariado de
+   Innovación Educativa disponible en este enlace.
+
+Programa de evaluación docente del profesorado
+
+   El Programa DOCENTIA (Programa de Apoyo a la Evaluación de la Actividad
+   Docente del Profesorado Universitario) puesto en marcha por ANECA en
+   coordinación con las agencias de evaluación autonómicas, pretende
+   favorecer la evaluación de la actividad docente del profesorado
+   prestando apoyo a las universidades en el diseño de mecanismos propios
+   para gestionar la calidad de la actividad docente del profesorado
+   universitario y favorecer su desarrollo y reconocimiento.
+   La Universidad de Sevilla trabaja en el desarrollo e implementación del
+   programa DOCENTIA-US (especificación particular del programa DOCENTIA
+   en la Universidad de Sevilla).
+   Puede encontrar más información en este enlace.
+
+¿Quieres explorar otras opciones?
+
+   VER MÁS GRADOS
+
+Quizá te interese
+
+   Acceso y matrícula
+   VER MÁS
+
+Acceso y matrícula
+
+   Estudios de doctorado
+   VER MÁS
+
+Estudios de doctorado
+
+   Estudios de máster
+   VER MÁS
+
+Estudios de máster
+
+   Logo negativo de la Universidad de Sevilla
+
+   Cinco siglos impulsando el conocimiento
+
+Menú extra 1
+
+     * Transparencia
+     * Antifraude
+     * Convivencia
+     * Perfil del contratante
+     * Protección de datos
+
+Menú extra 2
+
+     * Mapa web
+     * Aviso legal
+
+DESTACADOS
+
+     * La US
+     * Estudiar
+     * Investigar
+     * Empresa
+     * Directorio
+     * Quejas y sugerencias (Expón US)
+     * Sede electrónica
+
+Editorial
+
+     * Editorial
+
+   Si experimenta alguna dificultad con la visualización de la página web,
+   puede rellenar el formulario de accesibilidad
+
+User account menu
+
+     * Accesibilidad
+
+   Buscar _______________
+   Buscar
+
+ENCUÉNTRANOS
+
+   © Copyright 2025 Universidad de Sevilla - Todos los derechos reservados
+   -
+
+     * La US
+          + Mensaje del Rector
+          + Ejes Estratégicos
+               o Bienvenidos a la US
+               o Plan estratégico
+               o Rankings
+               o Igualdad
+               o Emprendimiento
+          + La US en cifras
+               o Anuario estadístico
+               o Oficina de Análisis y Prospectiva
+          + Historia
+          + Cultura y Patrimonio
+          + Secretaría general
+               o Agenda, Documentos y FAQ
+               o Órganos Colegiados
+               o Órganos dependientes
+               o Elecciones
+               o Convenios
+               o Normativas
+               o Consulta a la comunidad universitaria
+               o Apertura de cursos
+               o BOUS
+               o Registro General
+               o Portal de transparencia
+               o Asuntos Generales
+               o Protección de datos
+               o Contacto
+          + Imagen corporativa
+     * Estudiar
+          + Estudiar en la US
+          + Qué estudiar
+               o Grados
+               o Másteres
+               o Doctorado
+               o Dobles titulaciones internacionales
+               o Reconocimiento de créditos
+               o Otros estudios
+          + Acceso a la US
+               o Acceso
+               o Admisión
+               o Matrícula
+          + Orientación universitaria
+          + Expedición de títulos
+          + Becas y ayudas
+               o Becas y ayudas
+               o Ayudas al estudio
+               o Becas asistenciales
+               o Becas y ayudas de formación
+               o Becas y ayudas de movilidad
+               o Becas y ayudas culturales y deportivas
+               o Premios y distinciones
+          + Movilidad de estudiantes
+          + Estudiar en Sevilla
+          + Estudiantes visitantes
+          + Prácticas y empleo
+          + Bibliotecas y salas de estudio
+     * Investigar
+          + Investigar en la US
+               o Investigar
+               o Datos de investigación
+               o CRAI
+               o Espacios de investigación
+               o Centros mixtos
+               o Institutos de investigación
+               o Unidad de Cultura Científica
+               o OGPI y OPEA
+               o FIUS
+          + Plan propio
+          + Convocatorias
+          + Atención al investigador
+          + Captación de talento
+          + Movilidad de investigadores
+          + Doctorado
+          + Biblioteca
+          + Human Resources Strategy for Researchers
+     * Vivir la US
+          + La US en Sevilla
+          + Atención social
+          + Participación estudiantil
+          + Cultura
+          + Deportes
+          + Bibliotecas
+          + Agenda
+          + Campus
+          + Centros y departamentos
+          + Comunicación en la US
+     * Empresas
+          + Prácticas y Empleo
+          + Emprendimiento
+          + EBC
+          + Patentes
+          + Cátedras
+          + Mecenazgo y colaboraciones
+          + Perfil del contratante
+     * Internacional
+          + US internacional
+               o Datos y cifras
+               o Alianzas
+               o Convenios
+               o OGPI
+               o Rankings
+               o Captación de talento
+               o Delegaciones internacionales
+          + Oficina Welcome
+               o Antes de llegar
+               o Vivir en Sevilla
+               o Vivir la US
+               o Guías de Bienvenida
+               o Centro internacional
+               o Docencia en inglés
+          + Study abroad
+          + Movilidad internacional
+               o Dobles titulaciones internacionales
+               o Soy estudiante de la US
+               o Soy PDI
+               o Soy PTGAS
+          + Política lingüistica
+               o La política lingüística de la US
+               o Estudiar un idioma
+               o Acreditar un idioma
+               o Docencia en inglés
+               o Servicio de traducción
+          + Cooperación
+     * Trabaja en la US
+          + Profesorado
+               o Información General
+               o Planificación y selección
+               o Gestión Administrativa
+               o Docentia
+               o Ordenación académica
+          + PTGAS
+          + Directorio
+          + Servicios Centrales

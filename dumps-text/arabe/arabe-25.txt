@@ -1,11 +1,11 @@
    REFRESH(480 sec):
-   file://localhost/Users/benhadjsghaier.my/PPE1_groupe_2025/aspirations/a
-   rabe/arabe-25.html
+   file://localhost/Users/catalinaalvarez/cours/plurital/PPE1_groupe_2025/
+   aspirations/arabe/arabe-25.html
 
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-TDDZXVZ
 
-   19  C° weather icon
-   الأحد 28 ديسمبر 2025
+   16  C° weather icon
+   الاثنين 29 ديسمبر 2025
      * rss
      * instagram
      * youtube
