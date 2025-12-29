@@ -103,7 +103,7 @@
                 </span>
 
                 <div class="row" id="top-bar">
-                    <span class="spdate col-lg-4" id="dtheader">الأحد 8  رجب 1447هـ - 28 ديسمبر 2025 م GMT+3 03:20:29am</span>
+                    <span class="spdate col-lg-4" id="dtheader">الأحد 8  رجب 1447هـ - 28 ديسمبر 2025 م GMT+3 02:40:41pm</span>
 
 <div class="pdf-widget" style="height: auto; display: none;">
 								<img class="lazy" data-src="http://a5.alriyadh.com/media/pdf/20962/files/assets/flash/pages/page0015.jpg" width="100%">
@@ -551,11 +551,11 @@
     </div>
 
     <div class="col-lg-12 rmrpad" style="margin-bottom: 20px">
-        <a href="/2167316" class="img-thumbnail" style="color: #000;">
+        <a href="/2167577" class="img-thumbnail" style="color: #000;">
             <div class="bx">
                 <img src="/theme2/imgs/riyadhword-logo.png" alt="">
-                <h3 style="text-align: center; margin-top: 0; font-size: 22px;">جوهر الاعتدال</h3>
-                <p style="font-family: 'Tajawal', 'riy-Semibold',cursives;font-size: 16px;padding: 10px; text-align: justify;">يظهر الموقف السعودي في ملف حضرموت والمهرة امتدادًا لمنهج سياسي ثابت، حيث إن المملكة قرأت المشهد من زاوية أوسع، و...</p> 
+                <h3 style="text-align: center; margin-top: 0; font-size: 22px;">بناء الإنسان</h3>
+                <p style="font-family: 'Tajawal', 'riy-Semibold',cursives;font-size: 16px;padding: 10px; text-align: justify;">بدافع من الإنجازات التي تحققها المملكة بشكل متتابع في كل المجالات، تسمو مكانة رؤية 2030 في وجدان كل مواطن ومواطن...</p> 
             </div>
         </a>
     </div>
@@ -1120,6 +1120,20 @@
         });
 
 
+	
+	if( getCookie('box233') != 'show' ){
+        setTimeout(function(){
+            //$('.search-full-view').addClass("search-normal-screen");
+            $('#mailbox-id').modal('show');
+        },2000);
+		var date = new Date();
+		date.setTime(date.getTime()+(10*60*1000));
+		var expires = "; expires="+date.toGMTString();
+		document.cookie = 'box233=show'+expires;
+		console.log('cookie set');
+
+
+	}
 	
 	$('.close').click(function(){
 		//$('.search-full-view').removeClass("search-normal-screen");
