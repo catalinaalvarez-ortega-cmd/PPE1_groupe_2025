@@ -44,7 +44,7 @@
      * [fontsize-icon.png]
      * [fanar-top-button.png]
 
-   ____________________ بحث تفصيلي [BUTTON Input] (not implemented)___
+   ____________________ [BUTTON Input] (not implemented)___
 
 المكتبة الإسلامية
 

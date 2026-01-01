@@ -48,7 +48,7 @@ echo "<html>
 
 # initialise un compteur de fichiers
 indice=0
-for fichier in "$dossier"/*.txt; do
+for fichier in "$dossier"/espagnol.txt; do
     ((indice++))
 
     # assigne une langue à partir du nom du fichier
