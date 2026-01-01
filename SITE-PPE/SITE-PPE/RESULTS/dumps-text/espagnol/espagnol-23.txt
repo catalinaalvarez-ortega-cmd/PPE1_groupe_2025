@@ -1,0 +1,639 @@
+   #Editar Wikipedia (es) Canal Atom de Wikipedia
+
+   Ir al contenido
+
+   [ ] Menú principal
+   Menú principal
+   (BUTTON) mover a la barra lateral (BUTTON) ocultar
+   Navegación
+     * Portada
+     * Portal de la comunidad
+     * Actualidad
+     * Cambios recientes
+     * Páginas nuevas
+     * Página aleatoria
+     * Ayuda
+     * Notificar un error
+     * Páginas especiales
+
+   Wikipedia La enciclopedia libre
+   Buscar
+   ____________________
+   (BUTTON) Buscar
+
+   [ ] Apariencia
+
+     * Donaciones
+     * Crear una cuenta
+     * Acceder
+
+   [ ] Herramientas personales
+     * Donaciones
+     * Crear una cuenta
+     * Acceder
+
+Contenidos
+
+   (BUTTON) mover a la barra lateral (BUTTON) ocultar
+     * Inicio
+     * 1 Antecedentes
+     * 2 Estudios orientales
+     * 3 Crítica al concepto
+     * 4 Orientalismo en las artes
+     * 5 Fotografía Orientalista
+     * 6 Referencias
+     * 7 Bibliografía
+     * 8 Véase también
+     * 9 Enlaces externos
+
+   [ ] Cambiar a la tabla de contenidos
+
+Orientalismo
+
+   [ ] 51 idiomas
+     * العربية
+     * مصرى
+     * Български
+     * বাংলা
+     * Catal�
+     * Čeština
+     * Cymraeg
+     * Dansk
+     * Deutsch
+     * Ελληνικά
+     * English
+     * Esperanto
+     * Eesti
+     * Euskara
+     * فارسی
+     * Suomi
+     * Français
+     * Galego
+     * עברית
+     * हिन्दी
+     * Հայերեն
+     * Bahasa Indonesia
+     * Íslenska
+     * Italiano
+     * 日本語
+     * Қазақша
+     * 한국어
+     * Latina
+     * മലയാളം
+     * Nederlands
+     * ਪੰਜਾਬੀ
+     * Polski
+     * پنجابی
+     * پښتو
+     * Português
+     * Română
+     * Русский
+     * Srpskohrvatski / српскохрватски
+     * Simple English
+     * سرائیکی
+     * Slovenščina
+     * Shqip
+     * Српски / srpski
+     * Svenska
+     * ไทย
+     * Tagalog
+     * Türkçe
+     * Українська
+     * اردو
+     * Oʻzbekcha / ўзбекча
+     * 中文
+
+   Editar enlaces
+
+     * Artículo
+     * Discusión
+
+   [ ] español
+
+     * Leer
+     * Editar
+     * Ver historial
+
+   [ ] Herramientas
+   Herramientas
+   (BUTTON) mover a la barra lateral (BUTTON) ocultar
+   Acciones
+     * Leer
+     * Editar
+     * Ver historial
+
+   General
+     * Lo que enlaza aquí
+     * Cambios en enlazadas
+     * Subir archivo
+     * Enlace permanente
+     * Información de la página
+     * Citar esta página
+     * Obtener URL acortado
+     * Descargar código QR
+
+   Imprimir/exportar
+     * Crear un libro
+     * Descargar como PDF
+     * Versión para imprimir
+
+   En otros proyectos
+     * Wikimedia Commons
+     * Elemento de Wikidata
+
+   Apariencia
+   (BUTTON) mover a la barra lateral (BUTTON) ocultar
+   De Wikipedia, la enciclopedia libre
+   [330px-Anonymous_Venetian_orientalist_painting%2C_The_Reception_of_the_
+   Ambassadors_in_Damascus%27%2C_1511%2C_the_Louvre.jpg] Pintura
+   orientalista veneciana anónima, La recepción de los embajadores en
+   Damasco, 1511, Museo del Louvre. Se sabe que el ciervo con astas en el
+   primer plano nunca existió en Siria.[250px-Layard_Assyria.jpg] Grabado
+   de Austen Henry Layard (siglo XIX) que describe el desmontaje de un
+   monumento asirio[250px-Frye_Ghirshman.jpg] Los orientalistas Richard
+   Frye y Roman Ghirshman ante un yacimiento arqueológico en Irán, 1966.
+   Véanse más fotografías de orientalistas en Commons.
+
+   Orientalismo es un término polisémico que se usa tanto para designar a
+   los estudios orientales, como para describir un modo occidental de
+   inferiorizar a las culturas asiáticas con el fin de dominarlas, o
+   designar a la representación, ya sea la imitación o mistificación de
+   determinados aspectos de las culturas orientales en Occidente por parte
+   de escritores, diseñadores y artistas occidentales, que terminaron por
+   convertirse en tópicos estereotipados.
+
+Antecedentes
+
+   [editar]
+
+   El término se refiere al Oriente, o que es procedente del Este,^[1]​ en
+   contraste con el occidente u Oeste, y, a menudo, se conoce en Occidente
+   como "una forma de realismo radical".^[2]​ El término "oriental" entró
+   en el idioma castellano procedente del inglés y del francés (la palabra
+   raíz es Oriens, L) "Oriens" se relaciona con varios significados:. la
+   parte oriental del mundo, la parte del cielo en la que sale el sol, el
+   este, el sol naciente y el amanecer. Junto con los conceptos
+   geográficos de diferentes edades, su referencia de la "parte oriental"
+   ha cambiado. Por ejemplo, cuando Chaucer escribió en el cuento Monk
+   (1375), el "Oriente" se refiere a países situados inmediatamente al
+   este del Mediterráneo o el sur de Europa; mientras que en Aneurin
+   Bevan's In Place of Fear (1952), este término geográfico ya se había
+   expandido a Asia Oriental - "el despertar de Oriente bajo el impacto de
+   las ideas occidentales". Para el palestino Edward Said, la palabra
+   «orientialismo» expresa un modo occidental de inferiorizar a las
+   culturas asiáticas que "permite la dominación política, económica,
+   cultural y social de Occidente no solo durante la época colonial, sino
+   también en el presente".^[3]​
+
+   El término "Orientalismo" es ampliamente utilizado en arte para
+   referirse a las obras de los muchos artistas occidentales del siglo XIX
+   , que se especializaron en temas "orientales", a menudo basándose en
+   sus viajes a Asia Occidental . Los artistas, así como estudiosos ya
+   fueron descritos como "orientalistas" en el siglo XIX, especialmente en
+   Francia, donde el término, con un sentido más despectivo, se popularizó
+   en gran medida por el crítico Jules-Antoine Castagnary.^[4]​ Tal
+   desprecio no impidió que la Société des Peintres Orientalistes
+   ("Sociedad de Pintores orientalistas") se fundara en 1893, con
+   Jean-Léon Gérôme como presidente de honor.^[5]​ La palabra se usa con
+   menos frecuencia como término para los artistas ingleses del siglo XIX.
+   También se argumenta que "orientalismo" se utilizaba para hacer al este
+   parecer "menos temible al Oeste".^[6]​
+
+   Desde el siglo XVIII, "orientalista" ha sido el término tradicional
+   para un estudioso de los temas orientales; sin embargo, el uso en
+   inglés del orientalismo para describir la materia académica de
+   "estudios orientales" es rara; el Diccionario Oxford cita solo un uso,
+   por Lord Byron en 1812. La disciplina académica de los estudios
+   orientales también se puede conocer como "estudios asiáticos".
+
+   En 1978, el erudito palestino-estadounidense Edward Said publicó su
+   influyente y polémico libro, El Orientalismo, pues quería redefinir la
+   palabra;^[7]​ el término se utilizaba para describir lo que él sostenía
+   era una tradición occidental dominante, tanto académica y artística,
+   ofreciendo interpretaciones de extranjeros ajenos a Oriente, sobre todo
+   por las actitudes de Europa y su progresivo imperialismo en los siglos
+   XVIII y XIX. Said fue crítico de esta tradición académica y de algunos
+   estudiosos modernos, en especial Bernard Lewis. El Orientalismo de Said
+   elabora conceptos de Antonio Gramsci sobre hegemonía y la teorización
+   del discurso y la relación entre el conocimiento y el poder de Michel
+   Foucault.^[8]​ Said se ocupó principalmente de analizar la literatura
+   en un sentido más amplio, sobre todo literatura francesa. Otros,
+   especialmente Linda Nochlin, han tratado de extender su análisis al
+   arte, con resultados ambiguos.^[9]​ La obra de Said se convirtió en uno
+   de los textos fundacionales del postcolonialismo o los estudios
+   postcoloniales.^[10]​ Por otra parte, Edward Said señala al
+   Orientalismo como "una idea de representación teórica única": "El
+   Oriente es un escenario en el que todo el Oriente se limita". Said
+   sostuvo, como otros estudioso no occidentales, sostuvo que el mundo
+   llamado «desarrollado», que incluye principalmente la cultura
+   occidental, es la causa del colonialismo.^[11]​ Stephen Howe, el autor
+   de Empire, está de acuerdo en que las naciones occidentales, que antes
+   eran los imperios, fueron las creadoras de los países subdesarrollados,
+   dándoles forma mediante la extracción de la riqueza y el trabajo de
+   muchas naciones débiles.^[12]​
+
+Estudios orientales
+
+   [editar]
+   Véanse también: Estudios Orientales, Arqueología bíblica, Lenguas
+   bíblicas y Asiriología.
+   Véanse también: Escuela de Estudios Orientales y Africanos, Pontificio
+   Instituto Bíblico y Arte antiguo.
+
+Crítica al concepto
+
+   [editar]
+
+   Refiriéndose no al estudio de la Edad Antigua, sino al de Oriente
+   durante el período histórico del imperialismo europeo en la Edad
+   Contemporánea (del siglo XVIII a mediados del XX -cuando se produce la
+   descolonización-), el término "orientalismo" ha adquirido connotaciones
+   negativas al implicar, en ciertos usos, interpretaciones prejuiciosas o
+   anticuadas sobre las culturas y pueblos de Oriente. Este punto de vista
+   fue articulado sobre todo por Edward Said (Orientalismo, 1978, Cultura
+   e Imperialismo, 1993).^[13]​
+
+   Siguiendo las ideas de Michel Foucault, Said se centra en las
+   relaciones entre el poder y el conocimiento en la universidad y la
+   opinión pública, en particular en las visiones europeas del mundo
+   islámico. A través de una revisión comparativa e histórica de los
+   trabajos universitarios y literarios orientalistas, analiza las
+   relaciones de poder entre colonizados y colonizadores. Concluye que
+   "Oriente" y "Occidente" operan como términos opuestos, construyéndose
+   el concepto "Oriente" como una inversión negativa de la cultura
+   occidental. Estas ideas han tenido gran repercusión en la perspectiva
+   denominada tercermundista, y las obras de Said están entre los textos
+   fundacionales de los estudios postcoloniales.
+
+Orientalismo en las artes
+
+   [editar]
+   [250px-Bonaparte_ante_la_Esfinge%2C_por_Jean-L%C3%A9on_G%C3%A9r%C3%B4me
+   .jpg] Napoleón ante la Esfinge, de Jean-Léon Gérôme,
+   1867-1868.[250px-Antoine-Jean_Gros_-_Bonaparte_visitant_les_pestif%C3%A
+   9r%C3%A9s_de_Jaffa.jpg] Napoleón visita a los apestados de Jaffa,
+   Antoine-Jean Gros,
+   1804.[250px-Jean-Paul_Flandrin_-_Odalisque_with_Slave_-_Walters_37887.j
+   pg] La odalisca y la esclava, de Dominique
+   Ingres.[250px-WomenofAlgiers.JPG] Mujeres de Argel, de Eugène
+   Delacroix[250px-Fortuny_Marroquins.jpg] Marroquíes, de Mariano Fortuny,
+   1872-1874.[250px-La_perla_del_mercader.jpg] La perla del mercader
+   (1884) Alfredo Valenzuela Puelma.
+
+   La campaña napoleónica en Egipto y Siria (1798–1801, que permitió las
+   ulteriores investigaciones de Champollion), la guerra de independencia
+   de Grecia (1821–1829, que desató una oleada de simpatía europea, y a la
+   que acudió Lord Byron), la guerra de Crimea (1854–1855, durante la que
+   se produjo la «carga de la Brigada Ligera») y la apertura del canal de
+   Suez (1869, para cuya inauguración Verdi compuso Aida) contribuyeron a
+   aumentar el interés por un exotismo profusamente documentado.^[14]​
+
+   En el romanticismo, la seducción por el oriente cumplía el mismo papel
+   de alejamiento de la realidad que el historicismo medievalista.
+   Washington Irving encontró en Granada la conjunción de ambos (Cuentos
+   de la Alhambra), contribuyendo a la generación del tópico del exotismo
+   español. Mayor impacto tuvieron (posiblemente por su explícito
+   erotismo) las traducciones de Richard Francis Burton (el Kama Sutra,
+   1883, y Las mil y una noches, 1885). El concepto de "oriente" que se da
+   en estas obras operaba como un espejo de la propia cultura occidental,
+   o como una forma de expresar sus aspectos ocultos o ilícitos, en clave
+   decadentista. En la novela de Gustave Flaubert Salammbô la antigua
+   Cartago es el opuesto a la antigua Roma: una raza y una cultura semitas
+   opuestas a la latinidad, corruptora moralmente e imbuida de un erotismo
+   peligrosamente atractivo. Su influencia se sumó a la configuración del
+   imaginario antisemita que ya se había iniciado con el Judío errante de
+   Eugenio Sue. La literatura exótica del imperialismo británico tuvo su
+   máximo representante en Rudyard Kipling (Kim de la India, La carga del
+   hombre blanco).
+
+   Se pueden encontrar representaciones de «moros» y «turcos» en el arte
+   medieval, renacentista y barroco. Pero no fue hasta el siglo XIX cuando
+   el orientalismo en las artes se convirtió en un tema establecido. En
+   estas obras el mito del oriente exótico, decadente y corrupto está más
+   plenamente articulado. Pintores como Eugène Delacroix, Jean-Léon Gérôme
+   y Alexander Roubtzoff se recrearon en representaciones de todo tipo de
+   escenas ambientadas en escenarios de los países árabes del norte de
+   África y Oriente Medio. Tanto en los paisajes como en los interiores se
+   acentuaban los aspectos exóticos y sensuales de contrastes entre el
+   celaje y la luz deslumbrante del desierto y los tenebrosos interiores,
+   los fanásticos colores de los ropajes y las carnaciones seductoras -en
+   todos los tonos, del negro al blanco nacarado, pasando por el moreno-;
+   especialmente en las escenas de los baños y los harenes, que permitían
+   la representación voluptuosa de desnudos o semivestidos de las
+   odaliscas en posturas de incitante laxitud. Cuando Jean Auguste
+   Dominique Ingres, director de la francesa Académie de peinture pintó
+   una visión muy colorista de un baño turco, hizo que este oriente
+   erotizado se hiciera públicamente aceptable por su generalización
+   difusa de las formas femeninas, que podrían haber sido todas ellas el
+   mismo modelo. La sensualidad se veía aceptable en el exótico oriente.
+   Este estilo tuvo su momento álgido en las Exposiciones universales de
+   París de 1855 y 1867.
+
+   Algunos pintores orientalistas fueron:
+     * Jean Auguste Dominique Ingres (1780–1867)
+     * Eugène Delacroix (1798–1863)
+     * Théodore Chassériau (1819–1856)
+     * Eugène Fromentin (1820–1876)
+     * Jean-Léon Gérôme (1824–1904)
+     * Léon Belly (1827–1877)
+     * Willem de Famars Testas (1834-1896)
+     * Gustave Guillaumet (1840–1887)
+     * Alexandre Roubtzoff (1884–1949)
+
+   En España el principal ejemplo fue Mariano Fortuny (1838-1874), que
+   viajó a Marruecos donde quedó prendado del pintoresquismo local. Temas
+   marroquíes fueron igualmente tratados por Josep Tapiró (1836–1913) y
+   Antonio Fabrés (1854–1938).^[14]​
+   Véase también: Preciosismo (pintura)#Preciosismo y orientalismo
+
+   Con ello, es claro que el Oriente, dentro del que está Turquía, Grecia,
+   Medio Oriente y el Norte de África, se volvió el centro de fijación e
+   inspiración – por texturas, exotismo y color- para los diferentes
+   artistas occidentales. Ésta fuente era referente y lugar de inspiración
+   para varios artistas del periodo Barroco como Rembrandt, quienes se
+   nutrían, a su vez, del erotismo opulento representado en las escenas
+   del harem, cuyo valor en occidente además de introducir una nueva
+   concepción del vestido y la sensualidad reposa en que cambió la manera
+   de concebir la aproximación a lo erótico, pues en oriente era parte de
+   la cultura y por consecuencia, cultivado y no prohibido. Carácter
+   claramente marcado por la poca, o más vale nula, incidencia del
+   Cristianismo en la cultura oriental. También, los románticos marcaron
+   sus contrastes y emoción en las tipologías orientales. Lo típico, o más
+   vale el estereotipo de Oriente lo conforma: el color, lo exótico y lo
+   sensual.
+
+   Las obras orientalistas se concretan en las culturas islámicas, hebrea
+   y otras de origen semita, pues eran estas las que visitaban los
+   exploradores y viajeros, quienes, para el caso de los artistas
+   franceses, se encantaron y concentraron gran parte de sus viajes en el
+   Norte de África. Otra escena típica, que reposa y reitera en la
+   sensualidad, como las del harem, son las odaliscas reposadas, mujeres
+   que encarnaban el ideal y estereotipo de orientalismo. Sin embargo, la
+   realidad es que a pesar de las postales y de la idealización del
+   exotismo de Oriente, los Europeos tenían muy poco contacto real con
+   este mundo, dado que el conocimiento de esta zona respondía básicamente
+   a dos factores; por un lado, a las campañas y conquistas militares, y
+   por el otro, por unas rutas comerciales intermitentes.
+
+   En este orden, la presencia europea en Egipto – a partir de la invasión
+   y ocupación de las tropas francesas de Napoleón que duró de 1789 a
+   1801- atrajo un número importante de viajeros occidentales al Oriente,
+   muchos de los que capturaron sus impresiones a través de la pintura y
+   el grabado. Con esto, en el año de 1809 el gobierno francés público la
+   primera edición, de 24 volúmenes, llamada Descripción de Egipto –
+   description de l´Ègypte - en la cual se ilustró, entre otras,
+   topografía, vida silvestre; flora y fauna, arquitectura monumental del
+   antiguo Egipto, y población.^[15]​
+
+   Esta publicación fue la que más influenció dentro de las múltiples que
+   intentaron documentar la cultura de esta región y su influencia sobre
+   las artes decorativas francesas y la arquitectura, es innegable, pues
+   en el Periodo Imperial inciden los motivos egipcios. A modo de ejemplo,
+   en Francia, el monumento de París de Fontaine du Fellah es claramente
+   un referente de la inspiración originada en Oriente. Sin embargo,
+   Egipto trascendió por Europa, en términos de influencia, en varios
+   imperios hay muestras de ellos cabe citar Rusia, con Las Puertas
+   Egipcias de San Petersburgo y Reino Unido, con el Hall Egipcio de
+   Londres.
+
+   El carácter enciclopédico de la publicación Description de l´Ègypte,
+   por lo demás muy distinguido del siglo XIX y de la era de las
+   codificaciones, de la mano con las ilustraciones de los múltiples
+   viajeros, tenían el objetivo primario de ser propaganda y soporte del
+   imperialismo francés. Lo anterior, en vista de que Oriente era
+   ilustrado como un espacio exótico, novedoso e inusual, pero en todo
+   caso atrasado, carente de ley y bárbaro, situación de inferioridad
+   mitigada por la conquista francesa, ocupación militar que más que
+   imponer sobre Oriente las leyes napoleónicas, llevaba con sus
+   nacionales la ilustración.
+
+   Una pintura importante para analizar la mirada imperialista y de
+   propaganda es obra de Antoine-Jean Gros (1771-1835) , uno de los
+   pintores históricos predilectos de Napoleón, es el oleó
+   “Napoleón visitando a los apestados de Jaffa”. La citada obra
+   representa el concepto de orientalismo en sí, pues, como dice Said, el
+   orientalismo es un sistema construido por obras y autores y por ende un
+   signo de poder de Europa.^[16]​ Con esto en mente, el artista
+   Antoine-Jean Gros nunca visitó oriente, sin embargo, en su pintura se
+   reconocen los vestidos exóticos, con los colores y telas
+   características del Oriente construido por Europa, y además la
+   arquitectura monumental propia de esas tierras. Siendo así, más que un
+   collage con los ideales de Oriente la propaganda a favor del
+   imperialismo francés se constituye con la visita del Emperador,
+   Napoleón, a los prisioneros afectados por la plaga en Jaffa. Esta
+   imagen no solo remite al imaginario colectivo de la cristiandad, con el
+   Emperador como fuente de poder divino y caritativo, en medio del caos y
+   la crisis adyacente a una plaga. En este orden de ideas, en las
+   oportunidades en los que los motivos desplegados de Oriente permitía
+   incluir la cristiandad, los artistas hacían uso de ello. Lo anterior,
+   fue tendencia de los artistas británicos, que al incorporar el
+   referente religioso tenían la necesidad de conservar los parámetros de
+   naturaleza inherentes a este tipo de motivos artísticos.
+
+   Esta cofluencia entre los elementos representativos de Oriente, como
+   los vestidos y arquitectura, con la necesidad de plasmar la grandeza
+   del Imperio continúo siendo motivo reiterado para aristas del
+   Romanticismo. En este periodo, es necesario hablar de Eugène Delacroix
+   (1798–1863), quien más allá de plasmar la crueldad y violencia de las
+   situaciones de guerra y conquista en Egipto, lo hizo de la mano con los
+   temas románticos como la fuerza incontrolable y las emociones extremas.
+
+   Siendo así, resulta imposible hablar del orientalismo en las artes sin
+   hablar de Eugéne Delacroix, pues no solo pintó in situ imágenes como
+   las del Harem, sino que construyó su visión de Oriente a partir de su
+   obra es el Orientalismo del que habla Said, dado que se dedicó a
+   describir la realidad oriental a partir de las ideas políticas,
+   naturalmente imperialistas, de los grandes colonizadores y por ende,
+   “el examen imaginario de las realidades de Oriente se basaba, más o
+   menos exclusivamente, en una conciencia occidental soberana”.^[17]​
+   Ello se refleja, por citar un ejemplo, en que las odaliscas a pesar del
+   entorno colorido y exótico son de fisionomía europea. Otro motivo
+   importante de la obra de Delacroix está marcada por el énfasis en la
+   brutalidad militar, reflejado en los motivos, el contraste de colores y
+   la emocionalidad en la pintura, pues con ello, también, evidenciaban la
+   realidad de los conflictos andantes en este momento histórico: la
+   guerra en Grecia por la independencia, la conquista francesa de Argelia
+   y la Guerra de Crímea.
+
+   Esta vivacidad en la pintura de Delacroix es posible porque el artista
+   no se relegó en las imágenes documentadas en la Description de
+   l´Ègypte, por el contrario, viajó más de una vez a estas tierras y
+   visitó regiones como Egipto y Marruecos. Por tal razón, la experiencia
+   del día a día y la vida en cotidiana general se tomaron los motivos de
+   la pintura de los artistas viajeros.
+
+   El imaginario orientalista persistió en el arte hasta principios del
+   siglo XX, como evidencian los desnudos orientalistas de Matisse.
+
+   El uso de Oriente como un telón exótico continuó en las películas, por
+   ejemplo, en muchas de Rodolfo Valentino. Más tarde árabes ricos con
+   togas se convirtieron en un tema popular, especialmente durante la
+   crisis del petróleo de los años 1970. En los años 1990, el terrorista
+   árabe se convirtió en la figura de villano preferida de las películas
+   occidentales.^[cita requerida]
+
+Fotografía Orientalista
+
+   [editar]
+
+   Esta tendencia artística tiene una relación directa con los trabajos de
+   los fotógrafos. El hecho es que numerosos fotógrafos pioneros se
+   desplazan a aquellas latitudes, algunos con la intención de documentar
+   monumentos o excavaciones arqueológicas (Du Camp, De Clerq, Salzman),
+   otros con el deseo de captar con sus cámaras todo el exotismo de
+   aquellos paisajes de sol y arena, y sin duda todos ellos dispuestos a
+   superar cualquier dificultad. Egipto, Arabia, Tierra Santa, Líbano,
+   Siria, Turquía y también el norte de África: Argelia, Túnez y
+   Marruecos, quedaron reflejadas en aquellas imágenes que hoy
+   agradecemos, muchas de ellas irrepetibles a causa de la destrucción de
+   paisajes y monumentos, otras simplemente transformadas por el paso del
+   tiempo.
+
+   Algunos nombres: Wilhelm Hammerschmidt; J. Pascal Sebah; Adolphe Braun,
+   Hippolyte Arnoux; G. Lekegian; Felice Beato y Antonio Beato, Frank
+   Mason Good , Edward L. Wilson; Luigi Fiorillo; Luigi M. Molinari;
+   Antoine Schier; Félix Bonfils, Francis Frith, Georges y Constantine
+   Zangaki, en Egipto.
+
+   Garrigues en Túnez. Jean Geiser, Neurdein frères, Jacques Antoine
+   Moulin, Alexandre Leroux en Argelia. Tancrede Dumas en Líbano. Francis
+   Bedford y Bonfils en Palestina. Antoine Zilposche, Francis Frith,
+   Pascal Sebah & Joailier y Abdullah frères en Turquía. Frank Mason Good,
+   Francis Frith en Siria o A. Cavilla, John H.Mann y Albalat en
+   Marruecos.
+
+Referencias
+
+   [editar]
+    1. ↑ from the Latin oriens; Oxford English Dictionary
+    2. ↑ Said, Edward. “Orientialism,” New York: Vintage Books, 1979: 364
+    3. ↑ Said, Edward. “Orientialism,” New York: Vintage Books, 1979: 357
+    4. ↑ Tromans, 20
+    5. ↑ Harding, 74
+    6. ↑ Said, Edward. “Orientialism,” New York: Vintage Books, 1979: 363
+    7. ↑ Tromans, 24
+    8. ↑ Xypolia, Ilia (2011). «Orientations and Orientalism: The Governor
+       Sir Ronald Storrs». Journal of IslamicJerusalem Studies 11 (1):
+       24-43.
+    9. ↑ Tromans, 6, 11 (quoted), 23-25
+   10. ↑ Xypolia, Ilia (2011). «Orientations and Orientalism: The Governor
+       Sir Ronald Storrs». Journal of Islamic Jerusalem Studies 11 (1):
+       25-43.
+   11. ↑ Said, Edward (16 de abril de 2003). «Orientalism».
+   12. ↑ Howe, Stephen. Empire:A Very Short Introduction. Oxford
+       University press. pp. 73-77.
+   13. ↑ Ediciones actuales en castellano: Debolsillo, 2006 ISBN
+       8497597672; Anagrama, 2004 ISBN 84-339-0537-6.
+          + Orientalismo: En torno al discurso de Edward Said
+          + Edward Said, “Orientalismo”: 25 años después Archivado el 5 de
+            septiembre de 2012 en Wayback Machine.
+   14. ↑ ^a ^b Patricia Fride R. Carrassat e Isabelle Marcadé, Movimientos
+       de la pintura, Spes Editorial, S.L., 2004, pág. 51, ISBN
+       84-8332-596-9
+   15. ↑ Meagher, Jennifer. “Orientalism in Nineteenth-Century Art.” In
+       Heilbrunn Timeline of Art History. New York: The Metropolitan
+       Museum of Art, 2000–.
+       http://www.metmuseum.org/toah/hd/euor/hd_euor.htm (October 2004)
+   16. ↑ Said, E. (2002) Introducción. En Orientalismo. (Trad. Fuentes,
+       M.L.) Barcelona: Debolsillo (Trabajo original publicado en 1997).
+       pp. 26-38
+   17. ↑ Said, E. (2002) Introducción. En Orientalismo. (Trad. Fuentes,
+       M.L.) Barcelona: Debolsillo (Trabajo original publicado en 1997).
+       pág. 27
+
+Bibliografía
+
+   [editar]
+     * Urs APP. The Birth of Orientalism. Philadelphia: University of
+       Pennsylvania Press, 2010 (ISBN 978-0-8122-4261-4)
+     * López-Calvo, Ignacio, ed. Alternative Orientalisms in Latin America
+       and Beyond. Newcastle, England: Cambridge Scholars Publishing, 2007
+       (ISBN 1-84718-143-0)
+     * López-Calvo, Ignacio, ed. One World Periphery Reads the Other:
+       Knowing the "Oriental" in the Americas and the Iberian Peninsula.
+       Newcastle, England: Cambridge Scholars Publishing, 2009 (ISBN:
+       1-4438-1657-4)
+     * López-Calvo, Ignacio, ed. Peripheral Transmodernities:
+       South-to-South Dialogues between the Luso-Hispanic World and "the
+       Orient." Newcastle, England: Cambridge Scholars Publishing, 2012.
+       (ISBN 1-4438-3714-8)
+
+Véase también
+
+   [editar]
+     * Fetichismo asiático
+     * Estudios Orientales
+     * Orientalismo en Argentina
+     * Adolphe Philibert Dubois de Jancigny
+
+Enlaces externos
+
+   [editar]
+     * Colección de dibujos de tema orientalista digitalizados en la
+       Biblioteca Digital Hispánica de la Biblioteca Nacional de España
+
+   Control de autoridades
+     * Proyectos Wikimedia
+     * Wd Datos: Q42865
+     * Commonscat Multimedia: Orientalism / Q42865
+     __________________________________________________________________
+
+     * Identificadores
+     * BNF: 11977106b (data)
+     * GND: 4252308-4
+     * LCCN: sh99010610
+     * NDL: 00568923
+     * NKC: ph980411
+     * NLI: 987007551699505171
+     * SUDOC: 027808785
+     * AAT: 300055784
+     * Diccionarios y enciclopedias
+     * Britannica: url
+     * Treccani: url
+
+     * Wd Datos: Q42865
+     * Commonscat Multimedia: Orientalism / Q42865
+
+   Obtenido de
+   «https://es.wikipedia.org/w/index.php?title=Orientalismo&oldid=17063058
+   1»
+   Categorías:
+     * Orientalismo
+     * Ciencias históricas
+
+   Categorías ocultas:
+     * Wikipedia:Páginas con enlaces mágicos de ISBN
+     * Wikipedia:Artículos con pasajes que requieren referencias
+     * Wikipedia:Artículos con identificadores BNF
+     * Wikipedia:Artículos con identificadores GND
+     * Wikipedia:Artículos con identificadores LCCN
+     * Wikipedia:Artículos con identificadores AAT
+
+     * Esta página se editó por última vez el 23 nov 2025 a las 21:42.
+     * El texto está disponible bajo la Licencia Creative Commons
+       Atribución-CompartirIgual 4.0; pueden aplicarse cláusulas
+       adicionales. Al usar este sitio aceptas nuestros términos de uso y
+       nuestra política de privacidad.
+       Wikipedia® es una marca registrada de la Fundación Wikimedia, una
+       organización sin ánimo de lucro.
+
+     * Política de privacidad
+     * Acerca de Wikipedia
+     * Limitación de responsabilidad
+     * Contacto legal y de seguridad
+     * Código de conducta
+     * Desarrolladores
+     * Estadísticas
+     * Declaración de cookies
+     * Versión para móviles
+
+     * Wikimedia Foundation
+     * Powered by MediaWiki
+
+   (BUTTON) Buscar
+   ____________________
+   (BUTTON) Buscar
+
+   [ ] Cambiar a la tabla de contenidos
+   Orientalismo
+   (BUTTON) 51 idiomas Añadir tema

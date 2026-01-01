@@ -1,0 +1,5 @@
+   REFRESH(360 sec):
+   file://localhost/Users/catalinaalvarez/cours/plurital/PPE1_groupe_2025/
+   aspirations/arabe/arabe-5.html
+
+   Enable JavaScript and cookies to continue
