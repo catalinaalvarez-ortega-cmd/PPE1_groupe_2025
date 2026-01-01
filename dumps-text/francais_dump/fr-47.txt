@@ -144,12 +144,12 @@ Mots proches
    QUIZ
      __________________________________________________________________
 
-   « Qu'y a t il de plus tape à l'œil que le faux marbre ? ». Combien
-   doit-on mettre de traits d'union dans cette phrase ?
+   En grammaire, comment s'appelle le mot invariable servant à lier deux
+   mots ou deux propositions ?
      *
-          + (*) 3
-          + ( ) 4
-          + ( ) 5
+          + (*) une conjonction
+          + ( ) une préposition
+          + ( ) une locution
 
    Applications mobiles Index Mentions légales et crédits CGU CGV Charte
    de confidentialité Cookies Contact À la une © Larousse

@@ -103,17 +103,17 @@ echo "Terminé"
 
 #analyse des resultats 1 partition 2cooc
 
-python3 partition.py  -i ../Token/dump/fr-*.txt >../frequences/francais/d-freq-fr.tsv
+python3 partition_pals.py  -i ../Token/dump/fr-*.txt >../frequences/francais/d-freq-fr.tsv
 python3 tsv_to_html_table.py "../frequences/francais/d-freq-fr.tsv" "../frequences/francais/d-freq-fr.html"
 
-python3 partition.py  -i ../Token/contextes/fr-*.txt >../frequences/francais/c-freq-fr.tsv
+python3 partition_pals.py  -i ../Token/contextes/fr-*.txt >../frequences/francais/c-freq-fr.tsv
 python3 tsv_to_html_table.py "../frequences/francais/c-freq-fr.tsv" "../frequences/francais/c-freq-fr.html"
 
-python3 cooccurrent.py ../Token/dump/fr-*.txt --target ".*[oO]rient.*" --match-mode regex >../PALS/francais_pals/cooc-dump-fr.tsv
+python3 cooccurrents.py ../Token/dump/fr-*.txt --target ".*[oO]rient.*" --match-mode regex >../PALS/francais_pals/cooc-dump-fr.tsv
 python3 tsv_to_html_table.py "../PALS/francais_pals/cooc-dump-fr.tsv" "../PALS/francais_pals/cooc-dump-fr.html"
 
-python3 cooccurrent.py ../Token/contextes/fr-*.txt --target ".*[oO]rient.*" --match-mode regex >../PALS/francais_pals/cooc-contextes-fr.tsv-fr.tsv
-python3 tsv_to_html_table.py "../PALS/francais_pals/cooc-contextes-fr.tsv-fr.tsv" "../PALS/francais_pals/cooc-contextes-fr.tsv-fr.html"
+python3 cooccurrents.py ../Token/contextes/fr-*.txt --target ".*[oO]rient.*" --match-mode regex >../PALS/francais_pals/cooc-contextes-fr.tsv
+python3 tsv_to_html_table.py "../PALS/francais_pals/cooc-contextes-fr.tsv" "../PALS/francais_pals/cooc-contextes-fr.html"
 
 
 python3 wordcloud.py
