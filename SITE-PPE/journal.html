@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Journal | PPE Orientalisme</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="PPE.css" rel="stylesheet" />
+
+    <style>
+      .journal-entry {
+        border-left: 3px solid rgba(255, 255, 255, 0.15);
+        padding-left: 1.2rem;
+        position: relative;
+      }
+
+      .journal-entry::before {
+        content: "";
+        position: absolute;
+        left: -7px;
+        top: 0.35rem;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: rgba(34, 197, 94, 0.6);
+      }
+
+      .journal-date {
+        font-size: 0.9rem;
+        opacity: 0.7;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+      }
+
+      .journal-title {
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+      }
+
+      .journal-meta {
+        font-size: 0.9rem;
+        opacity: 0.75;
+      }
+
+      .journal-entry + .journal-entry {
+        margin-top: 2rem;
+      }
+
+      .journal-tabs .nav-link {
+        border-radius: 16px;
+        padding: 0.6rem 1.1rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.85);
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        transition: all 0.15s ease;
+      }
+
+      .journal-tabs .nav-link:hover {
+        background: rgba(34, 197, 94, 0.12);
+        border-color: rgba(34, 197, 94, 0.4);
+        color: rgba(255, 255, 255, 0.95);
+      }
+
+      .journal-tabs .nav-link.active {
+        background: linear-gradient(
+          135deg,
+          rgba(34, 197, 94, 0.35),
+          rgba(16, 185, 129, 0.25)
+        );
+        border-color: rgba(34, 197, 94, 0.6);
+        color: #fff;
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.25);
+      }
+
+      .journal-file {
+        font-size: 0.95rem;
+        opacity: 0.85;
+      }
+
+      .file-placeholder {
+        font-style: italic;
+        opacity: 0.6;
+      }
+
+      .md-wrap {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 18px;
+        padding: 1.2rem 1.2rem;
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+      }
+      .md-wrap h1,
+      .md-wrap h2,
+      .md-wrap h3 {
+        margin: 0 0 0.75rem 0;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+      }
+      .md-wrap h1 {
+        font-size: 1.35rem;
+      }
+      .md-wrap h2 {
+        font-size: 1.1rem;
+        opacity: 0.95;
+        margin-top: 1.2rem;
+      }
+      .md-wrap h3 {
+        font-size: 1rem;
+        opacity: 0.9;
+        margin-top: 1rem;
+      }
+      .md-wrap p {
+        opacity: 0.9;
+        line-height: 1.6;
+        margin-bottom: 0.75rem;
+      }
+      .md-wrap ul,
+      .md-wrap ol {
+        opacity: 0.92;
+        line-height: 1.6;
+      }
+      .md-wrap li {
+        margin-bottom: 0.35rem;
+      }
+      .md-wrap hr {
+        border: 0;
+        height: 1px;
+        margin: 1rem 0;
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .md-wrap code {
+        background: rgba(34, 197, 94, 0.12);
+        border: 1px solid rgba(34, 197, 94, 0.22);
+        padding: 0.06rem 0.35rem;
+        border-radius: 8px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+        font-size: 0.92em;
+      }
+      .md-wrap pre {
+        background: rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 14px;
+        padding: 0.9rem 1rem;
+        overflow: auto;
+        margin: 0.85rem 0;
+      }
+      .md-wrap pre code {
+        background: transparent;
+        border: 0;
+        padding: 0;
+        font-size: 0.92rem;
+        color: rgba(255, 255, 255, 0.92);
+        display: block;
+        white-space: pre;
+      }
+      .md-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        align-items: center;
+        margin-bottom: 0.9rem;
+        opacity: 0.9;
+      }
+      .md-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        padding: 0.35rem 0.7rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        font-weight: 650;
+        font-size: 0.88rem;
+      }
+      .md-actions a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body class="corps">
+    <div class="wow-bg"></div>
+
+    <header class="py-3">
+      <div
+        class="container d-flex align-items-center justify-content-between gap-3"
+      >
+        <h4 class="m-0"><em>Projet de Programmation Encadré</em></h4>
+        <span class="badge-soft">Journal</span>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-dark mt-3">
+        <div class="container">
+          <a class="navbar-brand fw-semibold" href="index.html"
+            >Mot : Orientalisme</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="journal.html"
+                  >Journal</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="analyse-ling.html"
+                  >Analyse linguistique</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="scripts.html">Scripts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="a-propos.html">À propos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-4">
+      <section class="hero mb-4 reveal">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content p-4 p-md-5">
+          <div class="glass p-3 p-md-4">
+            <h1 class="h3 mb-1 text-center">
+              <strong>Journal de bord</strong>
+            </h1>
+            <p class="mb-0 text-center">
+              Suivi chronologique du projet, des scripts et des analyses.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reveal">
+        <div class="modern-card p-4 p-md-5">
+          <div class="journal-entry">
+            <div class="journal-date">Étape 1</div>
+            <div class="journal-title">
+              Choix du mot et constitution du corpus
+            </div>
+            <p>
+              Sélection du mot <strong>orientalisme</strong> et constitution
+              d’un ensemble d’URLs dans les trois langues.
+            </p>
+            <div class="journal-meta">Corpus · URLs</div>
+          </div>
+
+          <div class="journal-entry">
+            <div class="journal-date">Étape 2</div>
+            <div class="journal-title">Développement des scripts</div>
+            <p>
+              Extraction des occurrences, gestion des encodages et nettoyage des
+              données.
+            </p>
+            <div class="journal-meta">Scripts · Encodage</div>
+          </div>
+
+          <div class="journal-entry">
+            <div class="journal-date">Étape 3</div>
+            <div class="journal-title">Tableaux et concordances</div>
+            <p>
+              Génération des tableaux HTML, concordances KWIC et dumps
+              intermédiaires.
+            </p>
+            <div class="journal-meta">Tableaux · KWIC</div>
+          </div>
+
+          <div class="journal-entry">
+            <div class="journal-date">Étape 4</div>
+            <div class="journal-title">Analyses lexicales et statistiques</div>
+            <p>
+              Cooccurrences, bigrams, tokenisation et calcul de spécificité avec
+              PALS.
+            </p>
+            <div class="journal-meta">PALS · Statistiques</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reveal mt-4">
+        <div class="modern-card p-4 p-md-5">
+          <h2 class="h4 mb-3 text-center">
+            <strong>Journaux individuels</strong>
+          </h2>
+
+          <ul
+            class="nav nav-pills justify-content-center gap-2 journal-tabs mb-4"
+          >
+            <li class="nav-item">
+              <button
+                class="nav-link active"
+                data-bs-toggle="pill"
+                data-bs-target="#journal-ar"
+              >
+                Myriam · Arabe
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#journal-es"
+              >
+                Catalina · Espagnol
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#journal-fr"
+              >
+                Salma · Français
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="journal-ar">
+              <p class="journal-file mb-3">
+                Journal de bord (Myriam) : suivi du projet, apprentissages Git,
+                scripts Bash, encodage, wordcloud arabe.
+              </p>
+
+              <article class="md-wrap">
+                <div class="md-meta">
+                  <span class="md-badge"> Journal Myriam</span>
+                  <span class="md-badge">🗓️ 05/10/2025 → 30/12/2025</span>
+                  <span class="md-badge">
+                    Git · Bash · Encodage · Wordcloud</span
+                  >
+                </div>
+
+                <h1>Journal de bord du projet encadré</h1>
+
+                <h2>Mise en pratique de git</h2>
+
+                <h3>05/10/2025</h3>
+                <p>
+                  Aujourd'hui, j'ai appris à modifier mon journal de bord depuis
+                  ma machine au lieu d'aller directement sur Github, grâce à la
+                  commande <code>nano</code> qui permet d'écrire dans le journal
+                  directement depuis le terminal. Il suffit de taper
+                  <code>nano</code> suivi du nom du fichier.
+                </p>
+                <p>
+                  Cette commande me fait penser à une commande qui permet de
+                  modifier un fichier directement dans le terminal et dont je
+                  m'étais servie dans un projet Bash ultérieur. Il s'agit de
+                  <code>vim</code>, dont la commande de sortie est
+                  <code>wq</code>.
+                </p>
+                <p>
+                  De ce que j'ai compris, la commande <code>pull</code> permet
+                  d'envoyer les modifications effectuées sur Github sur la
+                  machine tandis que la commande <code>push</code> permet
+                  d'envoyer les modifications effectuées sur la machine sur
+                  Github. Il est important de toujours penser à synchroniser les
+                  modifications.
+                </p>
+
+                <p>
+                  J'aimerais ajouter un détail sur les étapes à suivre pour
+                  modifier le fichier :
+                </p>
+                <ol>
+                  <li>Je suis entrée dans le dossier du projet PPE1-2025.</li>
+                  <li>
+                    J'ai ouvert et modifier le journal avec la commande
+                    <code>nano</code>.
+                  </li>
+                  <li>J'ai rédigé (comme ici).</li>
+                  <li>
+                    J'ai enregistré les changements avec <code>ctrl o</code>.
+                  </li>
+                  <li>
+                    J'ai vérifié si git voit les changements à l'aide de
+                    <code>git status</code>.
+                  </li>
+                  <li>
+                    Il a répondu <code>modified: journal.md</code>, donc c'est
+                    bon.
+                  </li>
+                  <li>
+                    On dit à git de "préparer" le fichier grâce à
+                    <code>git add journal.md</code>.
+                  </li>
+                  <li>
+                    On revérifie de nouveau avec <code>git status</code> pour
+                    voir si le journal est prêt à être enregistré, s'il est vert
+                    ça veut dire que oui.
+                  </li>
+                  <li>
+                    On crée un "commit" (enregistrement local) pour qu'il soit
+                    visible dans l'historique Git grâce à
+                    <code>git commit -m "ma phrase"</code> qui est une phrase
+                    d'enregistrement.
+                  </li>
+                  <li>
+                    Git répondra quelque chose qui confirmera la sauvegarde
+                    locale.
+                  </li>
+                  <li>
+                    On "push" les modifications sur Github :
+                    <code>git push origin main</code> qui signifie "envoie mes
+                    commits locaux vers le dépôt GitHub, sur la branche main".
+                  </li>
+                  <li>
+                    On refait <code>git status</code> et si on nous dit :
+                    <pre><code>On branch main
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean</code></pre>
+                    c'est que tout est OK.
+                  </li>
+                </ol>
+
+                <hr />
+
+                <h3>09/10/2025</h3>
+                <p>
+                  Aujourd'hui j'ai effectué les exercices pour m'entrainer aux
+                  Scripts Bash. L'exercice 1 ne m'a pas posé beaucoup de
+                  problème puisque j'ai déjà eu l'occasion de me familiariser au
+                  Shell et aux commandes Bash en licence TAL.
+                </p>
+                <p>
+                  L'exercice 2.a ne m'a pas posé beaucoup de problèmes si ce
+                  n'est au niveau des boucles, je connais la fonction d'une
+                  boucle, je sais bien les utiliser en Python et un peu moins en
+                  Bash mais je pense avoir compris.
+                </p>
+                <p>
+                  Pour le script <code>compte_par_type_par_an.sh</code>, je
+                  comprenais les attentes mais je n'arrivais pas trop à
+                  visualiser clairement une structure, j'ai donc écrit et
+                  réecrit et à force, j'ai fini par un peu mieux saisir la
+                  logique du Bash.
+                </p>
+                <p>
+                  Cependant, l'exercice 2 m'a posé davantage de problèmes : j'ai
+                  compris l'énoncé mais je n'arrivais pas, encore une fois, à
+                  bien visualiser la structure attendue en Bash. Je me suis
+                  rendue compte que je ne faisais pas bien les pipelines, que
+                  parfois je passais des variables alors que ce sont des
+                  commandes qui étaient attendues. Je mettais parfois un
+                  <code>|</code> juste avant ou après une commande qui ne peut
+                  rien recevoir en entrée.
+                </p>
+
+                <p><strong>Exemple :</strong></p>
+                <pre><code>$NB_LIEUX | cat ...</code></pre>
+                <p>
+                  C'est une variable que Bash essaye d'exécuter comme un
+                  programme ce qui aboutit à un "command not found" ou
+                  "permission denied".
+                </p>
+
+                <p>
+                  <strong>Parfois je faisais le grep après le wc -l :</strong>
+                </p>
+                <pre><code>cat ... | wc -l | grep ...</code></pre>
+                <p>
+                  <code>wc -l</code> ne renvoie qu'un chiffre, il n'y a plus
+                  rien à "grep" derrière donc il faut toujours faire :
+                </p>
+                <pre><code>cat ... | grep ... | wc -l</code></pre>
+                <p>
+                  ⇒ il faut toujours filtrer (grep) et ensuite compter (wc -l).
+                </p>
+
+                <p><strong>Pipes sans cohérence de flux :</strong></p>
+                <pre><code>cut -f2 ... | wc -l | awk {print$3}</code></pre>
+                <p>
+                  ⇒ <code>wc -l</code> ne renvoie qu'un chiffre, donc
+                  <code>awk</code> n'a pas de 3e colonne à lire.
+                </p>
+
+                <p>
+                  <strong
+                    >J'ai également compris que <code>cat</code> était une façon
+                    visuelle de dire :</strong
+                  >
+                  "je prends ces fichiers et je les envoie dans la chaine".
+                </p>
+
+                <pre><code>cat $CHEMIN/2016/*.ann | grep "Location" | "Person" | "Organization" | wc -l</code></pre>
+
+                <p>
+                  <strong
+                    >Pipes après des commandes qui ne produisent rien à lire
+                    :</strong
+                  >
+                </p>
+                <pre><code>NB_LIGNES=$(grep "$1|$2|$3" | wc -l $FICHIER)</code></pre>
+                <p>
+                  ⇒ Ici le grep n'a aucun fichier en entrée alors qu'il est
+                  suivi de wc -l : résultat ça ne lit rien donc
+                  <code>$NB_LIGNES</code> reste vide. Il aurait fallu faire :
+                </p>
+                <pre><code>NB_LIGNES=$(grep -E "$1|$2|$3" "$FICHIER" | wc -l)</code></pre>
+
+                <p><strong>Les pipes avant une variable :</strong></p>
+                <pre><code>$NB_LIEUX | cat ...</code></pre>
+
+                <p>
+                  <strong
+                    >Enchainement de commandes qui ne se comprennent pas entre
+                    elles :</strong
+                  >
+                </p>
+                <pre><code>cut -f2 $CHEMIN/*.ann | wc -l | awk '{print $3}'</code></pre>
+                <p>
+                  ⇒ Le wc -l ne renvoie qu'un seul chiffre, awk reçoit une ligne
+                  qui n'a pas de 3e colonne.
+                </p>
+
+                <p><strong>Résumé :</strong></p>
+                <ul>
+                  <li><code>$NB_LIEUX</code> n'est pas une commande.</li>
+                  <li>
+                    <code>$NB_LIEUX</code> contient un nombre (résultat d'un
+                    comptage).
+                  </li>
+                  <li>
+                    Si on écrit <code>$(...)</code>, Bash croit que l'on veut
+                    l'exécuter comme un programme.
+                  </li>
+                  <li>
+                    Le <code>|</code> fait croire que je voulais envoyer la
+                    sortie de ce "programme" dans <code>cat</code>.
+                  </li>
+                </ul>
+
+                <p>
+                  Je n'arrivais pas à exécuter mon script
+                  <code>compte_lieux.sh</code>, je ne comprenais pas pourquoi
+                  puis en fait, une syntaxe de Bash permet d'exécuter un
+                  programme même si l'utilisateur oublie de mettre un argument :
+                </p>
+
+                <pre><code>ANNEE="${1:-*}"
+MOIS="${2:-*}"
+NB="${3:-10}"</code></pre>
+
+                <p>
+                  ⇒ <code>${1:-*}</code> signifie : si <code>$1</code> existe,
+                  prends-le. Sinon utilise <code>*</code>. Si on fait
+                  <code>./compte_lieux.sh</code> ⇒ <code>$1</code> est vide ⇒
+                  <code>ANNEE=*</code> (toutes les années). Même logique pour le
+                  mois et le top 10 par défaut.
+                </p>
+
+                <hr />
+
+                <h3>22/10/2025</h3>
+                <p><strong>Décrire le code du cours :</strong></p>
+
+                <pre><code>#!/usr/bin/env bash
+if [ $# -ne 1 ]
+then
+  echo "ce programme demande un argument"
+  exit
+fi
+
+FICHIER_URLS=$1
+
+OK=0
+NOK=0
+
+while read -r LINE
+do
+  echo "la ligne : $LINE"
+  if [[ $LINE =~ ^https?:// ]]
+  then
+    echo "ressemble à une URL valide"
+    OK=$(expr $OK + 1)
+  else
+    echo "ne ressemble pas à une URL valide"
+    NOK=$(expr $NOK + 1)
+  fi
+done &lt; $FICHIER_URLS
+
+echo "$OK URLs et $NOK lignes douteuses"</code></pre>
+
+                <hr />
+
+                <h3>25/10/2025 — MINI-PROJET</h3>
+                <p><strong>Questions (slides miniprojet.pdf)</strong></p>
+
+                <pre><code>while read -r line;
+do
+  echo ${line};
+done &lt; "urls/fr.txt";</code></pre>
+
+                <p><strong>1. Pourquoi ne pas utiliser cat ?</strong></p>
+                <p>
+                  On utilise pas cat car cette commande ne fait qu'afficher le
+                  contenu du fichier tandis qu'une boucle nous permet d'itérer
+                  sur un élément et de vérifier s'il correspond aux critères
+                  souhaités. Ici nous souhaitons vérifier pour chaque url et
+                  donc chaque ligne du fichier
+                  <code>fr.txt</code> stocké dans le dossier <code>urls</code>.
+                </p>
+
+                <p>
+                  <strong
+                    >2. Comment transformer "urls/fr.txt" en paramètre du script
+                    ?</strong
+                  >
+                </p>
+                <pre><code>FICHIER=$HOME/PPE1-2526/miniprojet/urls/*.fr
+
+for URL in $FICHIER
+do
+  while read -r line;
+  do
+    echo ${line};
+  done &lt; $URL;
+done</code></pre>
+
+                <p><strong>2.1 Valider l’argument</strong></p>
+                <pre><code>if [[ $# -eq 0 ]]; then
+  echo "Erreur, il n'y a aucun fichier dans le dossier"
+  exit 1
+fi
+
+echo "Arguments donnés : $1"</code></pre>
+
+                <p>
+                  <strong
+                    >3. Afficher le numéro de ligne avant chaque URL</strong
+                  >
+                </p>
+                <pre><code>NUM_LIGNE=0
+while read -r line;
+do
+  NUM_LIGNE=$(expr $NUM_LIGNE + 1)
+  echo -e "ligne $NUM_LIGNE \t $line";
+done &lt; "urls/fr.txt"</code></pre>
+
+                <hr />
+
+                <h3>10/11/2025 — HTML / BULMA</h3>
+                <p>
+                  Changement du fichier TSV en fichier HTML. Je connaissais déjà
+                  le principe du HTML car j'en ai déjà fait mais je ne
+                  comprenais pas trop comment il pouvait être incorporé à un
+                  script Bash. Au début la sortie html me disait "Aucun argument
+                  trouvé" car je n'avais pas défini d'argument pour la sortie
+                  html. J'ai ensuite compris qu'il fallait inclure un
+                  <code>&lt;!DOCTYPE&gt;</code>, préciser l'encodage, comme dans
+                  un vrai script html, et non pas seulement les balises.
+                </p>
+
+                <hr />
+
+                <h3>18/11/2025 — CONFLIT GIT</h3>
+                <p>
+                  J'ai eu un conflit de merge pour la première fois en modifiant
+                  mon fichier html directement sur github. Je ne savais pas
+                  comment régler le problème, alors je me suis tournée vers
+                  ChatGPT. Je n'avais pas le même fichier en local et sur
+                  github. Grâce à <code>pwd</code>, <code>git branch</code>,
+                  <code>git status</code> ou encore
+                  <code>find . -name "index.html"</code>, j'ai pu me rendre
+                  compte du problème.
+                </p>
+                <p>
+                  Un message me disait que des commits en local et sur github
+                  ont été effectués : les branches ont divergé. ChatGPT m'a
+                  proposé de faire
+                  <code>git pull --rebase origin main</code> afin de récupérer
+                  ce qu'il y avait sur GitHub et de refaire les commits locaux
+                  par-dessus. Il m'a également proposé
+                  <code>git config --global pull.rebase true</code> pour que Git
+                  fasse toujours un rebase quand je pull. Ensuite, avec nano,
+                  j'ai modifié le html local contenant des marqueurs de
+                  conflits, puis j'ai add, commit, et push.
+                </p>
+
+                <hr />
+
+                <h3>23/12/2025 — ENCODAGE</h3>
+                <p>
+                  Je fais face à un problème d'exécution du script :
+                  <code>Permission denied</code>. J'ai exécuté
+                  <code>chmod +x script.sh</code> mais le message revenait. Puis
+                  j'ai testé d'autres commandes :
+                  <code>chmod u+rw script.sh</code>,
+                  <code>chmod u+x script.sh</code>. Le code fonctionne ensuite,
+                  mais un autre problème apparaît : le programme n'arrive à
+                  accéder à aucune URL malgré le User Agent.
+                </p>
+                <p>
+                  Peut-être que cela est dû au fait que les urls ne peuvent pas
+                  contenir directement de l'arabe, puisque le message "illegal
+                  byte sequence" revient. L'arabe n'est pas encodable en ASCII.
+                  Sur macOS, l'encodage par défaut est UTF-8, mais certains
+                  caractères peuvent être encodés sur des octets différents (ISO
+                  / Windows-1256), donc ça plante.
+                </p>
+
+                <hr />
+
+                <h3>29/12/2025 — WORDCLOUD</h3>
+                <p>
+                  Pour le nuage de mots, j'ai pu en générer un premier qui
+                  n'affichait que des carrés car l'arabe n'est pas affiché comme
+                  les langues latines. Les lettres arabes diffèrent selon leur
+                  position (initiale, médiane, finale) : un reshaping est
+                  nécessaire. L'arabe est aussi une langue sinistroverse (RTL).
+                  Wordcloud ne gère ni le reshaping ni la bidirectionnalité.
+                </p>
+                <p>
+                  La solution a été de préparer le texte via
+                  <code>arabic_reshaper</code> et d'utiliser
+                  <code>python-bidi</code>. Unicode code les caractères mais ne
+                  gère pas l'affichage graphique (RTL, reshaping, etc.) : c'est
+                  le moteur graphique.
+                </p>
+
+                <hr />
+
+                <h3>30/12/2025 — ENCODAGE</h3>
+                <p>
+                  J'ai décidé de déposer les résultats des scripts sur le site.
+                  Les fichiers txt arabes sont lisibles sur mon ordinateur, mais
+                  deviennent illisibles sur le site. Vu les caractères, il
+                  s'agit certainement d'un problème de surencodage.
+                </p>
+                <p>
+                  La langue arabe m'a posé énormément de problèmes au niveau de
+                  la tokenisation et de l'encodage. Comme le dépôt sur le site
+                  est optionnel, je ne vais pas écrire un script de correction,
+                  sachant que les résultats s'affichent correctement en local.
+                  Le problème subsiste même dans les programmes : certaines
+                  lettres arabes dans les motifs regex ne s'affichent pas
+                  correctement.
+                </p>
+              </article>
+            </div>
+
+            <div class="tab-pane fade show active" id="journal-es">
+              <p class="journal-file mb-3">
+                Travail sur le mot <strong>orientalisme</strong> en espagnol.
+              </p>
+
+              <article class="md-wrap">
+                <div class="md-meta">
+                  <span class="md-badge">Journal Catalina</span>
+                  <span class="md-badge">🗓️ 01/10/2025 → 26/11/2025</span>
+                  <span class="md-badge"
+                    >Git · Bash · Terminal · HTML · PALS · Wordcloud</span
+                  >
+                </div>
+
+                <h1>Journal de bord du projet encadré</h1>
+
+                <h2>01/10/25</h2>
+                <p>
+                  Pour améliorer le flux de travail, en ce qui concerle le Mac
+                  Terminal, je dois tenir compte des commandes suivantes : Pour
+                  commencer, ouvrir le Terminal avec le raccourcis [Command (⌘)
+                  + T]
+                </p>
+
+                <p><strong>Les principes de base :</strong></p>
+                <ul>
+                  <li>/ = Répertoire racine</li>
+                  <li>. = Répertoire de travail actuel</li>
+                  <li>.. = Parent du répertoire du travail actuel</li>
+                  <li>~ = Dossier personel</li>
+                  <li>
+                    sudo [command] = Exécuter la commande actuelle en utilisant
+                    les privilèges de sécurité du super utilisateur
+                  </li>
+                  <li>nano [file] = Ouvrir l'éditeur Terminal</li>
+                  <li>open [file] = Ouvrir un fichier spécifié</li>
+                  <li>
+                    [command] -h = Ouvrir l’aide pour une commande spécifique
+                  </li>
+                  <li>
+                    man [command] = Accéder au manuel d’aide pour une commande
+                    spécifique
+                  </li>
+                  <li>exit = Terminer la session shell en cours</li>
+                </ul>
+
+                <h3>En ce qui concerne les premiers exercice avec Git :</h3>
+                <p>
+                  j'ai créé, modifié et évalué le status de mon dépôt Github
+                  avec les commandes suivantes : git clone = pour copier sur mon
+                  mac le dépôt distant, git pull = pour mettre à jour le git
+                  local et git status = vérifier si le dossier est à jour.
+                </p>
+
+                <p>
+                  Sur mon terminal git status ne m'affiche pas les modification
+                  que j'ai efectué sur le dépôt en ligne. Je constant que le git
+                  status que j'ai sur mon Mac ne correspond pas au dernier
+                  commit affiché sur les dépôt en ligne, de même que l'heure du
+                  changement.
+                </p>
+
+                <p>
+                  Pour m'assurer j'ai télécharger la dernier version de mon
+                  dépôt git, je dois éxecuter la commande git pull. Avec la
+                  commande ls dans mon terminal, je constate que le fichier
+                  journal.md est bien présent dans le dossier PPE1-2025.
+                </p>
+
+                <p>
+                  Dans l'exercice 2, je n'ai pas pu créer le fichier
+                  ".gitignore" sur un fichier texte, ma solution a été donc de
+                  le créer depuis le VS code.
+                </p>
+
+                <hr />
+
+                <h2>08/10/25</h2>
+                <p>
+                  Aujourd'hui on a du travailler avec un archive zip que je n'ai
+                  pu télécharger. Ma solution a été donc, de travailler avec
+                  l'archive zip d'une collègue. Je constante que j'ai des
+                  difficultés à manipuler les commandes, je vais faire donc, un
+                  résumé de ces commandes :
+                </p>
+
+                <ul>
+                  <li>
+                    mkdir &lt;dir&gt; = pour générer un nouveau dossier -&gt;
+                    pour créer pkusiers dossier à la fois, sans imbrication =
+                    mkdir &lt;dir1&gt; &lt;dir2&gt; &lt;dir3&gt;
+                  </li>
+                  <li>
+                    rmdir &lt;dir&gt; = Supprimer un dossier vide ; ne
+                    fonctionne pas pour les dossiers contenant du contenu
+                  </li>
+                  <li>
+                    touch &lt;file&gt; = Générer un nouveau fichier sans
+                    spécifier d’extension
+                  </li>
+                  <li>
+                    cp &lt;file1&gt; &lt;file2&gt; &lt;file3&gt;
+                    /Users/&lt;dir&gt; = Dupliquer plusieurs fichiers dans un
+                    seul dossier
+                  </li>
+                  <li>
+                    rm &lt;file&gt; = Supprimer définitivement un fichier :
+                    prudence lors de l’utilisation de cette commande
+                  </li>
+                  <li>
+                    mv &lt;file&gt; &lt;dir&gt; = Déplacer un fichier dans un
+                    nouveau dossier ; permet l’écrasement éventuel de fichiers
+                    existants
+                  </li>
+                  <li>
+                    EX : mv /Users/catalinaalvarez/cours/exercice_1 ./plurital/
+                    -&gt; Déplacer le dossier "exercice_1" à le dossier
+                    "plurital".
+                  </li>
+                  <li>
+                    mv *.png ~/&lt;dir&gt; = Déplacer les fichiers portant
+                    l’extension PNG du dossier actuel vers un nouveau dossier.
+                  </li>
+                </ul>
+
+                <p>
+                  Il faut que je tiens compte à chaque fois de déplacer un
+                  dossier, où je suis placée, à savoir, chemin absolu ou chemin
+                  relatif.
+                </p>
+
+                <pre><code>cp -r ./txt/2016 ./ann/</code></pre>
+
+                <p>
+                  Ce qu'a été très utile comme commande de manipulation, a été
+                  "*", qui remplace le reste des caractères. Je l'ai utilisé
+                  notamment, au moment de déplacer les fichier qui comportent un
+                  nombre ou nom spécifique = ex : mv *_05_*.txt ./05, qui
+                  voulait dire les fichier texte avec 05 en milieu des autres
+                  caractères, le déplacer au dossier 05.
+                </p>
+
+                <ul>
+                  <li>
+                    mv *.odt doc -&gt; déplacer tous les fichier "odt" au
+                    dossier doc.
+                  </li>
+                </ul>
+
+                <blockquote
+                  class="border-start border-light ps-3 ms-0 opacity-90"
+                >
+                  <p class="mb-0">
+                    <strong>BONNE PRATIQUE :</strong> savoir où je suis placée
+                    pour manipuler plus facilement les documents.
+                  </p>
+                </blockquote>
+
+                <h2>SCRIPT BASH</h2>
+
+                <h3>EXERCICE 1</h3>
+                <p>
+                  J'ai du utiliser grape -r comme une recherche récursive dans
+                  tous les sous-dossiers, parce que dans la commande cat 2016/*,
+                  * cible aussi les dossier, pas seulement les fichiers .ann,
+                  j'ai du donc changer ma commande à celle-là :
+                </p>
+
+                <ul>
+                  <li>grep -r "Location" 2016/ | wc -l</li>
+                </ul>
+
+                <p>
+                  Pour le reste, il ne faut pas oublier les définitions des
+                  commandes ci-dessous:
+                </p>
+                <ul>
+                  <li>wc - l = compte les lignes trouvées.</li>
+                  <li>grep = sélectionne les ligne où "mot" apparait</li>
+                  <li>!/usr/bin/bash = shebang</li>
+                </ul>
+
+                <p><strong>correction feuille d'exercices</strong></p>
+                <p><code>echo "argument donne : $1"</code></p>
+                <p><code>echo "nombre de lieux en 2016 :"</code></p>
+                <p>
+                  <code>cat "$CHEMIN/2016/"* | grep location | xc -l</code>
+                </p>
+
+                <p>CHEMIN= il faut donner le chemin vers les fichiers</p>
+
+                <h3>EXERCICE 2</h3>
+                <p>DATADIR = $1<br />ANNEE = $2<br />TYPE = $3</p>
+                <p>
+                  <code>cat $ANNEE/*.ann ??? | grep "$TYPE" | wc -l</code>
+                </p>
+
+                <p><code>cd $DATADIR</code></p>
+                <p><code>echo "Nous sommes ici" :</code></p>
+                <p><code>pdw</code></p>
+
+                <ul>
+                  <li>
+                    créer des varibales pour stocker la variable pour récuperer
+                    les résultat
+                  </li>
+                  <li><code>$()</code></li>
+                  <li>
+                    commande ou pipeline, va être stocker dans la variable.
+                  </li>
+                </ul>
+
+                <p><code>A=$(bash ./compte.sh $DATADIR 2016 $TYPE)</code></p>
+
+                <blockquote
+                  class="border-start border-light ps-3 ms-0 opacity-90"
+                >
+                  <p class="mb-0">|| =&gt; "ou"<br />&amp;&amp; =&gt; "et"</p>
+                </blockquote>
+
+                <h3>EXERCICE 3</h3>
+                <p>
+                  sort = trier, ordre alphabetique<br />uniq -c = evite la
+                  répetition
+                </p>
+
+                <ol>
+                  <li>
+                    vérifier le bon nombre d'arguments : et puis le tester
+                  </li>
+                </ol>
+
+                <p><strong>condition :</strong></p>
+                <pre><code>if [$# -ne 4] 'nombre d'arguments passé au programme'
+then 
+     echo "probleme !"
+     exit
+fi</code></pre>
+
+                <ol start="2">
+                  <li>verifier que DATADIR est bien le fichier de données</li>
+                </ol>
+
+                <pre><code>if [ ! -d $DATADIR]
+then 
+    echo "$DATADIR n'est pas un dossier"
+    exit
+fi</code></pre>
+
+                <ol start="3">
+                  <li></li>
+                </ol>
+
+                <pre><code>if [! -d $DATADIR/2016 ]
+then
+     echo "$DATADIR n'est probablement pas le bon dossier"
+     exit
+fi</code></pre>
+
+                <p><code>B=$(bash ./compte.sh $DATADIR 2017 $TYPE)</code></p>
+
+                <h3>Validation des arguments</h3>
+                <p><strong>Les boucles</strong></p>
+                <pre><code>N=0
+
+for ELEMENT in a b c d
+do
+   N=$(expr $N + 1)
+   echo "le $N ieme élément est $ELEMENT"
+done</code></pre>
+
+                <h2>commenter l'exercice 4 :</h2>
+                <p>shebang</p>
+
+                <p>
+                  On a une condition qui test si le nombre d'argument est égal à
+                  1 lors de l'execution du script. Si la condition n'est pas
+                  respecté, la commande exit arrête l'execution du script.
+                </p>
+
+                <p>
+                  Ensuite, on a trois variables : fichier_urls défini par
+                  l'argument 1, les variables OK et NOK définies par 0.
+                </p>
+
+                <p>
+                  La boucle while utilise la commande "read", pour lire ligne
+                  par ligne le fichier. A chaque tour de boucle la commande echo
+                  permet d'afficher la ligne dans la sortie standard. Nous avons
+                  ensuite, une condition à double crochets, qui permet de
+                  vérifier, à l'aide d'une expression régulière, si la ligne
+                  commence par http:// ou https://, en outre si la condition est
+                  validée, le script affiche en sortie standard : ressemble à
+                  une URL valide et la varible OK s'incremente de 1. Cependant,
+                  si la condition n'est pas validée, les script affiche : "ne
+                  ressemble pas à une URL valide" et la varible NOK s'increment
+                  de 1. finalement, "done" termine la boucle while quand toutes
+                  les lignes sont lues, de même le script affiche les nombres
+                  des URls considérées comme correctes et "lignes douteuses"
+                </p>
+
+                <h2>interagir avec l'internet avec le terminal</h2>
+
+                <p>
+                  <strong>HTML</strong> = langage de balisage hypertexte;
+                  rajouter de la structure autour de quelque chose. Permet de
+                  structuré l'information avec les différents balises.
+                </p>
+
+                <blockquote
+                  class="border-start border-light ps-3 ms-0 opacity-90"
+                >
+                  <p class="mb-0">
+                    http n'est pas sécurisé, htpps est securisé
+                  </p>
+                </blockquote>
+
+                <p>
+                  <strong>LYNX</strong> = navigateur web qui va fonctionner avec
+                  le terminal.
+                </p>
+                <ul>
+                  <li>
+                    aller sur un site web = lynx &lt;adresse du site web&gt;
+                  </li>
+                  <li>
+                    naviguer avec les flechès haut et bas (page suivante) et on
+                    rentre dans les liens avec droite et gauche.
+                  </li>
+                </ul>
+
+                <blockquote
+                  class="border-start border-light ps-3 ms-0 opacity-90"
+                >
+                  <p class="mb-0">Commande + Q pour fermer un programme</p>
+                </blockquote>
+
+                <h3>Exercice</h3>
+                <p>
+                  deux option pour récuperer le cotenu d'une page pour
+                  l'afficher sur l'écran :
+                </p>
+
+                <ul>
+                  <li>
+                    récupérer le contenu textuel d’une page pour l’afficher
+                    (sans navigation)
+                    <ul>
+                      <li>
+                        chercher les options pour une commande, comment faire ?
+                        <strong>R =</strong> head ou man, lynx --help. (chercher
+                        sur le manuel)
+                      </li>
+                      <li>→ option -dump</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <blockquote
+                  class="border-start border-light ps-3 ms-0 opacity-90"
+                >
+                  <p class="mb-0">
+                    -v : qui inverse ce qui est capturé ou pas.
+                  </p>
+                </blockquote>
+
+                <ul>
+                  <li>
+                    retirer la liste des liens d’une page à l’affichage
+                    <ul>
+                      <li>→ option -nolist</li>
+                      <li>
+                        réperer ce qui est régulier dans la partie de la page,
+                        (expression regulière) = <code>=∼ ^ https ?://</code>
+                      </li>
+                      <li>
+                        <strong>option grep</strong> si je mets rien, il va, par
+                        exemple, chercher les occurence de HTTP
+                      </li>
+                      <li><code>lynx "les options" &lt;url&gt;</code></li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h3>CURL</h3>
+                <p><code>curl &lt;URL&gt;</code></p>
+                <p>Où &lt;URL&gt; est une URL vers une page sur le web.</p>
+                <p><strong>Quelques options utiles :</strong></p>
+                <ul>
+                  <li>
+                    -i : va donner des informations sur l’interaction avec le
+                    serveur
+                  </li>
+                  <li>-L : suit les redirections</li>
+                  <li>
+                    -o &lt;fichier&gt; : indique un &lt;fichier&gt; de sortie
+                  </li>
+                  <li>d’autres options à voir par vous-même : -I, -w, -s</li>
+                </ul>
+
+                <blockquote
+                  class="border-start border-light ps-3 ms-0 opacity-90"
+                >
+                  <p class="mb-0">
+                    "tiret i majuscule", équivalent à l’option "head"
+                  </p>
+                </blockquote>
+
+                <hr />
+
+                <h2>Questions miniprojet :</h2>
+                <ol>
+                  <li>
+                    <p>
+                      <strong>Pourquoi ne pas utiliser cat ?</strong><br />
+                      <strong>R =</strong> cat va simplement afficher tout le
+                      contenu du fichier dans le terminal, alors que nous
+                      souhaitons lire et/ou modifier les urls les unes après les
+                      autres, ce qui est possible avec la boucle while et la
+                      commande echo.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong
+                        >Comment transformer "urls/fr.txt" en paramètre du
+                        script ?</strong
+                      ><br />
+                      <strong>R =</strong> On va affecter une variable avec en
+                      valeur le chemin du répertoire, et nous pouvons ensuite
+                      tester l'existe du fichier. Également, nous pouvons
+                      définir un argument le chemin du fichier qui sera utilisé
+                      pour l'éxecution.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>2.1 Valider l’argument :</strong> ajouter le code
+                      nécessaire pour s’assurer qu’on donne bien un argument au
+                      script, sinon on s’arrête.<br />
+                      <strong>R =</strong> cf script
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong
+                        >Comment afficher le numéro de ligne avant chaque URL
+                        (sur la même ligne) ?</strong
+                      ><br />
+                      Bien séparer les valeurs par des tabulations<br />
+                      <strong>R =</strong> il faut utiliser un compteur dans la
+                      boucle while, c'est-à-dire qu'on attribue une valeur à une
+                      variable qui ajoutera 1 à chaque itération de boucle, ceci
+                      nous permettra d'afficher le numéro de la ligne, une
+                      tabulation et l'url.
+                    </p>
+                  </li>
+                </ol>
+
+                <pre><code>fichier | while read -r LINE;
+do
+echo $LINE;
+done    "afficher le contenu du fichier" </code></pre>
+
+                <pre><code>if [ ! -f $1]
+then
+    echo "vous indiquez un fichier"
+    exit 
+fi</code></pre>
+
+                <hr />
+
+                <h2>05/11/2025</h2>
+                <pre><code>then
+     echo "le script attend exactement ..."
+     
+     exit</code></pre>
+
+                <pre><code>lineno = 1
+
+while read -r line;
+do
+     
+     echo -e "${lineno} \t${line}";
+     lineno =$(expr $lineno + 1)
+
+done &lt; $FICHIER_URL;</code></pre>
+
+                <p><code>BASH/PROGRAMMES/MINIPROJET/</code></p>
+                <p><code>ls -l (lire/afficher le nombre de lignes)</code></p>
+
+                <p><code>mkdir a\*isborn</code></p>
+
+                <p>
+                  <code
+                    >ls un dossier n'est pas le même que ls un\dossier (éviter
+                    les spaces)</code
+                  >
+                </p>
+
+                <h2>EXERCICE 2:</h2>
+                <p>
+                  <strong
+                    >RÉCUPERER LE CODE HTTP, ENCODAGE, ET NOMBRE DE MOTS</strong
+                  >
+                </p>
+
+                <p>
+                  <code
+                    >curl -i -w (a la fin tu va m'affciher des choses en plus)
+                    "%{http_code}" h\n% http:// ...</code
+                  >
+                </p>
+                <p>
+                  (avoir le reflexe de lire le manuel (ex : man curl))<br />content-type
+                  : text./
+                </p>
+                <p><code>-s (silence)</code></p>
+                <p><code>\ = option + maj + /</code></p>
+
+                <p><code>head -1 metadata.tmp</code><br />récuperer le chart</p>
+
+                <p>
+                  <code>content_type=$(head -1)</code><br /><code
+                    >cut -d = -f2</code
+                  >
+                  récuperer la deuxième colonne
+                </p>
+
+                <p><code>echo "text/html" | cur -d = -f2</code></p>
+
+                <p>
+                  <code
+                    >echo $content_type | grep -E -o "charset=.*" | cut -d=
+                    -f2</code
+                  >
+                </p>
+
+                <p><code>-stdin recuperer la page html</code></p>
+                <p><code>lynx --help</code></p>
+
+                <p><strong>compte les mots :</strong></p>
+                <pre><code>cat tmp.txt | lynx -dump -stdin -nolist | wc -w</code></pre>
+
+                <hr />
+
+                <h2>HTML</h2>
+                <p>
+                  table = la balise racine du tableau<br />tr = table row, une
+                  ligne (se place dans table)<br />th = table header, une
+                  cellule d'entête<br />td = table data une cellule classique
+                </p>
+
+                <hr />
+
+                <h2>12/11/2025</h2>
+                <p><strong>Validation des arguments</strong></p>
+                <pre><code>if [ $# -ne 2 ]
+then
+     echo "le nombre d'arguments est incorrect !"
+     exit
+fi
+
+fichier_urls=$1
+
+echo -e  "
+
+&lt;html&gt;
+&lt;body&gt;
+&lt;table&gt;
+
+       &lt;tr&gt;
+
+
+"</code></pre>
+
+                <hr />
+
+                <h2>26/11/2025</h2>
+                <p>pip<br />venv<br />uv</p>
+
+                <p>Activate with: source venvs/plurital/bin/activate</p>
+                <p>commande = source $HOME/venvs/plurital/bin/activate</p>
+                <p>
+                  source (...) à chaque fois que tu veux activer ton
+                  environement
+                </p>
+
+                <p><code>uv pip --help</code></p>
+
+                <pre><code>  994  cd PPE1-2526
+  995  git status
+  996  open 
+  997  cd ..
+  998  open PPE1-2526
+  999  cd PPE1-2526
+ 1000  git pull
+ 1001  ls
+ 1002  brew install uv
+ 1003  clear
+ 1004  uv
+ 1005  uv venv $HOME/venvs/plurital
+ 1006  source $HOME/venvs/plurital/bin/activate
+ 1007  where is python3
+ 1008  uv pip install wordcloud
+ 1009  wordcloud_cli --help
+ 
+ /Users/catalinaalvarez/cours/plurital/PPE1-2526/docs
+ 
+ echo le
+ 
+ stopwords file
+ 
+  1023  wordcloud_cli --text pg16066.txt
+ 1024  wordcloud_cli --text pg16066.txt--imagefile pg16066.png
+ 1025  open pg16066.png
+ 1026  wordcloud_cli --text pg16066.txt--imagefile pg16066.png
+ 1027  wordcloud_cli --text pg16066.txt --imagefile pg16066.png
+ 1028  open pg16066.png
+ 1029  wordcloud_cli --text pg16066.txt --imagefile pg16066.png --stopwords stopwords.txt
+ 1030  open pg16066.png
+ 1031  open pg16066.png
+ 1032  wordcloud_cli --text  /Users/catalinaalvarez/cours/plurital/PPE1-2526/docs/pg16066.txt --imagefile pg16066.png --stopwords stopwords.txt
+ 1033  wordcloud_cli --text  /Users/catalinaalvarez/cours/plurital/PPE1-2526/docs/pg16066.txt --imagefile pg16066.png
+ 1034  open pg16066.png
+ 1035  wordcloud_cli --text pg16066.txt --imagefile pg16066.png --stopwords stopwords.txt
+ 1036  wordcloud_cli --text pg16066.txt --imagefile nuage.png --stopcords stopwords.txt
+ 1037  wordcloud_cli --text pg16066.txt --imagefile nuage.png --stopwords stopwords.txt</code></pre>
+
+                <p>
+                  <code
+                    >which python3 = pour savoir quel environement python
+                    travailler</code
+                  >
+                </p>
+
+                <pre><code>  1003  git pull
+  1004  cd ressources
+  1005  cd tokenization
+  1006  ls
+  1007  cd Chinois
+  1008  ls
+  1009  cat chinois.txt
+  1010  cd requirements.txt
+  1011  uv pip install -r requirements.txt
+  1012  ls
+  1013  cd requirements.txt
+  1014  uv pip install -r requirements.txt
+  1015  source $HOME/venvs/plurital/bin/activate
+  1016  uv pip install -r requirements.txt
+  1017  python tokenise_chinese.py chinois.txt &gt; chinois_seg.txt
+  1018  cat chinois.txt | python tokenize_chinese.py &gt; chinois_seg.txt</code></pre>
+
+                <h3>PALS</h3>
+                <pre><code>python3 ./cooccurrents.py --target robot fr-*.txt -N 10 
+
+python3 ./cooccurrents.py --target "robot" fr-*.txt -N 10 -s i 
+
+enumerer l'ensemble de fichier dans un corpus pour faire l'execice de cooccurents  = fr-*.txt prendre l'ensemble de fichier .txt &gt; fichier.tsv &lt;- pour stocker</code></pre>
+              </article>
+            </div>
+
+            <div class="tab-pane fade" id="journal-fr">
+              <p class="journal-file">
+                Journal de bord Salma
+                <strong>suivi individuels des séances</strong> et du projet.
+              </p>
+              <p>
+                Durant les premières seances j'ai decouvers comment utiliser un
+                terminal et realisé mes premiers commits. Par la suite nous
+                avons eu des mini projet qui m'ont appris a creer un script
+                pouvant lire un fichier d'url ligne par ligne et en extraire le
+                contenu vers un fichier txt pour chaque urls.
+              </p>
+              <hr />
+              <p>
+                Questions mini projet 2: partie 1 Pourquoi ne pas utiliser cat ?
+                Parce que contrairement au code ci dessus qui permet de lire
+                ligne par ligne le contenu de urls/fr.txt, cat va afficher tout
+                le conetenu. Comment transformer "urls/fr.txt" en paramètre du
+                script ? creer une variable fichier =$1 , et le generaliser. 2.1
+                Valider l’argument : ajouter le code nécessaire pour s’assurer
+                qu’on donne bien un argument au script, sinon on s’arrête
+                ajouter cette condition: if [ $# -ne 1 ] then echo "il faut un
+                argument ! " exit fi Comment afficher le numéro de ligne avant
+                chaque URL (sur la même ligne) ? Bien séparer les valeurs par
+                des tabulations + incrementer: echo nbligne {line} ; nbligne=$(
+                expr $nbligne + 1); echo -e "Lire les man\
+              </p>
+              <hr />
+              <p>
+                parite 2: Après l’exercice 1 fait, on va rajouter des
+                informations à chaque ligne, toujours séparées par des
+                tabulations : le code HTTP de réponse à la requête curl = permet
+                de recuperer le contenu d'une page web. HTTP=$(curl -s -o
+                /dev/null -w '%{http_code}' "$line") j'ai mis cette commande
+                dans ma boucle, -s permet mettre en sliencieux -o /dev/null
+                permet de rediriger l'output dans un trou noir = contenu du lien
+                pour ne pas les avoir afficher sur mon terminal -w
+                '%{http_code}= cela fait comprendre que je souhaite recuperer ce
+                qu'il y a apres ce qui est ici specifié dans mes acolades, et
+                donc recuperer le code HTTP.{} 1.1 les erreurs peuvent être
+                corrigées l’encodage de la page, s’il est présent j'ai voulu
+                suivre la meme logique que pour le code HTTP ENCODAGE=$(curl -s
+                -o /dev/null -w '%{ text/html; charset=}' "$line") mais ca ne
+                marche pas. en fait charset ce n'etait pas la bone categorie
+                mais plutot ={content_type} et la ca marche ! 3. le nombre de
+                mots dans la page j'ai essaye en pousuivant echo -e " nbligne \t
+                {line} \t wc -w" mais ca ne marche pas. ensuite ; jrai compris
+                qu'il faut que ce soit aussi stocker dans un paramettre , et
+                pour extraire correctement le contenu d'une page web il faut
+                utiliser lynx. MOTS=$(lynx -dump "$line" | wc -w ) la je stock
+                mon resultat qui va itérer wc ens en bas de page donc ce n'est
+                pas correct il faut que j'utilise une autre commande pour
+                qu'elle ne comptabilise pas ces meta données. j'ai ajouté
+                -nolist a -dump pour retirer la liste des liens d'une page à
+                l'affichage.
+              </p>
+              <hr />
+              <p>
+                Mais, il ya toujours un problème, ligne 6 " lynx : accès
+                impossible au fichier de départ https://roboty.magistry.fr/ 6
+                https://roboty.magistry. fr 0" lynx n'arrive pas a lire ce lien,
+                j'ai essaye avec curl et cet url https://roboty.magistry.fr le
+                message que j'ai eu = curl: (60) SSL certificate problem:
+                certificate has expired More details here:
+                https://curl.se/docs/sslcerts.html Stoker le resultat dans un
+                fichier .tsv ajouter une pipe qui permet de prendre le resultat
+                de mes commande et de les stocker dans un fichier tsv et '>>' me
+                permet d'ajouter ce contenu dans un nouveau fichier.
+              </p>
+              <hr />
+              <p>Journal Projet de Groupe:</p>
+              <hr />
+              <p>
+                Pour l’écriture du programme, je me suis aidé des codes
+                développé lors des exercices du mini-projet. J’ai rencontré
+                plusieurs difficultés, notamment pour générer un lien href
+                renvoyant vers un tableau HTML de concordances. Cela a pu être
+                résolue grâce à un script proposé par Catalina. La gestion de
+                chemin relatif et absolu a représenté une difficulté, la
+                solution à été de définir des variables pour chaque partie du
+                script qui génèrent des fichiers vers un chemin relatif. La
+                tokenization des extractions (dump) et contextes a été
+                challengeant, car j'ai dû me familiariser avec la librairie
+                NLTK.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer text-center py-3">PPE • 2025</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/ppe.js"></script>
+  </body>
+</html>

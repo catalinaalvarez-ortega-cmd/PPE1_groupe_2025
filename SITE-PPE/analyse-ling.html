@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Analyse linguistique | Projet de Programmation Encadré</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="PPE.css" rel="stylesheet" />
+
+    <style>
+      .lang-tabs-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-bottom: 0.25rem;
+        margin-bottom: 0.75rem;
+      }
+      .lang-tabs-wrap::-webkit-scrollbar {
+        display: none;
+      }
+
+      .lang-tabs {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+      }
+
+      .lang-tabs .nav-link {
+        border: 1px solid transparent;
+        color: rgba(255, 255, 255, 0.78);
+        background: transparent;
+        margin-bottom: -1px;
+      }
+
+      .lang-tab-btn {
+        border-radius: 999px !important;
+        padding: 0.55rem 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        user-select: none;
+        position: relative;
+        transition: transform 0.15s ease, background-color 0.15s ease,
+          border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+      }
+
+      .lang-tab-btn:hover {
+        transform: translateY(-1px);
+        background: rgba(140, 255, 140, 0.06);
+        border-color: rgba(140, 255, 140, 0.18);
+        color: rgba(255, 255, 255, 0.92);
+      }
+
+      .lang-tab-btn:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba(140, 255, 140, 0.2);
+      }
+
+      .lang-tabs .nav-link.active {
+        background: rgba(140, 255, 140, 0.1);
+        border-color: rgba(140, 255, 140, 0.25);
+        color: #fff;
+      }
+
+      .lang-tabs .nav-link.active::after {
+        content: "";
+        position: absolute;
+        left: 14px;
+        right: 14px;
+        bottom: -10px;
+        height: 2px;
+        border-radius: 2px;
+        background: rgba(140, 255, 140, 0.65);
+        opacity: 0.9;
+      }
+
+      .tab-pane {
+        animation: tabFade 0.18s ease-out;
+      }
+      @keyframes tabFade {
+        from {
+          opacity: 0;
+          transform: translateY(2px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (min-width: 992px) {
+        .lang-tabs {
+          flex-wrap: wrap;
+        }
+        .lang-tabs-wrap {
+          overflow-x: visible;
+        }
+      }
+
+      .modern-card p,
+      .modern-card li {
+        line-height: 1.55;
+      }
+      .mini-title {
+        font-weight: 700;
+        opacity: 0.92;
+        margin-top: 0.75rem;
+      }
+      .soft-hr {
+        border: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 1rem 0;
+      }
+      .code-inline {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+      }
+    </style>
+  </head>
+
+  <body class="corps">
+    <div class="wow-bg" aria-hidden="true"></div>
+
+    <header class="py-3">
+      <div
+        class="container d-flex align-items-center justify-content-between gap-3"
+      >
+        <h4 class="m-0"><em>Projet de Programmation Encadré</em></h4>
+        <span class="badge-soft">Analyse</span>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-dark mt-3">
+        <div class="container">
+          <a class="navbar-brand fw-semibold" href="index.html"
+            >Mot : Orientalisme</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="journal.html">Journal</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="analyse-ling.html"
+                  >Analyse linguistique</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="scripts.html">Scripts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="a-propos.html">À propos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-4">
+      <section class="hero mb-4 reveal">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content p-4 p-md-5">
+          <div class="glass p-3 p-md-4">
+            <h1 class="h3 mb-2 text-center px-2">
+              TEXTOMÉTRIE : ANALYSES LINGUISTIQUES PAR LANGUE
+              <span class="d-block mt-1 opacity-75">
+                (FRANÇAIS, ESPAGNOL, ARABE)
+              </span>
+            </h1>
+            <p class="mb-0 text-center">
+              Sens, connotations, cooccurrents, différences interlinguistiques
+              et domaines (art, science, politique).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reveal">
+        <div class="lang-tabs-wrap">
+          <ul
+            class="nav nav-tabs lang-tabs"
+            id="analyseLangTabs"
+            role="tablist"
+          >
+            <li class="nav-item">
+              <button
+                class="nav-link lang-tab-btn active"
+                data-bs-toggle="tab"
+                data-bs-target="#pane-fr"
+              >
+                Français
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link lang-tab-btn"
+                data-bs-toggle="tab"
+                data-bs-target="#pane-es"
+              >
+                Espagnol
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link lang-tab-btn"
+                data-bs-toggle="tab"
+                data-bs-target="#pane-ar"
+              >
+                Arabe
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content pt-2">
+          <div class="tab-pane fade show active" id="pane-fr">
+            <div class="row g-3">
+              <div class="col-12 col-lg-6">
+                <div class="cardx modern-card p-4 js-spotlight">
+                  <h2 class="h5 mb-2">Hypothèses</h2>
+                  <p class="mb-0">
+                    Je suppose que l’orientalisme est une notion qui évoque les
+                    civilisations orientales. Ce terme ferait référence aux arts
+                    et à la culture orientale allant du Maghreb à l’Asie, et
+                    résulterait des échanges entre Orient et Occident, notamment
+                    à travers la colonisation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <div class="cardx modern-card p-4 js-spotlight">
+                  <h2 class="h5 mb-2">Observations</h2>
+
+                  <p class="mb-2">
+                    Pour le choix du corpus en français, j’ai décidé de
+                    diversifier les sources en sélectionnant des URL issues de
+                    domaines littéraires, scientifiques et journalistiques.
+                    Cette diversification des sources me permet d’en dégager un
+                    sens plus global du terme étudié. Le mot choisi étant
+                    orientalisme, je ne souhaitais pas limiter ma recherche à ce
+                    terme précis, mais l’élargir à ses variations lexicales
+                    telles que orientaliste, oriental, orient pour capturer une
+                    vision plus large et plus complète de ce thème.
+                  </p>
+
+                  <hr class="soft-hr" />
+
+                  <div class="mini-title">Résultats</div>
+                  <p class="mb-0">
+                    Les mots les plus intéressants, selon le tableau des
+                    co-occurrences en enlevant les mots peu signifiant sont
+                    :<strong> Moyen(210)</strong>,
+                    <strong>Occident(136)</strong
+                    >, <strong>siècle(128)</strong>,
+                    <strong>paris(63)</strong>,<strong> artistes(54)</strong>,
+                    <strong>said(49)</strong>,<strong> peinture(49)</strong>,
+                    <strong>français(49)</strong>, <strong>Europe(49)</strong>,
+                    <strong>femmes(43)</strong>. Nous observons que selon les
+                    cooccurrences ce terme est souvent cité par opposition a
+                    occident, ou encore dans des contextes culturelles et
+                    littéraires comme Victor Hugo et ses ecrits inspirés de cet
+                    univers , artistes comme Delacroix qui a contribué au
+                    mouvement artistique autour de cet imaginaire, ou Edward
+                    Said célèbre ecrivains palestino-americain qui a theorisé
+                    cette thématique relatives aux études post-coloniale. Ces
+                    résultats confirmeent que l’orientalisme est le fruits des
+                    echanges litteraires, artisitiques et culturelles de
+                    l'orient vers l'occident et d'autres par elle est le reflet
+                    d’un imaginaire fantasmé par l’Occident. Ce courant a entre
+                    autres nourri des stéréotypes dans une moindre mesure et à
+                    contribué a une légitimation d’une domination coloniale.
+                    (<strong>stéréoptye(17)</strong>,
+                    <strong>domination(18)</strong>,
+                    <strong>coloniale(23)</strong><strong>clichés(11)</strong>).
+                    Nous pouvons constaté egalement que l'orientalisme en
+                    français fait référence géographiquement surtout au
+                    Maghreb(9), au moyen orient(11), et aux ottomans(11)et a
+                    l'asie (25).
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="cardx modern-card p-4 js-spotlight">
+                  <h2 class="h5 mb-2">Conclusion</h2>
+                  <p class="mb-2">
+                    Nous pouvons conclure qu’en français, l’orientalisme évoque
+                    principalement la <strong>peinture</strong>,
+                    <strong>Paris</strong>, la <strong>littérature</strong> et
+                    que ce terme se construit par opposition à
+                    <strong>occident</strong>. Cela correspond largement à
+                    l’idée que nous nous faisions avant de commencer ce projet.
+                  </p>
+                  <p class="mb-0">
+                    Ce qui a ete surprenant c'est de voir que ce terme évoque
+                    aussi la domination et la colonisation, et qu'en terme de
+                    zone géographique cela s'étant de l'afrique à l'asie.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="cardx modern-card p-4 js-spotlight">
+                  <h2 class="h5 mb-2">Document PDF (Salma)</h2>
+                  <p class="mb-3">
+                    Version PDF de l’analyse linguistique française (lecture
+                    directe + téléchargement).
+                  </p>
+
+                  <div class="d-flex flex-wrap gap-2 mb-3">
+                    <a
+                      class="btn btn-outline-light btn-sm"
+                      target="_blank"
+                      href="Salma/analyse_PPE_salma.pdf"
+                      >📄 Ouvrir le PDF</a
+                    >
+                    <a
+                      class="btn btn-outline-light btn-sm"
+                      download
+                      href="Salma/analyse_PPE_salma.pdf"
+                      >⬇ Télécharger</a
+                    >
+                  </div>
+
+                  <div class="ratio ratio-4x3">
+                    <iframe
+                      src="Salma/analyse_PPE_salma.pdf"
+                      title="Analyse linguistique français (PDF)"
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+
+                  <p class="mt-3 mb-0 opacity-75">
+                    Si le PDF ne s’affiche pas sur certains navigateurs,
+                    utilisez le bouton “Ouvrir le PDF”.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="pane-es">
+            <div class="row g-3">
+              <div class="col-12 col-lg-6">
+                <div class="cardx modern-card p-4 js-spotlight">
+                  <h2 class="h5 mb-2">Hypothèses</h2>
+                  <p class="mb-0">
+                    Lors de la recherche des sites, je n’ai pas souhaité me
+                    concentrer sur un thème spécifique, mais plutôt sur les
+                    premiers résultats affichés par les moteurs de recherche.
+                    L’objectif était de voir quels mots étaient mis en avant au
+                    moment de chercher le terme « oriental » en espagnol. Par
+                    conséquent, l’un de nos intérêts communs est de révéler s’il
+                    existe des différences marquantes en termes de
+                    stigmatisation de l’Orient, ainsi que la manière dont il est
+                    évoqué dans les hémisphères occidental, oriental et sud.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <div class="cardx modern-card p-4 js-spotlight">
+                  <h2 class="h5 mb-2">Observations</h2>
+
+                  <p class="mb-2">
+                    Le corpus analysé repose sur un ensemble de
+                    <strong>30 URL</strong> sélectionnées pour explorer le mot «
+                    orient » dans différents contextes en espagnol. Ces sites
+                    couvrent plusieurs thèmes évoquant l’art, l’éducation, la
+                    culture, mais aussi la géographie. Ceux-ci permettent de
+                    dégager des catégories d’usage principales, reflétant la
+                    polysémie du mot.
+                  </p>
+
+                  <p class="mb-2">
+                    Il ne s’agit là que d’un exemple représentatif d’un corpus
+                    plus vaste, mis en évidence dans le nuage de mots, où l’on
+                    peut observer en profondeur tous les termes gravitant autour
+                    du mot étudié.
+                  </p>
+
+                  <hr class="soft-hr" />
+
+                  <p class="mb-2">
+                    Pour analyser les cooccurrents, la commande utilisée est :
+                  </p>
+
+                  <pre
+                    class="mb-0"
+                  ><code>python3 /Users/catalinaalvarez/cours/plurital/PPE1_groupe_2025/programmes/cooccurrents.py \
+  /Users/catalinaalvarez/cours/plurital/PPE1_groupe_2025/PALS/espagnol_pals/dumps-text-espagnol.txt \
+  --target '.*orient.*' \
+  --match-mode regex \
+  -s i \
+  &gt; /Users/catalinaalvarez/cours/plurital/PPE1_groupe_2025/PALS/dumps-text.tsv</code></pre>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="cardx modern-card p-4 js-spotlight">
+                  <h2 class="h5 mb-2">Exemples commentés</h2>
+
+                  <p class="mb-2">
+                    En examinant les concurrents du mot « orient » dans notre
+                    corpus, nous remarquons la présence du terme « medio », qui
+                    fonctionne ici comme modificateur adjectival du nom « orient
+                    ». De même, on trouve « estudios » et « arte », qui jouent
+                    le rôle de compléments du nom étudié. Sur le plan
+                    syntaxique, nous pouvons donc déduire que « orient » n’est
+                    pas seulement défini comme un lieu situé dans l’espace
+                    géographique, en l’occurrence « medio oriente », mais aussi
+                    comme un cadre englobant des branches académiques et
+                    artistiques.
+                  </p>
+
+                  <p class="mb-2">
+                    Nous avons d’abord analysé la fréquence globale et la
+                    distribution des variantes. Pour ce faire, nous avons ciblé
+                    tout texte contenant la séquence « orient », qu’elle
+                    apparaisse au début, au milieu ou à la fin de la chaîne :
+                    <span class="code-inline">.*orient.*</span>. La fréquence
+                    totale dans le corpus s’élève à
+                    <strong>917 occurrences</strong>, réparties comme suit :
+                  </p>
+
+                  <ul class="mb-2">
+                    <li>Oriente (205)</li>
+                    <li>Orientalismo (193)</li>
+                    <li>Oriental (173)</li>
+                    <li>Orientales (110)</li>
+                    <li>Orientalista (102)</li>
+                    <li>Orientalistas (50)</li>
+                    <li>Orientaliedad (28)</li>
+                    <li>Orientalism (13)</li>
+                    <li>Orientación (11)</li>
+                    <li>Orientalialismo (4)</li>
+                    <li>Autres variantes (entre 3 et 1 occurrence)</li>
+                  </ul>
+
+                  <p class="mb-2">
+                    La colonne « spécificité » mesure la force de l’association
+                    entre l’objet d’étude et ses cooccurrences. Le mot « asia »
+                    (spécificité = 10,77) est fortement associé à « oriente »
+                    dans un contexte géographique. Pour « medio », la
+                    spécificité atteint 5,60 : cette association renvoie
+                    également à une zone géographique, mais avec une nuance
+                    politique et internationale. Des mots comme « estudios »
+                    (3,48) et « arte » (3,23) reflètent une dimension
+                    culturelle. « discurso » (2,11) et « occidente » (2,36)
+                    relèvent de la sphère politique à laquelle « medio » fait
+                    référence.
+                  </p>
+
+                  <p class="mb-2">
+                    Pour les contextes, la commande utilisée est :
+                  </p>
+
+                  <pre
+                    class="mb-2"
+                  ><code>python3 /Users/catalinaalvarez/cours/plurital/PPE1_groupe_2025/programmes/cooccurrents.py \
+  /Users/catalinaalvarez/cours/plurital/PPE1_groupe_2025/PALS/espagnol_pals/contextes-espagnol.txt \
+  --target '.*orient.*' \
+  --match-mode regex \
+  -N 30 \
+  -s i \
+  &gt; /Users/catalinaalvarez/cours/plurital/PPE1_groupe_2025/PALS/contextes.tsv</code></pre>
+
+                  <p class="mb-2">
+                    Les cooccurrences fréquentes restent globalement les mêmes
+                    que dans les dumps. Les plus spécifiques révèlent les
+                    associations immédiates du mot cible : « asia », toujours
+                    fortement lié, tout comme « medio ». En revanche, « pirineos
+                    » et « norte » prennent cette fois une place importante,
+                    soulignant l’association du mot avec une zone géographique.
+                    Les mots « áfrica », « occidente » et « discurso »
+                    renforcent la dimension géopolitique.
+                  </p>
+
+                  <p class="mb-2">
+                    Enfin, la comparaison des nuages de mots (dumps vs
+                    contextes) complète l’analyse : les dumps font ressortir
+                    visuellement « Asia », « said », « historia », « cultura »,
+                    « mundo », tandis que les contextes mettent en avant « medio
+                    », « asia », « estudios ». Les scripts donnent des chiffres,
+                    la visualisation met en évidence les grands thèmes.
+                  </p>
+
+                  <p class="mb-0">
+                    En somme, chaque suffixe nominal associé à « oriente »
+                    évoque un point de vue distinct :
+                    <br /><strong>-ismo</strong> (courant
+                    esthétique/intellectuel),
+                    <strong>-ista</strong> (spécialistes/professions),
+                    <strong>-ción</strong> (action/processus).
+                    <br />
+                    On peut en déduire qu’en espagnol, sur le web, « oriente »
+                    est perçu comme une zone d’étude géopolitique et culturelle
+                    majeure.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="cardx modern-card p-4 js-spotlight">
+                  <h2 class="h5 mb-2">Document PDF (Catalina)</h2>
+                  <p class="mb-3">
+                    Version PDF de l’analyse linguistique espagnole (lecture
+                    directe + téléchargement).
+                  </p>
+
+                  <div class="d-flex flex-wrap gap-2 mb-3">
+                    <a
+                      class="btn btn-outline-light btn-sm"
+                      target="_blank"
+                      href="Catalina/ppe_analyse_linguistique.pdf"
+                      >📄 Ouvrir le PDF</a
+                    >
+                    <a
+                      class="btn btn-outline-light btn-sm"
+                      download
+                      href="Catalina/ppe_analyse_linguistique.pdf"
+                      >⬇ Télécharger</a
+                    >
+                  </div>
+
+                  <div class="ratio ratio-4x3">
+                    <iframe
+                      src="Catalina/ppe_analyse_linguistique.pdf"
+                      title="Analyse linguistique espagnole (PDF)"
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+
+                  <p class="mt-3 mb-0 opacity-75">
+                    Si le PDF ne s’affiche pas sur certains navigateurs,
+                    utilisez le bouton “Ouvrir le PDF”.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="pane-ar">
+            <div class="row g-3">
+              <div class="col-12 col-lg-6">
+                <div class="cardx modern-card p-4 js-spotlight">
+                  <h2 class="h5 mb-3">Hypothèses</h2>
+                  <ul class="mb-0">
+                    <li>
+                      Je m’attendais à retrouver davantage de termes à
+                      connotation péjorative que dans les autres langues, dans
+                      la mesure où l’arabe est la langue des peuples qui ont été
+                      étudiés dans le cadre des sciences orientalistes. Par
+                      ailleurs, les premières études orientalistes portaient
+                      principalement sur des dimensions spirituelles, qu’il
+                      s’agisse de la religion ou de la philosophie. À cela
+                      s’ajoute le fait que la langue arabe est une langue
+                      liturgique : je m’attendais donc à observer un grand
+                      nombre d’occurrences en lien avec l’islam, l’islamologie
+                      mais aussi avec des notions telles que la colonisation ou
+                      l’endoctrinement. En revanche, je ne m’attendais pas à ce
+                      que les résultats soient aussi largement centrés sur
+                      l’orientalisme en tant que mouvement artistique et
+                      littéraire, ni à une présence relativement limitée de
+                      critiques et de remises en question.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <div class="cardx modern-card p-4 js-spotlight">
+                  <h2 class="h5 mb-3"><strong>Observations</strong></h2>
+                  <ul class="mb-0">
+                    <li>
+                      <h2 class="h5 mt-4 mb-2">
+                        <strong>Extractions des URLs</strong>
+                      </h2>
+                      La langue arabe est une langue flexionnelle, à écriture
+                      sinistroverse, qui ne peut pas être encodée en ASCII. Il
+                      est donc essentiel de prendre en compte ces paramètres
+                      avant le développement de tout script, sous peine de
+                      rencontrer de nombreuses difficultés techniques, notamment
+                      des problèmes d’encodage, de bidirectionnalité ou d’autres
+                      problèmes liés au marquage casuel. Afin d’extraire les
+                      occurrences pertinentes à partir des différentes URLs,
+                      j’ai défini une expression régulière permettant
+                      d’identifier les formes du lexème « orientaliste » et «
+                      orientalisme », en tenant compte des variations de genre
+                      (féminin / masculin /duel / pluriel) ainsi que des formes
+                      relevant du cas direct ou indirect.
+
+                      <h2 class="h5 mt-4 mb-2"><strong>Bigrammes</strong></h2>
+                      L’observation des bigrammes confirme d’ores et déjà
+                      l’hypothèse de départ que je m’étais formulée. En effet,
+                      de nombreux bigrammes renvoient au champ religieux et plus
+                      particulièrement à l’islam. On peut notamment citer des
+                      entités nommées telles que « saint Coran », « nazaréens »,
+                      « juifs » ainsi que des adjectifs comme « prophétique » ou
+                      « hérétique ». Par ailleurs, un nombre significatif de
+                      bigrammes est lié aux domaines des études, de la recherche
+                      et de la traduction, qui constituent des disciplines
+                      fondatrices de l’orientalisme envisagé comme discipline
+                      scientifique. Bien que les bigrammes puissent être
+                      considérés comme des associations de mots apparaissant
+                      hors d’un contexte discursif précisément défini, ils
+                      permettent néanmoins de valider une partie des hypothèses
+                      initiales et d’établir certains contextes d’usage.
+
+                      <h2 class="h5 mt-4 mb-2">
+                        <strong>Concordances</strong>
+                      </h2>
+
+                      Le tableau de concordances permet de restituer les
+                      contextes d’occurrence des mots étudiés. L’analyse
+                      confirme une nouvelle fois les hypothèses formulées en
+                      amont. Le terme « مستشرقين » (orientalistes, pluriel
+                      externe masculin, tous cas confondus) apparaît
+                      majoritairement dans des contextes à dimension politique
+                      et religieuse. Ces occurrences s’accompagnent fréquemment
+                      de syntagmes et de lexèmes relevant du champ académique et
+                      informationnel, tels que « étude de la langue arabe », «
+                      étude d’avis », « avis », « informations », « recherches »
+                      ou encore « article ». Il est également intéressant de
+                      relever l’apparition de domaines qui n’avaient pas été
+                      initialement anticipés, tels que l’art, avec l’emploi du
+                      terme « artistes » (فنانين), bien qu’il ne s’agisse que
+                      d’une occurrence isolée au regard de l’ensemble des
+                      observations effectuées. Le contexte religieux se confirme
+                      de manière encore plus marquée dans certains fichiers de
+                      concordances (cf la capture ci-dessous), où l’orientalisme
+                      est présenté comme une discipline dédiée à l’étude de la
+                      langue arabe et de l’islam, selon une approche se voulant
+                      « précise ». Cette formulation sous-entend l’existence de
+                      méthodologies d’étude spécifiques propres à ce champ
+                      disciplinaire.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="cardx modern-card p-4 js-spotlight">
+                  <h2 class="h5 mb-3"><strong>Conclusion</strong></h2>
+                  <p class="mb-0">
+                    Nous pouvons conclure qu’en langue arabe, les sites traitant
+                    de l’orientalisme évoquent le plus souvent les fondements
+                    sur lesquels cette discipline s’est construite, à savoir
+                    l’étude des peuples orientaux, de leurs usages et coutumes,
+                    de leurs pratiques religieuses et spirituelles, de leurs
+                    habitus, ainsi que de leur langue. L’orientalisme y est
+                    d’abord désigné comme un « attrait pour l’Orient », puis
+                    comme une science consacrée à l’étude des « choses venant
+                    d’Orient ». En revanche, aucune occurrence de termes tels
+                    que « colonisation », « colonie », « endoctrinement », ou
+                    d’autres lexèmes relevant du même champ sémantique n’a été
+                    relevée. Ainsi, la majorité des hypothèses formulées au
+                    départ se trouvent confirmées.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="cardx modern-card p-4 js-spotlight">
+                  <h2 class="h5 mb-3">Document PDF (Myriam)</h2>
+                  <p class="mb-3">
+                    Version PDF de l’analyse linguistique arabe (lecture directe
+                    + téléchargement).
+                  </p>
+
+                  <div class="d-flex flex-wrap gap-2 mb-3">
+                    <a
+                      class="btn btn-outline-light btn-sm"
+                      target="_blank"
+                      href="analyse-ling-arabe-ppe.pdf"
+                      >📄 Ouvrir le PDF</a
+                    >
+                    <a
+                      class="btn btn-outline-light btn-sm"
+                      download
+                      href="analyse-ling-arabe-ppe.pdf"
+                      >⬇ Télécharger</a
+                    >
+                  </div>
+
+                  <div class="ratio ratio-4x3">
+                    <iframe
+                      src="analyse-ling-arabe-ppe.pdf"
+                      title="Analyse linguistique arabe (PDF)"
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+
+                  <p class="mt-3 mb-0 opacity-75">
+                    Si le PDF ne s’affiche pas sur certains navigateurs,
+                    utilisez le bouton “Ouvrir le PDF”.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="to-top" id="toTop" aria-label="Remonter en haut">↑</button>
+    <footer class="footer">PPE • 2025</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/ppe.js"></script>
+  </body>
+</html>
