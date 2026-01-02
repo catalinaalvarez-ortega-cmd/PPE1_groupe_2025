@@ -180,7 +180,7 @@
           <div class="row g-3">
 
             <div class="col-md-4">
-              <a class="script-btn" href="Salma/orirentalisme_fr_programme.sh" download>
+              <a class="script-btn" href="../programmes/orirentalisme_fr_programme.sh" download>
                 <div class="script-title">Pipeline principal (FR) <span class="badge-soft">📄</span></div>
                 <div class="script-file">orirentalisme_fr_programme.sh</div>
                 <div class="script-meta">Téléchargement/traitement + génération des sorties (FR).</div>
@@ -188,7 +188,7 @@
             </div>
 
             <div class="col-md-4">
-              <a class="script-btn" href="Salma/tsv_to_html_table.py" download>
+              <a class="script-btn" href="../programmes/tsv_to_html_table.py" download>
                 <div class="script-title">TSV → HTML <span class="badge-soft">🐍</span></div>
                 <div class="script-file">tsv_to_html_table.py</div>
                 <div class="script-meta">Conversion des tableaux TSV en pages HTML lisibles.</div>
@@ -196,7 +196,7 @@
             </div>
 
             <div class="col-md-4">
-              <a class="script-btn" href="Salma/tokenizer.py" download>
+              <a class="script-btn" href="../programmes/tokenizer.py" download>
                 <div class="script-title">Tokenisation (FR) <span class="badge-soft">🐍</span></div>
                 <div class="script-file">tokenizer.py</div>
                 <div class="script-meta">Tokenisation et préparation des fichiers de sortie.</div>
@@ -204,7 +204,7 @@
             </div>
 
             <div class="col-md-4">
-              <a class="script-btn" href="Salma/wordcloud-fr.py" download>
+              <a class="script-btn" href="../programmes/wordcloud-fr.py" download>
                 <div class="script-title">Nuage de mots (FR) <span class="badge-soft">🐍</span></div>
                 <div class="script-file">wordcloud-fr.py</div>
                 <div class="script-meta">Génération du wordcloud français.</div>
@@ -232,7 +232,7 @@
           <div class="row g-3">
 
             <div class="col-md-4">
-              <a class="script-btn" href="Catalina/script.sh" download>
+              <a class="script-btn" href="../programmes/script.sh" download>
                 <div class="script-title">Pipeline principal (ES) <span class="badge-soft">📄</span></div>
                 <div class="script-file">script.sh</div>
                 <div class="script-meta">Traitement global + génération des sorties (ES).</div>
@@ -240,7 +240,7 @@
             </div>
 
             <div class="col-md-4">
-              <a class="script-btn" href="Catalina/concordance.sh" download>
+              <a class="script-btn" href="../programmes/concordance.sh" download>
                 <div class="script-title">Concordances (ES) <span class="badge-soft">📄</span></div>
                 <div class="script-file">concordance.sh</div>
                 <div class="script-meta">Extraction des lignes de concordance / KWIC (ES).</div>
@@ -248,7 +248,7 @@
             </div>
 
             <div class="col-md-4">
-              <a class="script-btn" href="Catalina/make_pals_corpus.sh" download>
+              <a class="script-btn" href="../programmes/make_pals_corpus.sh" download>
                 <div class="script-title">PALS – corpus (ES) <span class="badge-soft">📄</span></div>
                 <div class="script-file">make_pals_corpus.sh</div>
                 <div class="script-meta">Préparation du corpus au format PALS (ES).</div>
@@ -256,7 +256,7 @@
             </div>
 
             <div class="col-md-4">
-              <a class="script-btn" href="Catalina/wordcloud_es.py" download>
+              <a class="script-btn" href="../programmes/wordcloud_es.py" download>
                 <div class="script-title">Nuage de mots (ES) <span class="badge-soft">🐍</span></div>
                 <div class="script-file">wordcloud_es.py</div>
                 <div class="script-meta">Génération du wordcloud espagnol.</div>
@@ -380,18 +380,18 @@
   }
 
   const fr = [];
-  fr.push(makeCard("Résultats HTML (FR)", pick("RESULTS/francais_aspiration/", "fr-"), "🧾"));
-  fr.push(makeCard("Concordances (KWIC) – HTML (FR)", pick("RESULTS/concordances/francais_concordance/", "fr-"), "🔎"));
-  fr.push(makeCard("Contextes – TXT (FR)", pick("RESULTS/contextes/francais_contexte/", "fr-"), "📚"));
-  fr.push(makeCard("Dumps – TXT (FR)", pick("RESULTS/dumps-text/francais_dump/", "fr-"), "🧱"));
-  fr.push(makeCard("Token – contextes/dumps (FR)", pick("RESULTS/Token/", "fr-"), "🧩"));
+  fr.push(makeCard("Résultats HTML (FR)", pick("../aspirations/francais_aspiration/", "fr-"), "🧾"));
+  fr.push(makeCard("Concordances (KWIC) – HTML (FR)", pick("../concordances/francais_concordance/", "fr-"), "🔎"));
+  fr.push(makeCard("Contextes – TXT (FR)", pick("../contextes/francais_contexte/", "fr-"), "📚"));
+  fr.push(makeCard("Dumps – TXT (FR)", pick("../dumps-text/francais_dump/", "fr-"), "🧱"));
+  fr.push(makeCard("Token – contextes/dumps (FR)", pick("../Token/", "fr-"), "🧩"));
   document.getElementById("fr-results").innerHTML = fr.join("");
 
   const es = [];
-  es.push(makeCard("Résultats HTML (ES)", pick("RESULTS/espagnol/", "espagnol-"), "🧾"));
-  es.push(makeCard("Concordances (KWIC) – HTML (ES)", pick("RESULTS/concordances/espagnol/", "espagnol-"), "🔎"));
-  es.push(makeCard("Contextes – TXT (ES)", pick("RESULTS/contextes/espagnol/", "espagnol-"), "📚"));
-  es.push(makeCard("Dumps – TXT (ES)", pick("RESULTS/dumps-text/espagnol/", "espagnol-"), "🧱"));
+  es.push(makeCard("Résultats HTML (ES)", pick("../aspirations/espagnol/", "espagnol-"), "🧾"));
+  es.push(makeCard("Concordances (KWIC) – HTML (ES)", pick("../concordances/espagnol/", "espagnol-"), "🔎"));
+  es.push(makeCard("Contextes – TXT (ES)", pick("../contextes/espagnol/", "espagnol-"), "📚"));
+  es.push(makeCard("Dumps – TXT (ES)", pick("../dumps-text/espagnol/", "espagnol-"), "🧱"));
   document.getElementById("es-results").innerHTML = es.join("");
 
   const ar = [];
