@@ -3061,6 +3061,8 @@ gouvernée
 par
 les
 califats
+rachidoun
+,
 omeyyade
 et
 abbasside
@@ -3109,9 +3111,9 @@ géopolitiques
 et
 stratégiques
 ,
-sans
-prendre
 --
+locales
+.
 Cette
 approche
 facilita
@@ -7271,8 +7273,8 @@ Orient
 &
 oldid
 =
-2315976
-95
+2320168
+92
 ».
 Catégorie
 :
