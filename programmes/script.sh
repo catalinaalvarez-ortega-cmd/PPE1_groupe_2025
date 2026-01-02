@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# TODO
+# TODO
 # lecture multilingue
 # gestion des code 403 et fichiers vides dans les tableaux
 DIR="$(pwd)"
 
-# rend le fichier executable pour construire les concordanciers
+# rend le fichier executable pour construire les concordanciers 
 chmod +x "$DIR/programmes/concordance.sh"
 
 # variables prédéfinies
 dossier="$DIR/URLs"
-tab="tableau.html"
+tab="tableau"
 
 # Saisie des arguments
 #read -r -p "Donnez le nom du dossier contenant les fichiers de liens http : " dossier
@@ -22,33 +22,10 @@ tab="tableau.html"
 motif1=مستشرقين
 motif2=orient
 motif3=oriental
-
-echo "<html>
-  <head>
-    <meta charset=\"UTF-8\" />
-    <title>Programmation et Projet Encadré</title>
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
-    <link
-      rel=\"stylesheet\"
-      href=\"https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css\"
-    />
-  </head>
-  <body>
-    <div class=\"container is-fluid\">
-      <div class=\"box my-6\"><span class=\"is-size-1\">Tableaux HTML</span></div>
-      <nav class=\"navbar mb-6\" role=\"navigation\" aria-label=\"main navigation\">
-        <div id=\"navbarBasicExample\" class=\"navbar-menu\">
-          <div class=\"navbar-start\">
-            <a class=\"navbar-item\" href=\"../../index.html\"> Accueil </a>
-            <a class=\"navbar-item\"> Script </a>
-            <a class=\"navbar-item has-background-info-light\"> Tableaux </a>
-          </div>
-        </div>
-      </nav>"  > "$DIR/tableaux/$tab"
-
+      
 # initialise un compteur de fichiers
 indice=0
-for fichier in "$dossier"/espagnol.txt; do
+for fichier in "$dossier"/*.txt; do
     ((indice++))
 
     # assigne une langue à partir du nom du fichier
@@ -56,7 +33,7 @@ for fichier in "$dossier"/espagnol.txt; do
 
     motif=""
 
-    # reconnaissance de la langue et assigne le bon motif à rechercher
+    # reconnaissance de la langue et assigne le bon motif à rechercher 
     if [ "$lang" = "arabe" ]; then
       motif=$motif1
     elif [ "$lang" = "espagnol" ]; then
@@ -80,24 +57,119 @@ for fichier in "$dossier"/espagnol.txt; do
     # initialise un compteur de lignes
     line=0
 
-    echo -e "
-        <span class=\"tag is-dark is-large\">Tableau n° $indice, langue : $lang</span>
-        <table class=\"table mx-auto is-striped is-narrow my-6\">
-        <thead>
-          <tr>
-            <th><abbr title=\"Index\">index</abbr></th>
-            <th>url</th>
-            <th><abbr title=\"Code\">http code</abbr></th>
-            <th><abbr title=\"Encoding\">encodage</abbr></th>
-            <th><abbr title=\"html page\">page aspirée</abbr></th>
-            <th><abbr title=\"Dump\">dumps utf-8</abbr></th>
-            <th><abbr title=\"Dump utf-8\">dumps convertis</abbr></th>
-            <th class=\"has-text-centered\"><abbr title=\"Words\">occurences</abbr></th>
-            <th><abbr title=\"Context\">contexte</abbr></th>
-            <th><abbr title=\"Concordance\">concordance</abbr></th>
-          </tr>
-        </thead>
-        <tbody>" >> "$DIR/tableaux/$tab"
+    out_file="$DIR/tableaux/$tab-$lang.html"
+
+    cat > "$out_file" <<EOF
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tableaux | PPE Orientalisme</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="PPE.css" rel="stylesheet" />
+
+    <style>
+      /* Ajustements locaux pour un rendu table lisible sur fond sombre (sans impacter le reste du site) */
+      .ppe-table {
+        --bs-table-color: var(--ink);
+        --bs-table-bg: transparent;
+        --bs-table-striped-color: var(--ink);
+        --bs-table-striped-bg: rgba(255, 255, 255, 0.045);
+        --bs-table-border-color: rgba(255, 248, 220, 0.16);
+      }
+      .ppe-table thead th {
+        border-bottom-color: rgba(255, 248, 220, 0.22);
+        opacity: 0.95;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      .ppe-table td,
+      .ppe-table th {
+        vertical-align: middle;
+      }
+      .ppe-table .table-danger > * {
+        --bs-table-bg: rgba(220, 53, 69, 0.14);
+        --bs-table-striped-bg: rgba(220, 53, 69, 0.16);
+        --bs-table-color: var(--ink);
+      }
+      .ppe-table td a {
+        word-break: break-word;
+      }
+    </style>
+  </head>
+
+  <body class="corps">
+    <div class="wow-bg" aria-hidden="true"></div>
+
+    <header class="py-3">
+      <nav class="navbar navbar-expand-lg navbar-dark mt-3">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" rel="_blank" href="././index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" rel="_blank" href="././index.html"
+                  >Tableau Arabe</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" rel="_blank" href="././index.html"
+                  >Tableau Espagnol</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" rel="_blank" href="././index.html"
+                  >Tableau Français</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-4">
+      <section class="hero mb-4 reveal">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content p-4 p-md-5">
+          <div class="glass p-3 p-md-4 text-center">
+            <h1 class="h3 mb-1"><strong>Tableau n°$indice : langue $lang</strong></h1>
+            <p class="mb-0 opacity-75">
+              Résultats d’aspiration, dumps, contextes et concordances.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reveal">
+        <div class="modern-card p-3 p-md-4">
+          <div class="table-responsive">
+            <table class="table table-striped table-sm align-middle ppe-table">
+              <thead>
+                <tr>
+                  <th><abbr title="Index">index</abbr></th>
+                  <th>url</th>
+                  <th><abbr title="Code">http code</abbr></th>
+                  <th><abbr title="Encoding">encodage</abbr></th>
+                  <th><abbr title="html page">page aspirée</abbr></th>
+                  <th><abbr title="Dump">dumps utf-8</abbr></th>
+                  <th><abbr title="Dump utf-8">dumps convertis</abbr></th>
+                  <th class="text-center"><abbr title="Words">occurences</abbr></th>
+                  <th><abbr title="Context">contexte</abbr></th>
+                  <th><abbr title="Concordance">concordance</abbr></th>
+                </tr>
+              </thead>
+              <tbody>
+EOF
     while read -r url; do
         ((line++))
 
@@ -108,6 +180,12 @@ for fichier in "$dossier"/espagnol.txt; do
         contexte="$DIR/contextes/"$lang"/"$lang"-$line.txt"
         concordance="$DIR/concordances/"$lang"/"$lang"-$line.html"
 
+        # Valeurs par défaut
+        http_code="N/A"
+        encoding="N/A"
+        occurrences="-"
+        row_class=""
+
         # commande curl pour récupérer le code HTTP et le content type/charset + la page aspirée
         data=$(curl -sS -L -w "%{http_code}\n%{content_type}" -A "Mozilla/5.0 (compatible; curl-test)" --cookie cookies.txt -o "$aspiration" "$url")
 
@@ -115,17 +193,17 @@ for fichier in "$dossier"/espagnol.txt; do
         encoding=$(echo "$data" | tail -1 | grep -Eio 'charset=[^;[:space:]]+' | cut -d"=" -f2 | tr '[:upper:]' '[:lower:]')
 
         if [ -z "${encoding}" ]; then
-            encoding="N/A"
+            encoding="N/A" 
         fi
 
         #-------------------------------------------
 		    # On continue en tenant compte de l'encodage fourni par curl
 		    #-------------------------------------------
         if [[ "$encoding" == "utf-8" ]]; then
-
-          # les pages html aspirées et sauvegardées dans ./aspirations
+        
+          # les pages html aspirées et sauvegardées dans ./aspirations
           # le résultat est testé, si la commande curl a échoué le script continue sur la prochaine itération
-
+          
             # les DUMPS des pages aspirées obtenus avec lynx
             # vérifie si le fichier aspiré n'est pas vide
             [ -s "$aspiration" ] && \
@@ -144,7 +222,6 @@ for fichier in "$dossier"/espagnol.txt; do
             # les concordances en appelant le script concordance.sh
             ./programmes/concordance.sh "$motif" "$contexte" "$concordance"
 
-            echo -e "<tr>" >> "$DIR/tableaux/$tab"
         #-------------------------------------------
 		    # Si le charset extrait est connu de iconv
 		    #-------------------------------------------
@@ -163,12 +240,13 @@ for fichier in "$dossier"/espagnol.txt; do
 
             ./PROGRAMMES/concordance.sh "$motif" "$contexte" "$concordance"
 
-            echo -e "<tr class="has-background-info-light">" >> "$DIR/tableaux/$tab"
+            row_class="table-warning"
 
           #-------------------------------------------
 			    # Sinon on ne fait rien
 			    #-------------------------------------------
           else
+            row_class="table-danger"
             http_code="N/A"
             encoding="N/A"
             occurrences="-"
@@ -177,30 +255,49 @@ for fichier in "$dossier"/espagnol.txt; do
             dump_text_iconv="dumps-text/"$lang"/-"
             contexte="contextes/"$lang"/-"
             concordance="concordances/"$lang"/-"
-
-            echo -e "<tr class="has-background-danger-light">" >> "$DIR/tableaux/$tab"
           fi
         fi
 
-        echo -e "
-                <th>$line</th>
-                <td style=\"text-overflow: ellipsis; overflow: hidden; max-width: 12rem\"><a href=\"$url\" target="_blank" rel="noopener noreferrer">$url</a></td>
-                <td>$http_code</td>
-                <td>$encoding</td>
-                <td><a href=\"$aspiration\" target=\"_blank\" rel=\"noopener noreferrer\">html</a></td>
-                <td><a href=\"$dump_text\" target=\"_blank\" rel=\"noopener noreferrer\">\"$(basename $dump_text)\"</a></td>
-                <td><a href=\"$dump_text_iconv\" target=\"_blank\" rel=\"noopener noreferrer\">\"$(basename $dump_text_iconv)\"</a></td>
-                <td class=\"has-text-centered\">$occurrences</td>
-                <td><a href=\"$contexte\" target=\"_blank\" rel=\"noopener noreferrer\">\"$(basename $contexte)\"</a></td>
-                <td><a href=\"$concordance\" target=\"_blank\" rel=\"noopener noreferrer\">\"$(basename $concordance)\"</a></td>
-            </tr>" >> "$DIR/tableaux/$tab"
+    cat >> "$out_file" <<EOF
+                <tr class="$row_class">
+                  <th scope="row" class="text-nowrap">$line</th>
+                  <td style="text-overflow: ellipsis; overflow: hidden; max-width: 12rem">
+                    <a href="$url" target="_blank" rel="noopener noreferrer">$url</a>
+                  </td>
+                  <td>$http_code</td>
+                  <td>$encoding</td>
+                  <td>
+                    <a href="$aspiration" target="_blank" rel="noopener noreferrer">html</a>
+                  </td>
+                  <td>
+                    <a href="$dump_text" target="_blank" rel="noopener noreferrer">"$(basename "$dump_text")"</a>
+                  </td>
+                  <td>
+                    <a href="$dump_text_iconv" target="_blank" rel="noopener noreferrer">"$(basename "$dump_text_iconv")"</a>
+                  </td>
+                  <td class="text-center">$occurrences</td>
+                  <td>
+                    <a href="$contexte" target="_blank" rel="noopener noreferrer">"$(basename "$contexte")"</a>
+                  </td>
+                  <td>
+                    <a href="$concordance" target="_blank" rel="noopener noreferrer">"$(basename "$concordance")"</a>
+                  </td>
+                </tr>
+EOF
     done < $fichier
-    echo "
-      </tbody>
-        </table>" >> "$DIR/tableaux/$tab"
-done
+cat >> "$out_file" <<EOF
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
 
-echo "
-    </div>
+    <footer class="footer text-center py-3">PPE • 2025</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
-</html>" >> "$DIR/tableaux/$tab"
+</html>
+EOF
+done	
+    

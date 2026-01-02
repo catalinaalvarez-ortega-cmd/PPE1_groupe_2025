@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accueil | Projet de Programmation Encadré</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="PPE.css" rel="stylesheet" />
+
+    <style>
+      .trilang {
+        text-align: center;
+      }
+      .trilang .word {
+        font-weight: 800;
+        margin: 0;
+        opacity: 0.6;
+      }
+      .trilang .fr {
+        font-size: 2rem;
+      }
+      .trilang .es {
+        font-size: 1.6rem;
+      }
+      .trilang .ar {
+        font-size: 2.2rem;
+        direction: rtl;
+      }
+      .trilang .subtitle {
+        opacity: 0.75;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .hero h1 {
+        text-align: center;
+      }
+
+      .clouds-hero {
+        border-radius: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.02);
+      }
+      .clouds-grid {
+        display: grid;
+        gap: 1rem;
+        padding: 1rem;
+      }
+      @media (min-width: 992px) {
+        .clouds-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .cloud-card {
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(0, 0, 0, 0.12);
+        display: flex;
+        flex-direction: column;
+      }
+      .cloud-img {
+        width: 100%;
+        border-radius: 14px;
+      }
+      .cloud-body {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+      .cloud-title {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+      }
+      .fixed-note {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 14px;
+        padding: 0.8rem;
+      }
+      .mini-hint {
+        font-size: 0.9rem;
+        opacity: 0.75;
+      }
+
+      /* ===== Structure du site ===== */
+      .site-structure {
+        font-size: 0.9rem;
+        opacity: 0.8;
+        padding: 1rem !important;
+      }
+      .site-structure h4 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        opacity: 0.9;
+      }
+      .site-structure ul {
+        padding-left: 1.1rem;
+        margin-bottom: 0;
+      }
+      .site-structure li {
+        margin-bottom: 0.25rem;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+
+  <body class="corps">
+    <div class="wow-bg"></div>
+
+    <header class="py-3">
+      <div class="container d-flex justify-content-between">
+        <h4><em>Projet de Programmation Encadré</em></h4>
+        <span class="badge-soft">Mot : <strong>orientalisme</strong></span>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-dark mt-3">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><strong>Mot : Orientalisme</strong></a
+          >
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="journal.html">Journal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="analyse-ling.html"
+                  >Analyse linguistique</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="scripts.html">Scripts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="a-propos.html">À propos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-4">
+      <section class="hero mb-4">
+        <div class="glass p-4">
+          <h1>
+            <strong>Orientalisme : entre art, politique et science</strong>
+          </h1>
+        </div>
+
+        <div class="trilang mt-3">
+          <p class="word fr">orientalisme</p>
+          <p class="word es">orientalismo</p>
+          <p class="word ar">الاستشراق</p>
+          <div class="subtitle">analyse</div>
+          <p class="opacity-75">
+            Extraction de contextes d’occurrence via URLs
+          </p>
+        </div>
+      </section>
+
+      <!-- Tableaux -->
+      <section class="mb-4">
+        <div class="glass p-3 tables-access">
+          <h3 class="mb-3">Accès vers les tableaux pour chacune des langues</h3>
+
+          <div class="row g-3">
+            <!-- Arabe -->
+            <div class="col-12 col-lg-4">
+              <div class="cardx modern-card p-4 h-100 position-relative">
+                <div
+                  class="d-flex align-items-center justify-content-between mb-2"
+                >
+                  <h4 class="h5 mb-0">Tableau Arabe</h4>
+                  <span class="badge-soft">AR</span>
+                </div>
+                <p class="opacity-75 mb-0">
+                  Accéder au tableau de résultats pour le corpus arabe.
+                </p>
+                <a
+                  class="stretched-link"
+                  href="./RESULTS/tableaux/orientalisme_ar_simple.html"
+                  target="_blank"
+                  aria-label="Ouvrir le tableau arabe"
+                ></a>
+              </div>
+            </div>
+
+            <!-- Espagnol -->
+            <div class="col-12 col-lg-4">
+              <div class="cardx modern-card p-4 h-100 position-relative">
+                <div
+                  class="d-flex align-items-center justify-content-between mb-2"
+                >
+                  <h4 class="h5 mb-0">Tableau Espagnol</h4>
+                  <span class="badge-soft">ES</span>
+                </div>
+                <p class="opacity-75 mb-0">
+                  Accéder au tableau de résultats pour le corpus espagnol.
+                </p>
+                <a
+                  class="stretched-link"
+                  href="./RESULTS/tableaux/tableau.html"
+                  target="_blank"
+                  aria-label="Ouvrir le tableau espagnol"
+                ></a>
+              </div>
+            </div>
+
+            <!-- Français -->
+            <div class="col-12 col-lg-4">
+              <div class="cardx modern-card p-4 h-100 position-relative">
+                <div
+                  class="d-flex align-items-center justify-content-between mb-2"
+                >
+                  <h4 class="h5 mb-0">Tableau Français</h4>
+                  <span class="badge-soft">FR</span>
+                </div>
+                <p class="opacity-75 mb-0">
+                  Accéder au tableau de résultats pour le corpus français.
+                </p>
+                <a
+                  class="stretched-link"
+                  href="./RESULTS/tableaux/orientalismefr.html"
+                  target="_blank"
+                  aria-label="Ouvrir le tableau français"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clouds-hero mb-4">
+        <div class="p-3">
+          <h3>Nuages de mots</h3>
+          <p class="opacity-75">
+            Les nuages de mots illustrent les cooccurrents dominants autour du
+            terme
+            <em>orientalisme</em> dans chaque langue.
+          </p>
+        </div>
+
+        <div class="clouds-grid">
+          <div class="cloud-card">
+            <img
+              src="images/nuage_dump_fr.png"
+              class="cloud-img"
+              alt="Nuage français"
+            />
+            <div class="cloud-body">
+              <div class="cloud-title">
+                Français <span class="badge-soft">Salma</span>
+              </div>
+              <p class="mini-hint">
+                Les termes frequents mis en valeur dans le nuage de mot revèlent
+                les différentes dimensions de l'orientalisme. Comme les termes
+                "moyen", "occident","siècle", renvoient à sa a dimension
+                historique et géographique, en montrant qu'il y a une oppsition
+                entre deux espaces culturels (orient et occident). Le champ
+                lecial de l'art de la cultre est particulèrement présente;
+                "Litterature", "culture", "peinture","Edward saïd", "Hugo",
+                "Delacroix" cela demontre que l'orientalisme est surtut abordé à
+                travers des productions intellectuelles, artistiques, et
+                littéraires. Enfin, la présence de termes moins fréquents dans
+                notre nuage tels que ; "idées", "orenement ", "stéréotypée" ou
+                encore "cliché", "coloniale", "politique" ces termes peuvent
+                evoquer l'idée d'un imaginaire fantasmé de l'orient sous le
+                prisme de la domination coloniale.
+              </p>
+            </div>
+          </div>
+
+          <div class="cloud-card">
+            <img
+              src="images/nuage_contextes_es.png"
+              class="cloud-img"
+              alt="Nuage espagnol"
+            />
+            <div class="cloud-body">
+              <div class="cloud-title">
+                Espagnol <span class="badge-soft">Catalina</span>
+              </div>
+              <p class="mini-hint">
+                « Medio » désigne une entité précise, un marqueur politique et
+                international, tandis qu « asia » évoque plutôt un cadre
+                culturel et historique. Enfin, si l’on regroupe les fréquences
+                statistiquement proches, on observe que des mots comme «
+                estudios » (3,48) et « arte » (3,23) reflètent cette dimension
+                culturelle évoquée précédemment. De même, « discurso » (2,11) et
+                « occidente » (2,36) relèvent de la sphère politique à laquelle
+                « medio » fait référence. Les plus spécifiques révèlent les
+                associations immédiates du mot cible : « asia », toujours
+                fortement lié à la notion de légende, tout comme « medio ». En
+                revanche, « pirineos » et « norte » prennent cette fois une
+                place importante, ce qui souligne la forte association de «
+                orient » avec une zone géographique, suscitant davantage
+                d’intérêt pour son ancrage spatial que pour d’autres thèmes. Les
+                mots « áfrica », « occidente » et « discurso » renforcent cette
+                idée de « orient » comme un terme éveillant un vif intérêt
+                géopolitique, souvent central dans le discours politique
+                occidental.
+              </p>
+            </div>
+          </div>
+
+          <div class="cloud-card">
+            <img src="images/arabe.png" class="cloud-img" alt="Nuage arabe" />
+            <div class="cloud-body">
+              <div class="cloud-title">
+                Arabe <span class="badge-soft">Myriam</span>
+              </div>
+
+              <div class="fixed-note">
+                La majorité des termes saillants du nuage arabe relèvent de la
+                religion, de l’Islam, des études et du rapport à l’Occident. En
+                arabe, l’orientalisme renvoie principalement aux études
+                consacrées à l’Islam, aujourd’hui regroupées sous le champ de
+                l’islamologie, considéré comme un pilier central de
+                l’orientalisme.
+              </div>
+
+              <div class="mini-hint">
+                <strong>Exemples de cooccurrents observés :</strong>
+                <ul class="mb-0 mt-1">
+                  <li><strong>إسلامي</strong> → <em>islamique</em></li>
+                  <li><strong>محمد</strong> → <em>Mohammed</em></li>
+                  <li><strong>الغرب</strong> → <em>l’Occident</em></li>
+                  <li><strong>الدراسات</strong> → <em>les études</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row g-3 mt-4">
+        <div class="col-lg-7">
+          <div class="cardx modern-card p-4">
+            <h3>Qu’est-ce que l’orientalisme ?</h3>
+
+            <p><strong>La naissance de l’orientalisme</strong></p>
+            <p>
+              On situe les prémices de l’orientalisme au Moyen Âge, notamment à
+              l’époque des croisades (XIe–XIIIe siècles). Ces expéditions ont
+              mis les Européens en contact avec de nouvelles langues, de
+              nouveaux peuples et de nouveaux savoirs, suscitant curiosité et
+              besoin de compréhension. Des manuscrits orientaux ont alors
+              commencé à circuler en Europe, parfois conservés et étudiés dans
+              des bibliothèques royales. Toutefois, ces démarches n’étaient pas
+              purement scientifiques : elles s’inscrivaient aussi dans des
+              logiques religieuses et politiques, liées à la guerre, à la
+              conversion et à la domination culturelle.
+            </p>
+
+            <p>
+              Au début du XIVe siècle, le concile de Vienne (1311–1312) imposera
+              des chaires de langues orientales dans plusieurs universités
+              européennes. L’Église cherchait à mieux connaître l’Islam, à
+              former ses missionnaires mais aussi à accéder à des savoirs
+              scientifiques tels que la médecine ou la philosophie.
+            </p>
+
+            <p><strong>L’orientalisme en tant que discipline</strong></p>
+            <p>
+              L’orientalisme se structurera aux XVIe–XVIIe siècles, avant
+              d’émerger au XVIIIe siècle comme mouvement littéraire et
+              artistique. Il prendra alors la forme d’un goût pour l’exotisme et
+              l’imaginaire oriental, produisant des représentations souvent
+              idéalisées ou stéréotypées.
+            </p>
+
+            <p>
+              Cette fascination pour l’Orient s’est souvent exprimée à travers
+              des catégories occidentales, construisant une vision de l’Orient
+              qui reflète autant l’imaginaire européen que la réalité des
+              sociétés étudiées.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="cardx modern-card site-structure">
+            <h4>Structure du site</h4>
+            <ul>
+              <li>Accueil</li>
+              <li>Journal : suivi du projet</li>
+              <li>Analyse linguistique : interprétations et observations</li>
+              <li>Scripts et résultats : chaînes de traitement</li>
+              <li>À propos : équipe et rôles</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer text-center py-3">PPE • 2025</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -101,8 +101,8 @@ Conectarse
 
 Acerca del catálogo
 
-   La base de datos del catálogo de la Biblioteca cuenta con 153545
-   ejemplares de obras monográficas correspondientes a 100254 títulos y
+   La base de datos del catálogo de la Biblioteca cuenta con 153547
+   ejemplares de obras monográficas correspondientes a 100257 títulos y
    4849 números de 176 publicaciones periódicas especializadas. La
    consulta se puede realizar por título, autor, tema, editorial y/o
    cualquier palabra contenida en el registro bibliográfico
