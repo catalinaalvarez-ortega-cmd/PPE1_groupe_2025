@@ -116,4 +116,4 @@ python3 cooccurrents.py ../Token/contextes/fr-*.txt --target ".*[oO]rient.*" --m
 python3 tsv_to_html_table.py "../PALS/francais_pals/cooc-contextes-fr.tsv" "../PALS/francais_pals/cooc-contextes-fr.html"
 
 
-python3 wordcloud.py
+python3 wordcloud-fr.py

@@ -1472,11 +1472,11 @@ enumerer l'ensemble de fichier dans un corpus pour faire l'execice de cooccurent
                 marche pas. en fait charset ce n'etait pas la bone categorie
                 mais plutot ={content_type} et la ca marche ! 3. le nombre de
                 mots dans la page j'ai essaye en pousuivant echo -e " nbligne \t
-                {line} \t wc -w" mais ca ne marche pas. ensuite ; jrai compris
-                qu'il faut que ce soit aussi stocker dans un paramettre , et
+                {line} \t wc -w" mais ca ne marche pas. ensuite ; j'ai compris
+                qu'il faut que ce soit aussi stocker dans une variable , et
                 pour extraire correctement le contenu d'une page web il faut
                 utiliser lynx. MOTS=$(lynx -dump "$line" | wc -w ) la je stock
-                mon resultat qui va itérer wc ens en bas de page donc ce n'est
+                mon resultat qui va compter les mots  wc en comprenant les meta données,  donc ce n'est
                 pas correct il faut que j'utilise une autre commande pour
                 qu'elle ne comptabilise pas ces meta données. j'ai ajouté
                 -nolist a -dump pour retirer la liste des liens d'une page à
@@ -1509,7 +1509,7 @@ enumerer l'ensemble de fichier dans un corpus pour faire l'execice de cooccurent
                 script qui génèrent des fichiers vers un chemin relatif. La
                 tokenization des extractions (dump) et contextes a été
                 challengeant, car j'ai dû me familiariser avec la librairie
-                NLTK.
+                NLTK, tout en faisant appel a un environement virtuel pour pouvoir lancer les scripts python dans mon programme " orientalisme_fr_programme.sh"
               </p>
             </div>
           </div>
