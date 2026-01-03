@@ -1,11 +1,11 @@
    REFRESH(480 sec):
-   file://localhost/Users/catalinaalvarez/cours/plurital/PPE1_groupe_2025/
-   aspirations/arabe/arabe-25.html
+   file://localhost/home/alex/T%C3%A9l%C3%A9chargements/PPE1_groupe_2025-m
+   ain%281%29/PPE1_groupe_2025-main/aspirations/arabe/arabe-25.html
 
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-TDDZXVZ
 
-   14  C° weather icon
-   الجمعة 02 يناير 2026
+   19  C° weather icon
+   السبت 03 يناير 2026
      * rss
      * instagram
      * youtube

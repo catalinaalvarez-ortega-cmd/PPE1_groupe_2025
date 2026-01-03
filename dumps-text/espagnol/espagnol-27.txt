@@ -461,7 +461,7 @@ Newsletter
 
    Mantenete al día con nuestras últimas novedades
 
-   Tu correo electrónico_________________________________________ (BUTTON)
+   Tu correo electrónico ________________________________________ (BUTTON)
    Enviar
      *
      *

@@ -1,5 +1,5 @@
    REFRESH(360 sec):
-   file://localhost/Users/catalinaalvarez/cours/plurital/PPE1_groupe_2025/
-   aspirations/espagnol/espagnol-7.html
+   file://localhost/home/alex/T%C3%A9l%C3%A9chargements/PPE1_groupe_2025-m
+   ain%281%29/PPE1_groupe_2025-main/aspirations/espagnol/espagnol-7.html
 
    Enable JavaScript and cookies to continue

@@ -53,7 +53,7 @@ Orientalismo (libro)
    [ ] 27 idiomas
      * العربية
      * বাংলা
-     * Catal�
+     * Català
      * Cymraeg
      * Deutsch
      * English

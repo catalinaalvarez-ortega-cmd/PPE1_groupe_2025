@@ -1,96 +1,49 @@
 #!/usr/bin/env bash
 
-BASE="/Users/catalinaalvarez/cours/plurital/PPE1_groupe_2025"
-PALS_DIR="/Users/catalinaalvarez/cours/plurital/PPE1_groupe_2025/PALS"
-STOP_ES="/Users/catalinaalvarez/cours/plurital/PPE1_groupe_2025/nuages/stopwords_es.txt"
 
 if [ $# -ne 2 ]; then
-  echo "Usage: $0 <langue> <dossier>" >&2
-  echo "  langue : arabe | français | espagnol" >&2
-  echo "  dossier: contextes | dumps-text" >&2
+  echo "Argument 1 : <langue> (français, espagnol, arabe), argument 2 : <dossier> (contextes, dumps-text)"
   exit 1
 fi
 
 lang=$1
 dossier=$2
 
-case "$dossier" in
-  contextes|dumps-text) ;;
-  *) echo "Dossier invalide: $dossier" >&2; exit 1 ;;
-esac
+# choix conditionnel des regex en fonction de la langue pour la tokenisation
+if [ "$lang" = "arabe" ]; then
+  sent='[.!?؟]'
+  reg='\p{Arabic}\p{M}'
+elif [ "$lang" = "français" ]; then
+  sent='[.!?]'
+  reg='\p{Latin}\p{M}'
+elif [ "$lang" = "espagnol" ]; then
+  sent='[.!?]'
+  reg='\p{Latin}\p{M}'
+else
+  echo "Langue non prise en charge : $lang" >&2
+  exit 1
+fi
 
-case "$lang" in
-  arabe)    sent='[.!?؟]' ;;
-  français) sent='[.!?]'  ;;
-  espagnol) sent='[.!?]'  ;;
-  *) echo "Langue non prise en charge: $lang" >&2; exit 1 ;;
-esac
+# On crée le dossiers de sortie s'ils n'existent pas
+if [ ! -d "../pals/cooccurrent/$dossier" ]; then
+    mkdir -p ../pals/cooccurrent/$dossier
+fi
 
-mkdir -p "$PALS_DIR/cooccurrent/$dossier"
-out="$PALS_DIR/cooccurrent/$dossier/$dossier-$lang.txt"
-: > "$out"
+# Fichier de sortie
+out="../pals/cooccurrent/$dossier/$dossier-$lang.txt"
 
-# Conversion robuste vers UTF-8 (important si certains fichiers ne sont pas UTF-8 strict)
-to_utf8() {
-  local f="$1"
-  if iconv -f UTF-8 -t UTF-8 "$f" >/dev/null 2>&1; then
-    cat "$f"
-  elif iconv -f WINDOWS-1252 -t UTF-8 "$f" >/dev/null 2>&1; then
-    iconv -f WINDOWS-1252 -t UTF-8 "$f"
-  elif iconv -f ISO-8859-1 -t UTF-8 "$f" >/dev/null 2>&1; then
-    iconv -f ISO-8859-1 -t UTF-8 "$f"
-  else
-    iconv -f UTF-8 -t UTF-8 -c "$f"
-  fi
-}
+# Mise en place de la tokenisation
+# Boucle sur les fichiers textes du dossier
+# avec sed nous substituons les ponctuations de fin de phrase par des sauts de ligne
+# la solution avec tr affichait des caractères inconnus en fichier de sortie, d'où l'utilisation de perl
+# ce qui nous permet d'utiliser une regex en fonction de la langue, tout ce qui n'est pas dans l'ensemnle autorisé est remplacé par un saut de ligne
+# puis awk pour supprimer les lignes vides consécutives
+for file in ../$dossier/"$lang"/"$lang"-*.txt; do
 
-count_files=0
-count_skipped_empty=0
+  sed -E "s/${sent}/\n\n/g" "$file" | perl -CSDA -pe "s/[^\n${reg}]+/\n/g" | awk ' NF { print; blank=0; next } !blank { print ""; blank=1 } ' >> "$out"
 
-for file in "$BASE/$dossier/$lang/$lang"-*.txt; do
-  [ -e "$file" ] || continue
-
-  if [ ! -s "$file" ]; then
-    count_skipped_empty=$((count_skipped_empty+1))
-    continue
-  fi
-
-  count_files=$((count_files+1))
-
-  # Segmentation + tokenisation Unicode safe:
-  # - transforme fin de phrase en ligne vide (\n\n)
-  # - conserve toutes les lettres Unicode + diacritiques (accents)
-  # - le reste devient \n
-  to_utf8 "$file" \
-    | perl -CSDA -pe "s/${sent}/\n\n/g; s/[^\n\p{L}\p{M}]+/\n/g" \
-    | {
-        if [ "$lang" = "espagnol" ] && [ -f "$STOP_ES" ]; then
-          STOP_ES="$STOP_ES" perl -CSDA -MUnicode::Normalize=NFKC -ne '
-            BEGIN {
-              open my $fh, "<:encoding(UTF-8)", $ENV{STOP_ES} or die "Stopwords introuvable\n";
-              while (<$fh>) {
-                chomp; s/\r$//;
-                my $w = lc NFKC($_);
-                $sw{$w} = 1 if $w ne "";
-              }
-            }
-            chomp; s/\r$//;
-            if ($_ eq "") { print "\n"; next }   # garder séparateurs de phrases
-            my $t = lc NFKC($_);
-
-            next if length($t) < 2;              # retire bruit 1-char
-            next if $sw{$t};                     # stopwords
-            print "$t\n";
-          '
-        else
-          cat
-        fi
-      } \
-    | awk 'NF { print; blank=0; next } !blank { print ""; blank=1 }' \
-    >> "$out"
-
-  echo >> "$out"
 done
 
-echo "Corpus PALS généré: $out" >&2
-echo "Fichiers traités: $count_files ; fichiers vides ignorés: $count_skipped_empty" >&2
+# Exemple d'appel de cooccurrents.py
+# python3 cooccurrents.py ../pals/cooccurrent/contextes/contextes-espagnol.txt --target "orient.*" --match-mode regex -N 20 -s i > contextes.tsv
+

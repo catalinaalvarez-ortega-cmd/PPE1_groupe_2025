@@ -48,7 +48,7 @@ Contenidos
 Oriental
 
    [ ] 14 idiomas
-     * Catal�
+     * Català
      * Cebuano
      * Deutsch
      * Français

@@ -1,4 +1,4 @@
-   Oriente Medio, Norte de Ãfrica, AfganistÃ¡n y PakistÃ¡n
+   Oriente Medio, Norte de África, Afganistán y Pakistán
    h1
    false
    heading-top-none
@@ -11,24 +11,23 @@
    bg-default
 
    COMUNICADO DE PRENSA
-   SeÃ±ales de mejora en las perspectivas econÃ³micas para la regiÃ³n
-   MENAAP
+   Señales de mejora en las perspectivas económicas para la región MENAAP
    https://www.worldbank.org/en/news/press-release/2025/10/07/signs-of-imp
    rovement-in-the-economic-outlook-for-the-middle-east-north-africa-afgha
    nistan-pakistan-region
 
-   El Ãºltimo informe econÃ³mico del Banco Mundial para MENAAP apunta a
-   una perspectiva econÃ³mica mejorada para la regiÃ³n, con un crecimiento
+   El último informe económico del Banco Mundial para MENAAP apunta a una
+   perspectiva económica mejorada para la región, con un crecimiento
    esperado del 2,8 % en 2025 y el 3,3 % en 2026.
 
-   MÃ¡s informaciÃ³n (i)
-   ARTÃCULO INMERSIVO
-   Promover la seguridad hÃdrica en Oriente Medio y Norte de Ãfrica: VÃas
+   Más información (i)
+   ARTÍCULO INMERSIVO
+   Promover la seguridad hídrica en Oriente Medio y Norte de África: Vías
    hacia un futuro sostenible (i)
    https://www.worldbank.org/en/news/immersive-story/2025/04/09/building-a
    -water-secure-future-in-the-middle-east-and-north-africa
    COMUNICADO DE PRENSA
-   Abordar la seguridad hÃdrica mundial (i)
+   Abordar la seguridad hídrica mundial (i)
    https://www.worldbank.org/en/news/press-release/2025/02/11/the-mohamed-
    bin-zayed-water-initiative-and-world-bank-sign-mou-focused-on-driving-i
    nnovation-and-investment-to-address-g
@@ -45,29 +44,29 @@
    col1-blocks
    news-banner
 
-   Explorar PaÃses
-     * AfganistÃ¡n
+   Explorar Países
+     * Afganistán
      * Algeria
      * Djibouti
      * Egipto
-     * IrÃ¡n
+     * Irán
      * Iraq
      * Jordania
-     * LÃbano
+     * Líbano
      * Libia
 
      * Marruecos
-     * PakistÃ¡n
+     * Pakistán
      * Arabia Saudita
      * Siria
-     * TÃºnez
+     * Túnez
      * Cisjordania y Gaza
      * Yemen
 
    Ver todos
    Ver menos
    EXPLORAR SUBREGIONES
-     * Consejo de CooperaciÃ³n del Golfo (i)
+     * Consejo de Cooperación del Golfo (i)
 
    style
    grid, countrylist-container
@@ -86,19 +85,19 @@
    col2-blocks
    collapsible-text
 
-EL GRUPO BANCO MUNDIAL EN ORIENTE MEDIO, NORTE DE ÃFRICA, AFGANISTÃN Y
-PAKISTÃN
+EL GRUPO BANCO MUNDIAL EN ORIENTE MEDIO, NORTE DE ÁFRICA, AFGANISTÁN Y
+PAKISTÁN
 
-   Perspectivas econÃ³micas regionales: Octubre de 2025 (i)
-   Las perspectivas de crecimiento en Oriente Medio, Norte de Ãfrica,
-   AfganistÃ¡n y PakistÃ¡n (MENAAP) estÃ¡n mejorando, en consonancia con
-   las tendencias mundiales, pero los conflictos, la fragilidad y el
-   desplazamiento siguen siendo desafÃos persistentes. Se proyecta que el
+   Perspectivas económicas regionales: Octubre de 2025 (i)
+   Las perspectivas de crecimiento en Oriente Medio, Norte de África,
+   Afganistán y Pakistán (MENAAP) están mejorando, en consonancia con las
+   tendencias mundiales, pero los conflictos, la fragilidad y el
+   desplazamiento siguen siendo desafíos persistentes. Se proyecta que el
    PIB regional crezca un 2,8 % en 2025 y un 3,3 % en 2026, frente al 2,3
-   % de 2024, impulsado por un desempeÃ±o superior al previsto en los
-   paÃses del Consejo de CooperaciÃ³n del Golfo y los paÃses en desarrollo
-   importadores de petrÃ³leo.
-   Leer mÃ¡s
+   % de 2024, impulsado por un desempeño superior al previsto en los
+   países del Consejo de Cooperación del Golfo y los países en desarrollo
+   importadores de petróleo.
+   Leer más
    Leer menos
    sec-spacing
    section-padding-between
@@ -110,30 +109,30 @@ PAKISTÃN
    region
    MEA
 
-EN CIFRAS: ORIENTE MEDIO, NORTE DE ÃFRICA, AFGANISTÃN Y PAKISTÃN
+EN CIFRAS: ORIENTE MEDIO, NORTE DE ÁFRICA, AFGANISTÁN Y PAKISTÁN
 
-   Explorar mÃ¡s datos (i)
+   Explorar más datos (i)
    https://data.worldbank.org/region/middle-east-and-north-africa
-   Oriente Medio, Norte de Ãfrica, AfganistÃ¡n y PakistÃ¡n
+   Oriente Medio, Norte de África, Afganistán y Pakistán
    Fuente
    Conjunto de datos:
    Ir a Datos 360
    WB_FSI_BX_KLT_DINV_CD_WD
-   InversiÃ³n extranjera directa, entradas netas
+   Inversión extranjera directa, entradas netas
    Balanza de pagos, en USD corrientes
    WB_WDI_SI_POV_DDAY
-   Tasa de recuento de la pobreza en la lÃnea de USDÂ 3,00Â al dÃa
-   PPA de 2021. % de la poblaciÃ³n
+   Tasa de recuento de la pobreza en la línea de USD 3,00 al día
+   PPA de 2021. % de la población
    WB_WDI_EG_ELC_RNEW_ZS
-   ProducciÃ³n de electricidad renovable
-   % de la producciÃ³n total de electricidad
+   Producción de electricidad renovable
+   % de la producción total de electricidad
    WB_WDI_SL_TLF_CACT_FE_ZS
-   Tasa de participaciÃ³n femenina en la fuerza laboral
-   % de la poblaciÃ³n femenina mayor de 15 aÃ±os. EstimaciÃ³n modelada de
-   la OIT
+   Tasa de participación femenina en la fuerza laboral
+   % de la población femenina mayor de 15 años. Estimación modelada de la
+   OIT
    WB_WDI_SE_ENR_PRSC_FM_ZS
-   MatrÃcula, educaciÃ³n primaria y secundaria (bruta), Ãndice de paridad
-   de gÃ©nero (GPI)
+   Matrícula, educación primaria y secundaria (bruta), índice de paridad
+   de género (GPI)
    sec-spacing
    section-padding-between
    sec-spacing-bottom
@@ -142,46 +141,46 @@ EN CIFRAS: ORIENTE MEDIO, NORTE DE ÃFRICA, AFGANISTÃN Y PAKISTÃN
    default, bg-neutrals-10-gradient
 
    NUESTRAS PIORIDADES
-   EN ORIENTE MEDIO, NORTE DE ÃFRICA, AFGANISTÃN Y PAKISTÃN
-   Nos hemos comprometido a trabajar en Oriente Medio, Norte de Ãfrica,
-   AfganistÃ¡n y PakistÃ¡n para ayudar a crear un mundo sin pobreza en un
+   EN ORIENTE MEDIO, NORTE DE ÁFRICA, AFGANISTÁN Y PAKISTÁN
+   Nos hemos comprometido a trabajar en Oriente Medio, Norte de África,
+   Afganistán y Pakistán para ayudar a crear un mundo sin pobreza en un
    planeta habitable.
 
 Empleo
 
    Children in Partner for People and the Planet
 
-   La regiÃ³n MENAAP enfrenta un inmenso desafÃo laboral. Su poblaciÃ³n en
-   edad de trabajar estÃ¡ creciendo mÃ¡s rÃ¡pido de lo que se crean
-   empleos. La poblaciÃ³n en edad de trabajar, ahora alrededor de 380
-   millones, aumentarÃ¡ en un 40 % en los prÃ³ximos 25 aÃ±os, pero el
-   crecimiento econÃ³mico ha sido bajo, especialmente en cuanto al empleo.
-   Nuestro objetivo es que haya mÃ¡s empleos en el sector privado, de
-   manera mÃ¡s rÃ¡pida.
+   La región MENAAP enfrenta un inmenso desafío laboral. Su población en
+   edad de trabajar está creciendo más rápido de lo que se crean empleos.
+   La población en edad de trabajar, ahora alrededor de 380 millones,
+   aumentará en un 40 % en los próximos 25 años, pero el crecimiento
+   económico ha sido bajo, especialmente en cuanto al empleo. Nuestro
+   objetivo es que haya más empleos en el sector privado, de manera más
+   rápida.
 
-   Leer mÃ¡s (i)
+   Leer más (i)
 
-Seguridad hÃdrica
+Seguridad hídrica
 
    Man listening on headset
 
-   El Banco Mundial se dedica a apoyar a los paÃses de MENAAP para que
-   tomen medidas firmes para garantizar un futuro con seguridad hÃdrica
+   El Banco Mundial se dedica a apoyar a los países de MENAAP para que
+   tomen medidas firmes para garantizar un futuro con seguridad hídrica
    para sus ciudadanos. Como resultado, millones de personas en toda la
-   regiÃ³n se estÃ¡n beneficiando de mejores servicios y un suministro de
-   agua mÃ¡s seguro.
+   región se están beneficiando de mejores servicios y un suministro de
+   agua más seguro.
 
-   Leer mÃ¡s (i)
+   Leer más (i)
 
-GÃ©nero
+Género
 
    People raising their hand at a conference
 
-   Apoyar el desarrollo de las mujeres va mÃ¡s allÃ¡ de impulsar la
-   economÃa: se trata tambiÃ©n de construir un futuro mejor y mÃ¡s
-   inclusivo para todos.
+   Apoyar el desarrollo de las mujeres va más allá de impulsar la
+   economía: se trata también de construir un futuro mejor y más inclusivo
+   para todos.
 
-   Leer mÃ¡s (i)
+   Leer más (i)
    sec-spacing
    section-padding-between
    sec-spacing-bottom
@@ -189,16 +188,16 @@ GÃ©nero
    style
    bg-primary-blue-90, region-feature-card
 
-   LO ÃLTIMO DE ORIENTE MEDIO, NORTE DE ÃFRICA, AFGANISTÃN Y PAKISTÃN
+   LO ÚLTIMO DE ORIENTE MEDIO, NORTE DE ÁFRICA, AFGANISTÁN Y PAKISTÁN
 
-   MantÃ©ngase al dÃa con la Ãºltima informaciÃ³n sobre Oriente Medio,
-   Norte de Ãfrica, AfganistÃ¡n y PakistÃ¡n.
+   Manténgase al día con la última información sobre Oriente Medio, Norte
+   de África, Afganistán y Pakistán.
 
    Ver todos los blogs
 
    Ver todas las noticias
 
-   Ver todos los artÃculos
+   Ver todos los artículos
 
    Ver todas las investigaciones y publicaciones (i)
    { "facets": [ "contentType" ], "orderby": "contentDate desc", "select":
@@ -213,7 +212,7 @@ GÃ©nero
    style
    default, data-card-noborder
 
-CONTÃCTENOS
+CONTÁCTENOS
 
    Facebook
    lp-fb
@@ -221,9 +220,9 @@ CONTÃCTENOS
    X
    lp-x
    https://x.com/WorldBankMENA
-   SuscrÃbase a nuestro
-   BoletÃn semanal del Grupo Banco Mundial
-   Las Ãºltimas noticias, historias, datos y mÃ¡s del Grupo Banco Mundial
+   Suscríbase a nuestro
+   Boletín semanal del Grupo Banco Mundial
+   Las últimas noticias, historias, datos y más del Grupo Banco Mundial
    sobre temas de desarrollo urgentes.
    WBG External Corporate Spanish Newsletter|wbg-svc-ext-corp-spn-nl
 
@@ -232,20 +231,20 @@ Directivos regionales
    Ousmane Dione
    https://www.worldbank.org/en/about/people/o/ousmane-dione
    default alt
-   Vicepresidente, Oriente Medio y Norte de Ãfrica, AfganistÃ¡n y
-   PakistÃ¡n (MENAAP)
+   Vicepresidente, Oriente Medio y Norte de África, Afganistán y Pakistán
+   (MENAAP)
    mini-card
    Roberta Gatti
    https://www.worldbank.org/en/about/people/r/roberta-gatti
    default alt
 
-   Economista Jefe, Oriente Medio y Norte de Ãfrica, AfganistÃ¡n y
-   PakistÃ¡n (MENAAP)
+   Economista Jefe, Oriente Medio y Norte de África, Afganistán y Pakistán
+   (MENAAP)
 
    Oficina del Economista Jefe (i)
    mini-card
 
-Contactos en la regiÃ³n
+Contactos en la región
 
    Banco Mundial
    1818 H Street NW
@@ -278,26 +277,26 @@ Contactos en la regiÃ³n
    col3-blocks
    text
 
-   MÃS DESDEÂ ORIENTE MEDIO, NORTE DE ÃFRICA, AFGANISTÃN Y PAKISTÃN
+   MÁS DESDE ORIENTE MEDIO, NORTE DE ÁFRICA, AFGANISTÁN Y PAKISTÁN
    world-bank:content-type/report
-   Informe actualizado sobre la economÃa de Oriente Medio y Norte de
-   Ãfrica: Octubre de 2024 (i)
+   Informe actualizado sobre la economía de Oriente Medio y Norte de
+   África: Octubre de 2024 (i)
    https://www.worldbank.org/en/region/mena/publication/middle-east-and-no
    rth-africa-economic-update-archiveoctober2024
    default alt
-   SegÃºn las previsiones, la regiÃ³n de Oriente Medio y Norte de Ãfrica
-   (MENA) crecerÃ¡ un 2,2 % en 2024, pero las perspectivas siguen siendo
+   Según las previsiones, la región de Oriente Medio y Norte de África
+   (MENA) crecerá un 2,2 % en 2024, pero las perspectivas siguen siendo
    moderadas en medio de una mayor incertidumbre.
    mini-card
    world-bank:content-type/report
-   Informe actualizado sobre la economÃa de Oriente Medio y Norte de
-   Ãfrica: Abril de 2024 (i)
+   Informe actualizado sobre la economía de Oriente Medio y Norte de
+   África: Abril de 2024 (i)
    https://www.worldbank.org/en/region/mena/publication/middle-east-and-no
    rth-africa-economic-update-archiveapril2024
    default alt
-   Se proyecta que la regiÃ³n de Oriente Medio y Norte de Ãfrica (MENA)
-   crecerÃ¡ moderadamente en 2024, y que se volverÃ¡ a registrar el bajo
-   crecimiento observado en la dÃ©cada previa a la pandemia.
+   Se proyecta que la región de Oriente Medio y Norte de África (MENA)
+   crecerá moderadamente en 2024, y que se volverá a registrar el bajo
+   crecimiento observado en la década previa a la pandemia.
    mini-card
    sec-spacing
    section-none

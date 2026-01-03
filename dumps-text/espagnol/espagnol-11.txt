@@ -9,7 +9,7 @@
 
    (BUTTON)
      * English
-     * Catal�
+     * Català
      * Español
      * Français
 
@@ -118,9 +118,9 @@ About
           + Careers
 
    [icon_world.svg] English
-   Change �[ ]_]
+   Change › [ ]
      * English
-     * Catal�
+     * Català
      * Español
      * Français
 

@@ -4,7 +4,7 @@
    Dark Mode Light Mode
 
      * Arte & Cultura
-     * Attualit�
+     * Attualità
           + Geopolitica
           + Interviste
      * Scienza
@@ -27,7 +27,7 @@
    Popular Searches
      * Arte & Cultura
      * Arti Visive
-     * Attualit�
+     * Attualità
      * Cinema e Media
      * Civiltà e Popoli
      * Convertiti
@@ -60,6 +60,15 @@
 
    In evidenza
 
+Intervista al Presidente dell’Azione Cattolica Diocesi di Nocera
+Inferiore-Sarno Agostino Orefice
+
+     * Attualità
+     * Interviste
+
+   Gennaio 2, 2026
+   bySimone Esposito
+
 “AGRUPACIÓN INSTRUMENTALIA”
 
      * International
@@ -70,24 +79,17 @@
 
 Glauco Gresleri, pioniere italiano dell’architettura del XX secolo
 
-     * Attualit�
+     * Attualità
      * Eventi
 
    Dicembre 31, 2025
    byLorenzo Gresleri
-
-Natività sopra il Golgota
-
-     * Religioni
-
-   Dicembre 31, 2025
-   byRafi Ghattas
    La Redazione La Redazione
 
    Tota Pulchra News Tota Pulchra News
 
      * Arte & Cultura
-     * Attualit�
+     * Attualità
           + Geopolitica
           + Interviste
      * Scienza
@@ -114,7 +116,7 @@ Natività sopra il Golgota
    Popular Searches
      * Arte & Cultura
      * Arti Visive
-     * Attualit�
+     * Attualità
      * Cinema e Media
      * Civiltà e Popoli
      * Convertiti
@@ -147,6 +149,15 @@ Natività sopra il Golgota
 
    In evidenza
 
+Intervista al Presidente dell’Azione Cattolica Diocesi di Nocera
+Inferiore-Sarno Agostino Orefice
+
+     * Attualità
+     * Interviste
+
+   Gennaio 2, 2026
+   bySimone Esposito
+
 “AGRUPACIÓN INSTRUMENTALIA”
 
      * International
@@ -157,18 +168,11 @@ Natività sopra il Golgota
 
 Glauco Gresleri, pioniere italiano dell’architettura del XX secolo
 
-     * Attualit�
+     * Attualità
      * Eventi
 
    Dicembre 31, 2025
    byLorenzo Gresleri
-
-Natività sopra il Golgota
-
-     * Religioni
-
-   Dicembre 31, 2025
-   byRafi Ghattas
    La Virgen de Monserrate de Orihuela y sus elementos ceremoniales
      * International
 

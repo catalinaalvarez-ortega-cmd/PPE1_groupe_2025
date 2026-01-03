@@ -1,1 +1,9 @@
-   error code: 522
+                       Estado HTTP 404 – No encontrado
+     __________________________________________________________________
+
+   Tipo Informe de estado
+
+   Descripción El recurso requerido no está disponible.
+     __________________________________________________________________
+
+  Apache Tomcat/8.5.54 (Debian)

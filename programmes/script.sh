@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# TODO
-# lecture multilingue
-# gestion des code 403 et fichiers vides dans les tableaux
-DIR="$(pwd)"
+#-------------------------------------------
+# Executer script.sh depuis la racine du projet PPE
+# bash ./programmes/script.sh
+#-------------------------------------------
 
 # rend le fichier executable pour construire les concordanciers 
-chmod +x "$DIR/programmes/concordance.sh"
+chmod +x "./programmes/concordance.sh"
 
 # variables prédéfinies
-dossier="$DIR/URLs"
+dossier="./URLs"
 tab="tableau"
 
 # Saisie des arguments
@@ -49,15 +49,18 @@ for fichier in "$dossier"/*.txt; do
 
 
     # créons les sous-dossiers de sortie
-    mkdir "$DIR/aspirations/$lang";
-    mkdir "$DIR/dumps-text/$lang";
-    mkdir "$DIR/contextes/$lang";
-    mkdir "$DIR/concordances/$lang";
+if [[ ! -d "./aspirations/$lang" && ! -d "./dumps-text/$lang" && ! -d "./contextes/$lang" && ! -d "./concordances/$lang" ]] && ! -d "./aspirations/$lang" && ! -d "./dumps-text/$lang" && ! -d "./contextes/$lang" && ! -d "./concordances/$lang" ]]; then
+        mkdir "./aspirations/$lang";
+        mkdir "./dumps-text/$lang";
+        mkdir "./contextes/$lang";
+        mkdir "./concordances/$lang";
+    fi
+    
 
     # initialise un compteur de lignes
     line=0
 
-    out_file="$DIR/tableaux/$tab-$lang.html"
+    out_file="./tableaux/$tab-$lang.html"
 
     cat > "$out_file" <<EOF
 <!DOCTYPE html>
@@ -112,22 +115,22 @@ for fichier in "$dossier"/*.txt; do
           <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" rel="_blank" href="././index.html"
+                <a class="nav-link" rel="_blank" href="../SITE-PPE/index.html"
                   >Accueil</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" rel="_blank" href="././index.html"
+                <a class="nav-link" rel="_blank" href="../tableaux/tableau-arabe.html"
                   >Tableau Arabe</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" rel="_blank" href="././index.html"
+                <a class="nav-link" rel="_blank" href="../tableaux/tableau-espagnol.html"
                   >Tableau Espagnol</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" rel="_blank" href="././index.html"
+                <a class="nav-link" rel="_blank" href="../tableaux/orientalisme.html"
                   >Tableau Français</a
                 >
               </li>
@@ -174,12 +177,11 @@ EOF
         ((line++))
 
         # nous stockons les chemins des fichiers à enregistrer dans des variables
-        aspiration="$DIR/aspirations/"$lang"/"$lang"-$line.html"
-        dump_text="$DIR/dumps-text/"$lang"/"$lang"-$line.txt"
-        dump_text_iconv="$DIR/dumps-text/"$lang"/"$lang"-$line-utf8.txt"
-        contexte="$DIR/contextes/"$lang"/"$lang"-$line.txt"
-        concordance="$DIR/concordances/"$lang"/"$lang"-$line.html"
-
+        aspiration="./aspirations/"$lang"/"$lang"-$line.html"
+        dump_text="./dumps-text/"$lang"/"$lang"-$line.txt"
+        dump_text_iconv="./dumps-text/"$lang"/"$lang"-$line-utf8.txt"
+        contexte="./contextes/"$lang"/"$lang"-$line.txt"
+        concordance="./concordances/"$lang"/"$lang"-$line.html"
         # Valeurs par défaut
         http_code="N/A"
         encoding="N/A"
@@ -211,7 +213,7 @@ EOF
             > "$dump_text"
 
             # remplir la colonne dumps iconv
-            dump_text_iconv=""$DIR"/dumps-text/"$lang"/-"
+            dump_text_iconv="./dumps-text/"$lang"/-"
 
             # compter les occurrences du mot dans la page
             occurrences=$(grep -o -i "$motif" "$dump_text" | wc -l)
@@ -267,20 +269,20 @@ EOF
                   <td>$http_code</td>
                   <td>$encoding</td>
                   <td>
-                    <a href="$aspiration" target="_blank" rel="noopener noreferrer">html</a>
+                    <a href=".$aspiration" target="_blank" rel="noopener noreferrer">html</a>
                   </td>
                   <td>
-                    <a href="$dump_text" target="_blank" rel="noopener noreferrer">"$(basename "$dump_text")"</a>
+                    <a href=".$dump_text" target="_blank" rel="noopener noreferrer">"$(basename "$dump_text")"</a>
                   </td>
                   <td>
-                    <a href="$dump_text_iconv" target="_blank" rel="noopener noreferrer">"$(basename "$dump_text_iconv")"</a>
+                    <a href=".$dump_text_iconv" target="_blank" rel="noopener noreferrer">"$(basename "$dump_text_iconv")"</a>
                   </td>
                   <td class="text-center">$occurrences</td>
                   <td>
-                    <a href="$contexte" target="_blank" rel="noopener noreferrer">"$(basename "$contexte")"</a>
+                    <a href=".$contexte" target="_blank" rel="noopener noreferrer">"$(basename "$contexte")"</a>
                   </td>
                   <td>
-                    <a href="$concordance" target="_blank" rel="noopener noreferrer">"$(basename "$concordance")"</a>
+                    <a href=".$concordance" target="_blank" rel="noopener noreferrer">"$(basename "$concordance")"</a>
                   </td>
                 </tr>
 EOF
@@ -293,7 +295,7 @@ cat >> "$out_file" <<EOF
       </section>
     </main>
 
-    <footer class="footer text-center py-3">PPE • 2025</footer>
+    <footer class="footer text-center py-3">PPE • 2025-2026</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
