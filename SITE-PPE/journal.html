@@ -1504,12 +1504,12 @@ enumerer l'ensemble de fichier dans un corpus pour faire l'execice de cooccurent
                 plusieurs difficultés, notamment pour générer un lien href
                 renvoyant vers un tableau HTML de concordances. Cela a pu être
                 résolue grâce à un script proposé par Catalina. La gestion de
-                chemin relatif et absolu a représenté une difficulté, la
-                solution à été de définir des variables pour chaque partie du
-                script qui génèrent des fichiers vers un chemin relatif. La
+                chemin relatif et absolu a représenté une grande difficulté dans ce projet, tout d'abord dans le script orientalisme_fr_programme, la
+                solution à été de définir des variables pour chaque partie du script qui génèrent des fichiers vers un chemin relatif.IL y a eu des problèmes liés à l'arborescence car un dossier Results a été créé, cela posait probleme si nous voulons faire des modifications dans nos fichiers (originaux) cela ne mettait pas à jours les fichiers dupliqués dans Results. Et donc dans index.html, manifes.js et script.html les paths ont ete modifié de sorte à ce qu'ils pointnent vers l'arborescence demandé.  La
                 tokenization des extractions (dump) et contextes a été
                 challengeant, car j'ai dû me familiariser avec la librairie
                 NLTK, tout en faisant appel a un environement virtuel pour pouvoir lancer les scripts python dans mon programme " orientalisme_fr_programme.sh"
+
               </p>
             </div>
           </div>
